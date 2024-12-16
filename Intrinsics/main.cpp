@@ -60,7 +60,29 @@ void mulVectors(const double* v1,const double* v2, double* out, int size) {
 }
 
 double scalarMult(const double* v1, const double* v2, int size) {
+	int i;
+	double res=0.0;
 
+	__m256d x3 = _mm256_setzero_pd();
+#pragma ivdep
+	for (i = 0; i < (size / 4) * 4; i += 4) {
+		__m256d x0 = _mm256_load_pd(&v1[i]);
+		__m256d x1 = _mm256_load_pd(&v2[i]);
+
+		x3 = _mm256_fmadd_pd(x0, x1, x3);
+	}
+
+	double horizontal_sum[4];
+	_mm256_store_pd(horizontal_sum, x3);
+
+	for (int j = 0; j < 4; j++)
+		res += horizontal_sum[i];
+
+	for (; i < size; i++) {
+		res += (v1[i] * v2[i]);
+	}
+
+	return res;
 }
 
 int main() {

@@ -1,0 +1,2921 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: main.cpp, Line: 70, Column: 0 }
+Function:        '?scalarMult@@YANPEBN0H@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?_mm256_load_pd@@YA?AU__m256d@@PEBN@Z'
+  - String:          ''' inlined into '''
+  - Caller:          '?scalarMult@@YANPEBN0H@Z'
+    DebugLoc:        { File: main.cpp, Line: 62, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          '?scalarMult@@YANPEBN0H@Z'
+  - String:          ':'
+  - Line:            '8'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: main.cpp, Line: 69, Column: 0 }
+Function:        '?scalarMult@@YANPEBN0H@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?_mm256_load_pd@@YA?AU__m256d@@PEBN@Z'
+  - String:          ''' inlined into '''
+  - Caller:          '?scalarMult@@YANPEBN0H@Z'
+    DebugLoc:        { File: main.cpp, Line: 62, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          '?scalarMult@@YANPEBN0H@Z'
+  - String:          ':'
+  - Line:            '7'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: main.cpp, Line: 41, Column: 0 }
+Function:        '?mulVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?_mm256_load_pd@@YA?AU__m256d@@PEBN@Z'
+  - String:          ''' inlined into '''
+  - Caller:          '?mulVectors@@YAXPEBN0PEANH@Z'
+    DebugLoc:        { File: main.cpp, Line: 36, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          '?mulVectors@@YAXPEBN0PEANH@Z'
+  - String:          ':'
+  - Line:            '5'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: main.cpp, Line: 40, Column: 0 }
+Function:        '?mulVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?_mm256_load_pd@@YA?AU__m256d@@PEBN@Z'
+  - String:          ''' inlined into '''
+  - Caller:          '?mulVectors@@YAXPEBN0PEANH@Z'
+    DebugLoc:        { File: main.cpp, Line: 36, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          '?mulVectors@@YAXPEBN0PEANH@Z'
+  - String:          ':'
+  - Line:            '4'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: main.cpp, Line: 15, Column: 0 }
+Function:        '?addVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?_mm256_load_pd@@YA?AU__m256d@@PEBN@Z'
+  - String:          ''' inlined into '''
+  - Caller:          '?addVectors@@YAXPEBN0PEANH@Z'
+    DebugLoc:        { File: main.cpp, Line: 10, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          '?addVectors@@YAXPEBN0PEANH@Z'
+  - String:          ':'
+  - Line:            '5'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: main.cpp, Line: 14, Column: 0 }
+Function:        '?addVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?_mm256_load_pd@@YA?AU__m256d@@PEBN@Z'
+  - String:          ''' inlined into '''
+  - Caller:          '?addVectors@@YAXPEBN0PEANH@Z'
+    DebugLoc:        { File: main.cpp, Line: 10, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          '?addVectors@@YAXPEBN0PEANH@Z'
+  - String:          ':'
+  - Line:            '4'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: main.cpp, Line: 17, Column: 0 }
+Function:        '?addVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?_mm256_add_pd@@YA?AU__m256d@@U1@0@Z'
+  - String:          ''' inlined into '''
+  - Caller:          '?addVectors@@YAXPEBN0PEANH@Z'
+    DebugLoc:        { File: main.cpp, Line: 10, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          '?addVectors@@YAXPEBN0PEANH@Z'
+  - String:          ':'
+  - Line:            '7'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: main.cpp, Line: 76, Column: 0 }
+Function:        '?scalarMult@@YANPEBN0H@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?_mm256_store_pd@@YAXPEANU__m256d@@@Z'
+  - String:          ''' inlined into '''
+  - Caller:          '?scalarMult@@YANPEBN0H@Z'
+    DebugLoc:        { File: main.cpp, Line: 62, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          '?scalarMult@@YANPEBN0H@Z'
+  - String:          ':'
+  - Line:            '14'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: main.cpp, Line: 45, Column: 0 }
+Function:        '?mulVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?_mm256_store_pd@@YAXPEANU__m256d@@@Z'
+  - String:          ''' inlined into '''
+  - Caller:          '?mulVectors@@YAXPEBN0PEANH@Z'
+    DebugLoc:        { File: main.cpp, Line: 36, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          '?mulVectors@@YAXPEBN0PEANH@Z'
+  - String:          ':'
+  - Line:            '9'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: main.cpp, Line: 19, Column: 0 }
+Function:        '?addVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?_mm256_store_pd@@YAXPEANU__m256d@@@Z'
+  - String:          ''' inlined into '''
+  - Caller:          '?addVectors@@YAXPEBN0PEANH@Z'
+    DebugLoc:        { File: main.cpp, Line: 10, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          '?addVectors@@YAXPEBN0PEANH@Z'
+  - String:          ':'
+  - Line:            '9'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: main.cpp, Line: 50, Column: 0 }
+Function:        '?mulVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?_mm_load_pd@@YA?AU__m128d@@PEBN@Z'
+  - String:          ''' inlined into '''
+  - Caller:          '?mulVectors@@YAXPEBN0PEANH@Z'
+    DebugLoc:        { File: main.cpp, Line: 36, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          '?mulVectors@@YAXPEBN0PEANH@Z'
+  - String:          ':'
+  - Line:            '14'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: main.cpp, Line: 49, Column: 0 }
+Function:        '?mulVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?_mm_load_pd@@YA?AU__m128d@@PEBN@Z'
+  - String:          ''' inlined into '''
+  - Caller:          '?mulVectors@@YAXPEBN0PEANH@Z'
+    DebugLoc:        { File: main.cpp, Line: 36, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          '?mulVectors@@YAXPEBN0PEANH@Z'
+  - String:          ':'
+  - Line:            '13'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: main.cpp, Line: 24, Column: 0 }
+Function:        '?addVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?_mm_load_pd@@YA?AU__m128d@@PEBN@Z'
+  - String:          ''' inlined into '''
+  - Caller:          '?addVectors@@YAXPEBN0PEANH@Z'
+    DebugLoc:        { File: main.cpp, Line: 10, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          '?addVectors@@YAXPEBN0PEANH@Z'
+  - String:          ':'
+  - Line:            '14'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: main.cpp, Line: 23, Column: 0 }
+Function:        '?addVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?_mm_load_pd@@YA?AU__m128d@@PEBN@Z'
+  - String:          ''' inlined into '''
+  - Caller:          '?addVectors@@YAXPEBN0PEANH@Z'
+    DebugLoc:        { File: main.cpp, Line: 10, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          '?addVectors@@YAXPEBN0PEANH@Z'
+  - String:          ':'
+  - Line:            '13'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: main.cpp, Line: 26, Column: 0 }
+Function:        '?addVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?_mm_add_pd@@YA?AU__m128d@@U1@0@Z'
+  - String:          ''' inlined into '''
+  - Caller:          '?addVectors@@YAXPEBN0PEANH@Z'
+    DebugLoc:        { File: main.cpp, Line: 10, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          '?addVectors@@YAXPEBN0PEANH@Z'
+  - String:          ':'
+  - Line:            '16'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: main.cpp, Line: 54, Column: 0 }
+Function:        '?mulVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?_mm_store_pd@@YAXPEANU__m128d@@@Z'
+  - String:          ''' inlined into '''
+  - Caller:          '?mulVectors@@YAXPEBN0PEANH@Z'
+    DebugLoc:        { File: main.cpp, Line: 36, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          '?mulVectors@@YAXPEBN0PEANH@Z'
+  - String:          ':'
+  - Line:            '18'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: main.cpp, Line: 28, Column: 0 }
+Function:        '?addVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?_mm_store_pd@@YAXPEANU__m128d@@@Z'
+  - String:          ''' inlined into '''
+  - Caller:          '?addVectors@@YAXPEBN0PEANH@Z'
+    DebugLoc:        { File: main.cpp, Line: 10, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          '?addVectors@@YAXPEBN0PEANH@Z'
+  - String:          ':'
+  - Line:            '18'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: main.cpp, Line: 43, Column: 0 }
+Function:        '?mulVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?_mm256_mul_pd@@YA?AU__m256d@@U1@0@Z'
+  - String:          ''' inlined into '''
+  - Caller:          '?mulVectors@@YAXPEBN0PEANH@Z'
+    DebugLoc:        { File: main.cpp, Line: 36, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          '?mulVectors@@YAXPEBN0PEANH@Z'
+  - String:          ':'
+  - Line:            '7'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: main.cpp, Line: 52, Column: 0 }
+Function:        '?mulVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?_mm_mul_pd@@YA?AU__m128d@@U1@0@Z'
+  - String:          ''' inlined into '''
+  - Caller:          '?mulVectors@@YAXPEBN0PEANH@Z'
+    DebugLoc:        { File: main.cpp, Line: 36, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          '?mulVectors@@YAXPEBN0PEANH@Z'
+  - String:          ':'
+  - Line:            '16'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: main.cpp, Line: 66, Column: 0 }
+Function:        '?scalarMult@@YANPEBN0H@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?_mm256_setzero_pd@@YA?AU__m256d@@XZ'
+  - String:          ''' inlined into '''
+  - Caller:          '?scalarMult@@YANPEBN0H@Z'
+    DebugLoc:        { File: main.cpp, Line: 62, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          '?scalarMult@@YANPEBN0H@Z'
+  - String:          ':'
+  - Line:            '4'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: main.cpp, Line: 72, Column: 0 }
+Function:        '?scalarMult@@YANPEBN0H@Z'
+Args:
+  - String:          ''''
+  - Callee:          '?_mm256_fmadd_pd@@YA?AU__m256d@@U1@00@Z'
+  - String:          ''' inlined into '''
+  - Caller:          '?scalarMult@@YANPEBN0H@Z'
+    DebugLoc:        { File: main.cpp, Line: 62, Column: 0 }
+  - String:          ''''
+  - String:          ' with '
+  - String:          '(cost=always)'
+  - String:          ': '
+  - Reason:          always inline attribute
+  - String:          ' at callsite '
+  - String:          '?scalarMult@@YANPEBN0H@Z'
+  - String:          ':'
+  - Line:            '10'
+  - String:          ':'
+  - Column:          '0'
+  - String:          ';'
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: main.cpp, Line: 10, Column: 0 }
+Function:        '?addVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          'FastISel didn''t lower all arguments: '
+  - Prototype:       ''
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: main.cpp, Line: 10, Column: 0 }
+Function:        '?addVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - NumStackBytes:   '440'
+  - String:          ' stack bytes in function '''
+  - Function:        '?addVectors@@YAXPEBN0PEANH@Z'
+  - String:          ''''
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        '?addVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'movq	'
+  - String:          ': '
+  - INST_movq:       '3'
+  - String:          "\n"
+  - String:          'movl	'
+  - String:          ': '
+  - INST_movl:       '2'
+  - String:          "\n"
+  - String:          '#SEH_EndPrologue'
+  - String:          ': '
+  - INST_#SEH_EndPrologue: '1'
+  - String:          "\n"
+  - String:          '#SEH_PushReg '
+  - String:          ': '
+  - INST_#SEH_PushReg: '1'
+  - String:          "\n"
+  - String:          '#SEH_SetFrame '
+  - String:          ': '
+  - INST_#SEH_SetFrame: '1'
+  - String:          "\n"
+  - String:          '#SEH_StackAlloc '
+  - String:          ': '
+  - INST_#SEH_StackAlloc: '1'
+  - String:          "\n"
+  - String:          'andq	'
+  - String:          ': '
+  - INST_andq:       '1'
+  - String:          "\n"
+  - String:          'leaq	'
+  - String:          ': '
+  - INST_leaq:       '1'
+  - String:          "\n"
+  - String:          'pushq	'
+  - String:          ': '
+  - INST_pushq:      '1'
+  - String:          "\n"
+  - String:          'subq	'
+  - String:          ': '
+  - INST_subq:       '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 13, Column: 0 }
+Function:        '?addVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'movl	'
+  - String:          ': '
+  - INST_movl:       '6'
+  - String:          "\n"
+  - String:          cltd
+  - String:          ': '
+  - INST_cltd:       '1'
+  - String:          "\n"
+  - String:          'cmpl	'
+  - String:          ': '
+  - INST_cmpl:       '1'
+  - String:          "\n"
+  - String:          'idivl	'
+  - String:          ': '
+  - INST_idivl:      '1'
+  - String:          "\n"
+  - String:          j
+  - String:          ': '
+  - INST_j:          '1'
+  - String:          "\n"
+  - String:          'shll	'
+  - String:          ': '
+  - INST_shll:       '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 14, Column: 0 }
+Function:        '?addVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'vmovapd	'
+  - String:          ': '
+  - INST_vmovapd:    '14'
+  - String:          "\n"
+  - String:          'movq	'
+  - String:          ': '
+  - INST_movq:       '9'
+  - String:          "\n"
+  - String:          'addq	'
+  - String:          ': '
+  - INST_addq:       '3'
+  - String:          "\n"
+  - String:          'movslq	'
+  - String:          ': '
+  - INST_movslq:     '3'
+  - String:          "\n"
+  - String:          'shlq	'
+  - String:          ': '
+  - INST_shlq:       '3'
+  - String:          "\n"
+  - String:          'vaddpd	'
+  - String:          ': '
+  - INST_vaddpd:     '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 13, Column: 0 }
+Function:        '?addVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'movl	'
+  - String:          ': '
+  - INST_movl:       '2'
+  - String:          "\n"
+  - String:          'addl	'
+  - String:          ': '
+  - INST_addl:       '1'
+  - String:          "\n"
+  - String:          'jmp	'
+  - String:          ': '
+  - INST_jmp:        '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 22, Column: 0 }
+Function:        '?addVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'jmp	'
+  - String:          ': '
+  - INST_jmp:        '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 22, Column: 0 }
+Function:        '?addVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'movl	'
+  - String:          ': '
+  - INST_movl:       '6'
+  - String:          "\n"
+  - String:          cltd
+  - String:          ': '
+  - INST_cltd:       '1'
+  - String:          "\n"
+  - String:          'cmpl	'
+  - String:          ': '
+  - INST_cmpl:       '1'
+  - String:          "\n"
+  - String:          'idivl	'
+  - String:          ': '
+  - INST_idivl:      '1'
+  - String:          "\n"
+  - String:          j
+  - String:          ': '
+  - INST_j:          '1'
+  - String:          "\n"
+  - String:          'shll	'
+  - String:          ': '
+  - INST_shll:       '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 23, Column: 0 }
+Function:        '?addVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'vmovapd	'
+  - String:          ': '
+  - INST_vmovapd:    '14'
+  - String:          "\n"
+  - String:          'movq	'
+  - String:          ': '
+  - INST_movq:       '9'
+  - String:          "\n"
+  - String:          'addq	'
+  - String:          ': '
+  - INST_addq:       '3'
+  - String:          "\n"
+  - String:          'movslq	'
+  - String:          ': '
+  - INST_movslq:     '3'
+  - String:          "\n"
+  - String:          'shlq	'
+  - String:          ': '
+  - INST_shlq:       '3'
+  - String:          "\n"
+  - String:          'vaddpd	'
+  - String:          ': '
+  - INST_vaddpd:     '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 22, Column: 0 }
+Function:        '?addVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'movl	'
+  - String:          ': '
+  - INST_movl:       '2'
+  - String:          "\n"
+  - String:          'addl	'
+  - String:          ': '
+  - INST_addl:       '1'
+  - String:          "\n"
+  - String:          'jmp	'
+  - String:          ': '
+  - INST_jmp:        '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 31, Column: 0 }
+Function:        '?addVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'jmp	'
+  - String:          ': '
+  - INST_jmp:        '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 31, Column: 0 }
+Function:        '?addVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'cmpl	'
+  - String:          ': '
+  - INST_cmpl:       '1'
+  - String:          "\n"
+  - String:          j
+  - String:          ': '
+  - INST_j:          '1'
+  - String:          "\n"
+  - String:          'movl	'
+  - String:          ': '
+  - INST_movl:       '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 32, Column: 0 }
+Function:        '?addVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'movq	'
+  - String:          ': '
+  - INST_movq:       '3'
+  - String:          "\n"
+  - String:          'movslq	'
+  - String:          ': '
+  - INST_movslq:     '3'
+  - String:          "\n"
+  - String:          'vmovsd	'
+  - String:          ': '
+  - INST_vmovsd:     '2'
+  - String:          "\n"
+  - String:          'vaddsd	'
+  - String:          ': '
+  - INST_vaddsd:     '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 31, Column: 0 }
+Function:        '?addVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'movl	'
+  - String:          ': '
+  - INST_movl:       '2'
+  - String:          "\n"
+  - String:          'addl	'
+  - String:          ': '
+  - INST_addl:       '1'
+  - String:          "\n"
+  - String:          'jmp	'
+  - String:          ': '
+  - INST_jmp:        '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 34, Column: 0 }
+Function:        '?addVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          '#SEH_Epilogue'
+  - String:          ': '
+  - INST_#SEH_Epilogue: '1'
+  - String:          "\n"
+  - String:          'leaq	'
+  - String:          ': '
+  - INST_leaq:       '1'
+  - String:          "\n"
+  - String:          'popq	'
+  - String:          ': '
+  - INST_popq:       '1'
+  - String:          "\n"
+  - String:          retq
+  - String:          ': '
+  - INST_retq:       '1'
+  - String:          "\n"
+  - String:          vzeroupper
+  - String:          ': '
+  - INST_vzeroupper: '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: main.cpp, Line: 10, Column: 0 }
+Function:        '?addVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - NumInstructions: '132'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: main.cpp, Line: 36, Column: 0 }
+Function:        '?mulVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          'FastISel didn''t lower all arguments: '
+  - Prototype:       ''
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: main.cpp, Line: 36, Column: 0 }
+Function:        '?mulVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - NumStackBytes:   '440'
+  - String:          ' stack bytes in function '''
+  - Function:        '?mulVectors@@YAXPEBN0PEANH@Z'
+  - String:          ''''
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        '?mulVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'movq	'
+  - String:          ': '
+  - INST_movq:       '3'
+  - String:          "\n"
+  - String:          'movl	'
+  - String:          ': '
+  - INST_movl:       '2'
+  - String:          "\n"
+  - String:          '#SEH_EndPrologue'
+  - String:          ': '
+  - INST_#SEH_EndPrologue: '1'
+  - String:          "\n"
+  - String:          '#SEH_PushReg '
+  - String:          ': '
+  - INST_#SEH_PushReg: '1'
+  - String:          "\n"
+  - String:          '#SEH_SetFrame '
+  - String:          ': '
+  - INST_#SEH_SetFrame: '1'
+  - String:          "\n"
+  - String:          '#SEH_StackAlloc '
+  - String:          ': '
+  - INST_#SEH_StackAlloc: '1'
+  - String:          "\n"
+  - String:          'andq	'
+  - String:          ': '
+  - INST_andq:       '1'
+  - String:          "\n"
+  - String:          'leaq	'
+  - String:          ': '
+  - INST_leaq:       '1'
+  - String:          "\n"
+  - String:          'pushq	'
+  - String:          ': '
+  - INST_pushq:      '1'
+  - String:          "\n"
+  - String:          'subq	'
+  - String:          ': '
+  - INST_subq:       '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 39, Column: 0 }
+Function:        '?mulVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'movl	'
+  - String:          ': '
+  - INST_movl:       '6'
+  - String:          "\n"
+  - String:          cltd
+  - String:          ': '
+  - INST_cltd:       '1'
+  - String:          "\n"
+  - String:          'cmpl	'
+  - String:          ': '
+  - INST_cmpl:       '1'
+  - String:          "\n"
+  - String:          'idivl	'
+  - String:          ': '
+  - INST_idivl:      '1'
+  - String:          "\n"
+  - String:          j
+  - String:          ': '
+  - INST_j:          '1'
+  - String:          "\n"
+  - String:          'shll	'
+  - String:          ': '
+  - INST_shll:       '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 40, Column: 0 }
+Function:        '?mulVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'vmovapd	'
+  - String:          ': '
+  - INST_vmovapd:    '14'
+  - String:          "\n"
+  - String:          'movq	'
+  - String:          ': '
+  - INST_movq:       '9'
+  - String:          "\n"
+  - String:          'addq	'
+  - String:          ': '
+  - INST_addq:       '3'
+  - String:          "\n"
+  - String:          'movslq	'
+  - String:          ': '
+  - INST_movslq:     '3'
+  - String:          "\n"
+  - String:          'shlq	'
+  - String:          ': '
+  - INST_shlq:       '3'
+  - String:          "\n"
+  - String:          'vmulpd	'
+  - String:          ': '
+  - INST_vmulpd:     '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 39, Column: 0 }
+Function:        '?mulVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'movl	'
+  - String:          ': '
+  - INST_movl:       '2'
+  - String:          "\n"
+  - String:          'addl	'
+  - String:          ': '
+  - INST_addl:       '1'
+  - String:          "\n"
+  - String:          'jmp	'
+  - String:          ': '
+  - INST_jmp:        '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 48, Column: 0 }
+Function:        '?mulVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'jmp	'
+  - String:          ': '
+  - INST_jmp:        '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 48, Column: 0 }
+Function:        '?mulVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'movl	'
+  - String:          ': '
+  - INST_movl:       '6'
+  - String:          "\n"
+  - String:          cltd
+  - String:          ': '
+  - INST_cltd:       '1'
+  - String:          "\n"
+  - String:          'cmpl	'
+  - String:          ': '
+  - INST_cmpl:       '1'
+  - String:          "\n"
+  - String:          'idivl	'
+  - String:          ': '
+  - INST_idivl:      '1'
+  - String:          "\n"
+  - String:          j
+  - String:          ': '
+  - INST_j:          '1'
+  - String:          "\n"
+  - String:          'shll	'
+  - String:          ': '
+  - INST_shll:       '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 49, Column: 0 }
+Function:        '?mulVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'vmovapd	'
+  - String:          ': '
+  - INST_vmovapd:    '14'
+  - String:          "\n"
+  - String:          'movq	'
+  - String:          ': '
+  - INST_movq:       '9'
+  - String:          "\n"
+  - String:          'addq	'
+  - String:          ': '
+  - INST_addq:       '3'
+  - String:          "\n"
+  - String:          'movslq	'
+  - String:          ': '
+  - INST_movslq:     '3'
+  - String:          "\n"
+  - String:          'shlq	'
+  - String:          ': '
+  - INST_shlq:       '3'
+  - String:          "\n"
+  - String:          'vmulpd	'
+  - String:          ': '
+  - INST_vmulpd:     '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 48, Column: 0 }
+Function:        '?mulVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'movl	'
+  - String:          ': '
+  - INST_movl:       '2'
+  - String:          "\n"
+  - String:          'addl	'
+  - String:          ': '
+  - INST_addl:       '1'
+  - String:          "\n"
+  - String:          'jmp	'
+  - String:          ': '
+  - INST_jmp:        '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 57, Column: 0 }
+Function:        '?mulVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'jmp	'
+  - String:          ': '
+  - INST_jmp:        '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 57, Column: 0 }
+Function:        '?mulVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'cmpl	'
+  - String:          ': '
+  - INST_cmpl:       '1'
+  - String:          "\n"
+  - String:          j
+  - String:          ': '
+  - INST_j:          '1'
+  - String:          "\n"
+  - String:          'movl	'
+  - String:          ': '
+  - INST_movl:       '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 58, Column: 0 }
+Function:        '?mulVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'movq	'
+  - String:          ': '
+  - INST_movq:       '3'
+  - String:          "\n"
+  - String:          'movslq	'
+  - String:          ': '
+  - INST_movslq:     '3'
+  - String:          "\n"
+  - String:          'vmovsd	'
+  - String:          ': '
+  - INST_vmovsd:     '2'
+  - String:          "\n"
+  - String:          'vmulsd	'
+  - String:          ': '
+  - INST_vmulsd:     '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 57, Column: 0 }
+Function:        '?mulVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'movl	'
+  - String:          ': '
+  - INST_movl:       '2'
+  - String:          "\n"
+  - String:          'addl	'
+  - String:          ': '
+  - INST_addl:       '1'
+  - String:          "\n"
+  - String:          'jmp	'
+  - String:          ': '
+  - INST_jmp:        '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 60, Column: 0 }
+Function:        '?mulVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          '#SEH_Epilogue'
+  - String:          ': '
+  - INST_#SEH_Epilogue: '1'
+  - String:          "\n"
+  - String:          'leaq	'
+  - String:          ': '
+  - INST_leaq:       '1'
+  - String:          "\n"
+  - String:          'popq	'
+  - String:          ': '
+  - INST_popq:       '1'
+  - String:          "\n"
+  - String:          retq
+  - String:          ': '
+  - INST_retq:       '1'
+  - String:          "\n"
+  - String:          vzeroupper
+  - String:          ': '
+  - INST_vzeroupper: '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: main.cpp, Line: 36, Column: 0 }
+Function:        '?mulVectors@@YAXPEBN0PEANH@Z'
+Args:
+  - NumInstructions: '132'
+  - String:          ' instructions in function'
+...
+--- !Passed
+Pass:            stack-protector
+Name:            StackProtectorBuffer
+Function:        '?scalarMult@@YANPEBN0H@Z'
+Args:
+  - String:          'Stack protection applied to function '
+  - Function:        '?scalarMult@@YANPEBN0H@Z'
+    DebugLoc:        { File: main.cpp, Line: 62, Column: 0 }
+  - String:          ' due to a stack allocated buffer or struct containing a buffer'
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: main.cpp, Line: 62, Column: 0 }
+Function:        '?scalarMult@@YANPEBN0H@Z'
+Args:
+  - String:          'FastISel didn''t lower all arguments: '
+  - Prototype:       ''
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: main.cpp, Line: 66, Column: 0 }
+Function:        '?scalarMult@@YANPEBN0H@Z'
+Args:
+  - String:          FastISel missed
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: main.cpp, Line: 72, Column: 0 }
+Function:        '?scalarMult@@YANPEBN0H@Z'
+Args:
+  - String:          FastISel missed call
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: main.cpp, Line: 62, Column: 0 }
+Function:        '?scalarMult@@YANPEBN0H@Z'
+Args:
+  - NumStackBytes:   '440'
+  - String:          ' stack bytes in function '''
+  - Function:        '?scalarMult@@YANPEBN0H@Z'
+  - String:          ''''
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        '?scalarMult@@YANPEBN0H@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'movq	'
+  - String:          ': '
+  - INST_movq:       '5'
+  - String:          "\n"
+  - String:          'vmovapd	'
+  - String:          ': '
+  - INST_vmovapd:    '3'
+  - String:          "\n"
+  - String:          'movl	'
+  - String:          ': '
+  - INST_movl:       '2'
+  - String:          "\n"
+  - String:          '#SEH_EndPrologue'
+  - String:          ': '
+  - INST_#SEH_EndPrologue: '1'
+  - String:          "\n"
+  - String:          '#SEH_PushReg '
+  - String:          ': '
+  - INST_#SEH_PushReg: '1'
+  - String:          "\n"
+  - String:          '#SEH_SetFrame '
+  - String:          ': '
+  - INST_#SEH_SetFrame: '1'
+  - String:          "\n"
+  - String:          '#SEH_StackAlloc '
+  - String:          ': '
+  - INST_#SEH_StackAlloc: '1'
+  - String:          "\n"
+  - String:          'andq	'
+  - String:          ': '
+  - INST_andq:       '1'
+  - String:          "\n"
+  - String:          'leaq	'
+  - String:          ': '
+  - INST_leaq:       '1'
+  - String:          "\n"
+  - String:          'pushq	'
+  - String:          ': '
+  - INST_pushq:      '1'
+  - String:          "\n"
+  - String:          'subq	'
+  - String:          ': '
+  - INST_subq:       '1'
+  - String:          "\n"
+  - String:          'vxorps	'
+  - String:          ': '
+  - INST_vxorps:     '1'
+  - String:          "\n"
+  - String:          'xorq	'
+  - String:          ': '
+  - INST_xorq:       '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 68, Column: 0 }
+Function:        '?scalarMult@@YANPEBN0H@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'movl	'
+  - String:          ': '
+  - INST_movl:       '6'
+  - String:          "\n"
+  - String:          cltd
+  - String:          ': '
+  - INST_cltd:       '1'
+  - String:          "\n"
+  - String:          'cmpl	'
+  - String:          ': '
+  - INST_cmpl:       '1'
+  - String:          "\n"
+  - String:          'idivl	'
+  - String:          ': '
+  - INST_idivl:      '1'
+  - String:          "\n"
+  - String:          j
+  - String:          ': '
+  - INST_j:          '1'
+  - String:          "\n"
+  - String:          'shll	'
+  - String:          ': '
+  - INST_shll:       '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 69, Column: 0 }
+Function:        '?scalarMult@@YANPEBN0H@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'vmovapd	'
+  - String:          ': '
+  - INST_vmovapd:    '14'
+  - String:          "\n"
+  - String:          'movq	'
+  - String:          ': '
+  - INST_movq:       '6'
+  - String:          "\n"
+  - String:          'addq	'
+  - String:          ': '
+  - INST_addq:       '2'
+  - String:          "\n"
+  - String:          'movslq	'
+  - String:          ': '
+  - INST_movslq:     '2'
+  - String:          "\n"
+  - String:          'shlq	'
+  - String:          ': '
+  - INST_shlq:       '2'
+  - String:          "\n"
+  - String:          'vfmadd213pd	'
+  - String:          ': '
+  - INST_vfmadd213pd: '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 68, Column: 0 }
+Function:        '?scalarMult@@YANPEBN0H@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'movl	'
+  - String:          ': '
+  - INST_movl:       '2'
+  - String:          "\n"
+  - String:          'addl	'
+  - String:          ': '
+  - INST_addl:       '1'
+  - String:          "\n"
+  - String:          'jmp	'
+  - String:          ': '
+  - INST_jmp:        '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 76, Column: 0 }
+Function:        '?scalarMult@@YANPEBN0H@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'vmovapd	'
+  - String:          ': '
+  - INST_vmovapd:    '4'
+  - String:          "\n"
+  - String:          'movq	'
+  - String:          ': '
+  - INST_movq:       '2'
+  - String:          "\n"
+  - String:          'leaq	'
+  - String:          ': '
+  - INST_leaq:       '1'
+  - String:          "\n"
+  - String:          'movl	'
+  - String:          ': '
+  - INST_movl:       '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 78, Column: 0 }
+Function:        '?scalarMult@@YANPEBN0H@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'cmpl	'
+  - String:          ': '
+  - INST_cmpl:       '1'
+  - String:          "\n"
+  - String:          j
+  - String:          ': '
+  - INST_j:          '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 79, Column: 0 }
+Function:        '?scalarMult@@YANPEBN0H@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'vmovsd	'
+  - String:          ': '
+  - INST_vmovsd:     '2'
+  - String:          "\n"
+  - String:          'movslq	'
+  - String:          ': '
+  - INST_movslq:     '1'
+  - String:          "\n"
+  - String:          'vaddsd	'
+  - String:          ': '
+  - INST_vaddsd:     '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 78, Column: 0 }
+Function:        '?scalarMult@@YANPEBN0H@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'movl	'
+  - String:          ': '
+  - INST_movl:       '2'
+  - String:          "\n"
+  - String:          'addl	'
+  - String:          ': '
+  - INST_addl:       '1'
+  - String:          "\n"
+  - String:          'jmp	'
+  - String:          ': '
+  - INST_jmp:        '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 81, Column: 0 }
+Function:        '?scalarMult@@YANPEBN0H@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'jmp	'
+  - String:          ': '
+  - INST_jmp:        '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 81, Column: 0 }
+Function:        '?scalarMult@@YANPEBN0H@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'cmpl	'
+  - String:          ': '
+  - INST_cmpl:       '1'
+  - String:          "\n"
+  - String:          j
+  - String:          ': '
+  - INST_j:          '1'
+  - String:          "\n"
+  - String:          'movl	'
+  - String:          ': '
+  - INST_movl:       '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 82, Column: 0 }
+Function:        '?scalarMult@@YANPEBN0H@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'movq	'
+  - String:          ': '
+  - INST_movq:       '2'
+  - String:          "\n"
+  - String:          'movslq	'
+  - String:          ': '
+  - INST_movslq:     '2'
+  - String:          "\n"
+  - String:          'vmovsd	'
+  - String:          ': '
+  - INST_vmovsd:     '2'
+  - String:          "\n"
+  - String:          'vaddsd	'
+  - String:          ': '
+  - INST_vaddsd:     '1'
+  - String:          "\n"
+  - String:          'vmulsd	'
+  - String:          ': '
+  - INST_vmulsd:     '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 81, Column: 0 }
+Function:        '?scalarMult@@YANPEBN0H@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'movl	'
+  - String:          ': '
+  - INST_movl:       '2'
+  - String:          "\n"
+  - String:          'addl	'
+  - String:          ': '
+  - INST_addl:       '1'
+  - String:          "\n"
+  - String:          'jmp	'
+  - String:          ': '
+  - INST_jmp:        '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: main.cpp, Line: 85, Column: 0 }
+Function:        '?scalarMult@@YANPEBN0H@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'vmovsd	'
+  - String:          ': '
+  - INST_vmovsd:     '3'
+  - String:          "\n"
+  - String:          '#SEH_Epilogue'
+  - String:          ': '
+  - INST_#SEH_Epilogue: '1'
+  - String:          "\n"
+  - String:          'callq	'
+  - String:          ': '
+  - INST_callq:      '1'
+  - String:          "\n"
+  - String:          'leaq	'
+  - String:          ': '
+  - INST_leaq:       '1'
+  - String:          "\n"
+  - String:          'movq	'
+  - String:          ': '
+  - INST_movq:       '1'
+  - String:          "\n"
+  - String:          'popq	'
+  - String:          ': '
+  - INST_popq:       '1'
+  - String:          "\n"
+  - String:          retq
+  - String:          ': '
+  - INST_retq:       '1'
+  - String:          "\n"
+  - String:          vzeroupper
+  - String:          ': '
+  - INST_vzeroupper: '1'
+  - String:          "\n"
+  - String:          'xorq	'
+  - String:          ': '
+  - INST_xorq:       '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: main.cpp, Line: 62, Column: 0 }
+Function:        '?scalarMult@@YANPEBN0H@Z'
+Args:
+  - NumInstructions: '107'
+  - String:          ' instructions in function'
+...
+--- !Passed
+Pass:            stack-protector
+Name:            StackProtectorAddressTaken
+Function:        main
+Args:
+  - String:          'Stack protection applied to function '
+  - Function:        main
+    DebugLoc:        { File: main.cpp, Line: 88, Column: 0 }
+  - String:          ' due to the address of a local variable being taken'
+...
+--- !Passed
+Pass:            stack-protector
+Name:            StackProtectorAddressTaken
+Function:        main
+Args:
+  - String:          'Stack protection applied to function '
+  - Function:        main
+    DebugLoc:        { File: main.cpp, Line: 88, Column: 0 }
+  - String:          ' due to the address of a local variable being taken'
+...
+--- !Passed
+Pass:            stack-protector
+Name:            StackProtectorAddressTaken
+Function:        main
+Args:
+  - String:          'Stack protection applied to function '
+  - Function:        main
+    DebugLoc:        { File: main.cpp, Line: 88, Column: 0 }
+  - String:          ' due to the address of a local variable being taken'
+...
+--- !Passed
+Pass:            stack-protector
+Name:            StackProtectorAddressTaken
+Function:        main
+Args:
+  - String:          'Stack protection applied to function '
+  - Function:        main
+    DebugLoc:        { File: main.cpp, Line: 88, Column: 0 }
+  - String:          ' due to the address of a local variable being taken'
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: main.cpp, Line: 88, Column: 0 }
+Function:        main
+Args:
+  - String:          'FastISel didn''t lower all arguments: '
+  - Prototype:       ''
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+Function:        main
+Args:
+  - String:          FastISel missed call
+  - String:          ' (in function: main)'
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: main.cpp, Line: 88, Column: 0 }
+Function:        main
+Args:
+  - NumStackBytes:   '104'
+  - String:          ' stack bytes in function '''
+  - Function:        main
+  - String:          ''''
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        main
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'movq	'
+  - String:          ': '
+  - INST_movq:       '14'
+  - String:          "\n"
+  - String:          'movl	'
+  - String:          ': '
+  - INST_movl:       '9'
+  - String:          "\n"
+  - String:          'leaq	'
+  - String:          ': '
+  - INST_leaq:       '8'
+  - String:          "\n"
+  - String:          'callq	'
+  - String:          ': '
+  - INST_callq:      '7'
+  - String:          "\n"
+  - String:          'callq	*'
+  - String:          ': '
+  - INST_callq:      '7'
+  - String:          "\n"
+  - String:          'xorq	'
+  - String:          ': '
+  - INST_xorq:       '2'
+  - String:          "\n"
+  - String:          '#SEH_EndPrologue'
+  - String:          ': '
+  - INST_#SEH_EndPrologue: '1'
+  - String:          "\n"
+  - String:          '#SEH_Epilogue'
+  - String:          ': '
+  - INST_#SEH_Epilogue: '1'
+  - String:          "\n"
+  - String:          '#SEH_StackAlloc '
+  - String:          ': '
+  - INST_#SEH_StackAlloc: '1'
+  - String:          "\n"
+  - String:          'addq	'
+  - String:          ': '
+  - INST_addq:       '1'
+  - String:          "\n"
+  - String:          retq
+  - String:          ': '
+  - INST_retq:       '1'
+  - String:          "\n"
+  - String:          'subq	'
+  - String:          ': '
+  - INST_subq:       '1'
+  - String:          "\n"
+  - String:          'xorl	'
+  - String:          ': '
+  - INST_xorl:       '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: main.cpp, Line: 88, Column: 0 }
+Function:        main
+Args:
+  - NumInstructions: '54'
+  - String:          ' instructions in function'
+...
+--- !Passed
+Pass:            stack-protector
+Name:            StackProtectorAddressTaken
+Function:        '?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ'
+Args:
+  - String:          'Stack protection applied to function '
+  - Function:        '?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ'
+    DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                       Line: 678, Column: 0 }
+  - String:          ' due to the address of a local variable being taken'
+...
+--- !Passed
+Pass:            stack-protector
+Name:            StackProtectorAddressTaken
+Function:        '?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ'
+Args:
+  - String:          'Stack protection applied to function '
+  - Function:        '?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ'
+    DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                       Line: 678, Column: 0 }
+  - String:          ' due to the address of a local variable being taken'
+...
+--- !Passed
+Pass:            stack-protector
+Name:            StackProtectorAddressTaken
+Function:        '?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ'
+Args:
+  - String:          'Stack protection applied to function '
+  - Function:        '?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ'
+    DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                       Line: 678, Column: 0 }
+  - String:          ' due to the address of a local variable being taken'
+...
+--- !Passed
+Pass:            stack-protector
+Name:            StackProtectorAddressTaken
+Function:        '?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ'
+Args:
+  - String:          'Stack protection applied to function '
+  - Function:        '?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ'
+    DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                       Line: 678, Column: 0 }
+  - String:          ' due to the address of a local variable being taken'
+...
+--- !Passed
+Pass:            stack-protector
+Name:            StackProtectorAddressTaken
+Function:        '?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ'
+Args:
+  - String:          'Stack protection applied to function '
+  - Function:        '?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ'
+    DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                       Line: 678, Column: 0 }
+  - String:          ' due to the address of a local variable being taken'
+...
+--- !Passed
+Pass:            stack-protector
+Name:            StackProtectorAddressTaken
+Function:        '?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ'
+Args:
+  - String:          'Stack protection applied to function '
+  - Function:        '?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ'
+    DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                       Line: 678, Column: 0 }
+  - String:          ' due to the address of a local variable being taken'
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                   Line: 678, Column: 0 }
+Function:        '?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ'
+Args:
+  - String:          'FastISel didn''t lower all arguments: '
+  - Prototype:       ''
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+Function:        '?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ'
+Args:
+  - String:          FastISel missed call
+  - String:          ' (in function: ?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ)'
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                   Line: 678, Column: 0 }
+Function:        '?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ'
+Args:
+  - NumStackBytes:   '184'
+  - String:          ' stack bytes in function '''
+  - Function:        '?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ'
+  - String:          ''''
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        '?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'movq	'
+  - String:          ': '
+  - INST_movq:       '10'
+  - String:          "\n"
+  - String:          'callq	'
+  - String:          ': '
+  - INST_callq:      '2'
+  - String:          "\n"
+  - String:          '#SEH_EndPrologue'
+  - String:          ': '
+  - INST_#SEH_EndPrologue: '1'
+  - String:          "\n"
+  - String:          '#SEH_StackAlloc '
+  - String:          ': '
+  - INST_#SEH_StackAlloc: '1'
+  - String:          "\n"
+  - String:          'cmpq	'
+  - String:          ': '
+  - INST_cmpq:       '1'
+  - String:          "\n"
+  - String:          j
+  - String:          ': '
+  - INST_j:          '1'
+  - String:          "\n"
+  - String:          'subq	'
+  - String:          ': '
+  - INST_subq:       '1'
+  - String:          "\n"
+  - String:          'xorq	'
+  - String:          ': '
+  - INST_xorq:       '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                   Line: 692, Column: 0 }
+Function:        '?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'leaq	'
+  - String:          ': '
+  - INST_leaq:       '3'
+  - String:          "\n"
+  - String:          'movq	'
+  - String:          ': '
+  - INST_movq:       '3'
+  - String:          "\n"
+  - String:          'callq	'
+  - String:          ': '
+  - INST_callq:      '2'
+  - String:          "\n"
+  - String:          'imulq	'
+  - String:          ': '
+  - INST_imulq:      '1'
+  - String:          "\n"
+  - String:          'jmp	'
+  - String:          ': '
+  - INST_jmp:        '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                   Line: 694, Column: 0 }
+Function:        '?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'cmpq	'
+  - String:          ': '
+  - INST_cmpq:       '1'
+  - String:          "\n"
+  - String:          j
+  - String:          ': '
+  - INST_j:          '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                   Line: 696, Column: 0 }
+Function:        '?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'movq	'
+  - String:          ': '
+  - INST_movq:       '7'
+  - String:          "\n"
+  - String:          cqto
+  - String:          ': '
+  - INST_cqto:       '3'
+  - String:          "\n"
+  - String:          'idivq	'
+  - String:          ': '
+  - INST_idivq:      '3'
+  - String:          "\n"
+  - String:          'leaq	'
+  - String:          ': '
+  - INST_leaq:       '3'
+  - String:          "\n"
+  - String:          'movl	'
+  - String:          ': '
+  - INST_movl:       '3'
+  - String:          "\n"
+  - String:          'callq	'
+  - String:          ': '
+  - INST_callq:      '2'
+  - String:          "\n"
+  - String:          'imulq	'
+  - String:          ': '
+  - INST_imulq:      '2'
+  - String:          "\n"
+  - String:          'addq	'
+  - String:          ': '
+  - INST_addq:       '1'
+  - String:          "\n"
+  - String:          'jmp	'
+  - String:          ': '
+  - INST_jmp:        '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                   Line: 705, Column: 0 }
+Function:        '?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'movq	'
+  - String:          ': '
+  - INST_movq:       '7'
+  - String:          "\n"
+  - String:          cqto
+  - String:          ': '
+  - INST_cqto:       '3'
+  - String:          "\n"
+  - String:          'idivq	'
+  - String:          ': '
+  - INST_idivq:      '3'
+  - String:          "\n"
+  - String:          'leaq	'
+  - String:          ': '
+  - INST_leaq:       '3'
+  - String:          "\n"
+  - String:          'callq	'
+  - String:          ': '
+  - INST_callq:      '2'
+  - String:          "\n"
+  - String:          'imulq	'
+  - String:          ': '
+  - INST_imulq:      '2'
+  - String:          "\n"
+  - String:          'addq	'
+  - String:          ': '
+  - INST_addq:       '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        '?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'movq	'
+  - String:          ': '
+  - INST_movq:       '2'
+  - String:          "\n"
+  - String:          '#SEH_Epilogue'
+  - String:          ': '
+  - INST_#SEH_Epilogue: '1'
+  - String:          "\n"
+  - String:          'addq	'
+  - String:          ': '
+  - INST_addq:       '1'
+  - String:          "\n"
+  - String:          'callq	'
+  - String:          ': '
+  - INST_callq:      '1'
+  - String:          "\n"
+  - String:          retq
+  - String:          ': '
+  - INST_retq:       '1'
+  - String:          "\n"
+  - String:          'xorq	'
+  - String:          ': '
+  - INST_xorq:       '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                   Line: 678, Column: 0 }
+Function:        '?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ'
+Args:
+  - NumInstructions: '83'
+  - String:          ' instructions in function'
+...
+--- !Passed
+Pass:            stack-protector
+Name:            StackProtectorAddressTaken
+Function:        '??$duration_cast@V?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@_JU?$ratio@$00$0DLJKMKAA@@3@$0A@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DOI@@std@@@01@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@@Z'
+Args:
+  - String:          'Stack protection applied to function '
+  - Function:        '??$duration_cast@V?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@_JU?$ratio@$00$0DLJKMKAA@@3@$0A@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DOI@@std@@@01@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@@Z'
+    DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                       Line: 421, Column: 0 }
+  - String:          ' due to the address of a local variable being taken'
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                   Line: 421, Column: 0 }
+Function:        '??$duration_cast@V?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@_JU?$ratio@$00$0DLJKMKAA@@3@$0A@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DOI@@std@@@01@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@@Z'
+Args:
+  - String:          'FastISel didn''t lower all arguments: '
+  - Prototype:       ''
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+Function:        '??$duration_cast@V?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@_JU?$ratio@$00$0DLJKMKAA@@3@$0A@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DOI@@std@@@01@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@@Z'
+Args:
+  - String:          FastISel missed call
+  - String:          ' (in function: ??$duration_cast@V?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@_JU?$ratio@$00$0DLJKMKAA@@3@$0A@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DOI@@std@@@01@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@@Z)'
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                   Line: 421, Column: 0 }
+Function:        '??$duration_cast@V?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@_JU?$ratio@$00$0DLJKMKAA@@3@$0A@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DOI@@std@@@01@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@@Z'
+Args:
+  - NumStackBytes:   '88'
+  - String:          ' stack bytes in function '''
+  - Function:        '??$duration_cast@V?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@_JU?$ratio@$00$0DLJKMKAA@@3@$0A@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DOI@@std@@@01@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@@Z'
+  - String:          ''''
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        '??$duration_cast@V?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@_JU?$ratio@$00$0DLJKMKAA@@3@$0A@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DOI@@std@@@01@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'movq	'
+  - String:          ': '
+  - INST_movq:       '12'
+  - String:          "\n"
+  - String:          'callq	'
+  - String:          ': '
+  - INST_callq:      '3'
+  - String:          "\n"
+  - String:          'movb	'
+  - String:          ': '
+  - INST_movb:       '2'
+  - String:          "\n"
+  - String:          'xorq	'
+  - String:          ': '
+  - INST_xorq:       '2'
+  - String:          "\n"
+  - String:          '#SEH_EndPrologue'
+  - String:          ': '
+  - INST_#SEH_EndPrologue: '1'
+  - String:          "\n"
+  - String:          '#SEH_Epilogue'
+  - String:          ': '
+  - INST_#SEH_Epilogue: '1'
+  - String:          "\n"
+  - String:          '#SEH_StackAlloc '
+  - String:          ': '
+  - INST_#SEH_StackAlloc: '1'
+  - String:          "\n"
+  - String:          'addq	'
+  - String:          ': '
+  - INST_addq:       '1'
+  - String:          "\n"
+  - String:          cqto
+  - String:          ': '
+  - INST_cqto:       '1'
+  - String:          "\n"
+  - String:          'idivq	'
+  - String:          ': '
+  - INST_idivq:      '1'
+  - String:          "\n"
+  - String:          'leaq	'
+  - String:          ': '
+  - INST_leaq:       '1'
+  - String:          "\n"
+  - String:          'movl	'
+  - String:          ': '
+  - INST_movl:       '1'
+  - String:          "\n"
+  - String:          retq
+  - String:          ': '
+  - INST_retq:       '1'
+  - String:          "\n"
+  - String:          'subq	'
+  - String:          ': '
+  - INST_subq:       '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                   Line: 421, Column: 0 }
+Function:        '??$duration_cast@V?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@_JU?$ratio@$00$0DLJKMKAA@@3@$0A@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DOI@@std@@@01@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@@Z'
+Args:
+  - NumInstructions: '29'
+  - String:          ' instructions in function'
+...
+--- !Passed
+Pass:            stack-protector
+Name:            StackProtectorAddressTaken
+Function:        '??$?GUsteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@01@0@Z'
+Args:
+  - String:          'Stack protection applied to function '
+  - Function:        '??$?GUsteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@01@0@Z'
+    DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                       Line: 548, Column: 0 }
+  - String:          ' due to the address of a local variable being taken'
+...
+--- !Passed
+Pass:            stack-protector
+Name:            StackProtectorAddressTaken
+Function:        '??$?GUsteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@01@0@Z'
+Args:
+  - String:          'Stack protection applied to function '
+  - Function:        '??$?GUsteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@01@0@Z'
+    DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                       Line: 548, Column: 0 }
+  - String:          ' due to the address of a local variable being taken'
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                   Line: 548, Column: 0 }
+Function:        '??$?GUsteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@01@0@Z'
+Args:
+  - String:          'FastISel didn''t lower all arguments: '
+  - Prototype:       ''
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+Function:        '??$?GUsteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@01@0@Z'
+Args:
+  - String:          FastISel missed call
+  - String:          ' (in function: ??$?GUsteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@01@0@Z)'
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                   Line: 548, Column: 0 }
+Function:        '??$?GUsteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@01@0@Z'
+Args:
+  - NumStackBytes:   '104'
+  - String:          ' stack bytes in function '''
+  - Function:        '??$?GUsteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@01@0@Z'
+  - String:          ''''
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        '??$?GUsteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@01@0@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'movq	'
+  - String:          ': '
+  - INST_movq:       '13'
+  - String:          "\n"
+  - String:          'callq	'
+  - String:          ': '
+  - INST_callq:      '4'
+  - String:          "\n"
+  - String:          'leaq	'
+  - String:          ': '
+  - INST_leaq:       '4'
+  - String:          "\n"
+  - String:          'xorq	'
+  - String:          ': '
+  - INST_xorq:       '2'
+  - String:          "\n"
+  - String:          '#SEH_EndPrologue'
+  - String:          ': '
+  - INST_#SEH_EndPrologue: '1'
+  - String:          "\n"
+  - String:          '#SEH_Epilogue'
+  - String:          ': '
+  - INST_#SEH_Epilogue: '1'
+  - String:          "\n"
+  - String:          '#SEH_StackAlloc '
+  - String:          ': '
+  - INST_#SEH_StackAlloc: '1'
+  - String:          "\n"
+  - String:          'addq	'
+  - String:          ': '
+  - INST_addq:       '1'
+  - String:          "\n"
+  - String:          retq
+  - String:          ': '
+  - INST_retq:       '1'
+  - String:          "\n"
+  - String:          'subq	'
+  - String:          ': '
+  - INST_subq:       '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                   Line: 548, Column: 0 }
+Function:        '??$?GUsteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@01@0@Z'
+Args:
+  - NumInstructions: '29'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                   Line: 108, Column: 0 }
+Function:        '?count@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEBA_JXZ'
+Args:
+  - String:          'FastISel didn''t lower all arguments: '
+  - Prototype:       ''
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                   Line: 108, Column: 0 }
+Function:        '?count@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEBA_JXZ'
+Args:
+  - NumStackBytes:   '8'
+  - String:          ' stack bytes in function '''
+  - Function:        '?count@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEBA_JXZ'
+  - String:          ''''
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        '?count@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEBA_JXZ'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'movq	'
+  - String:          ': '
+  - INST_movq:       '3'
+  - String:          "\n"
+  - String:          '#SEH_EndPrologue'
+  - String:          ': '
+  - INST_#SEH_EndPrologue: '1'
+  - String:          "\n"
+  - String:          '#SEH_Epilogue'
+  - String:          ': '
+  - INST_#SEH_Epilogue: '1'
+  - String:          "\n"
+  - String:          '#SEH_StackAlloc '
+  - String:          ': '
+  - INST_#SEH_StackAlloc: '1'
+  - String:          "\n"
+  - String:          'popq	'
+  - String:          ': '
+  - INST_popq:       '1'
+  - String:          "\n"
+  - String:          'pushq	'
+  - String:          ': '
+  - INST_pushq:      '1'
+  - String:          "\n"
+  - String:          retq
+  - String:          ': '
+  - INST_retq:       '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                   Line: 108, Column: 0 }
+Function:        '?count@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEBA_JXZ'
+Args:
+  - NumInstructions: '9'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                   Line: 98, Column: 0 }
+Function:        '??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEAA@AEB_J@Z'
+Args:
+  - String:          'FastISel didn''t lower all arguments: '
+  - Prototype:       ''
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                   Line: 98, Column: 0 }
+Function:        '??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEAA@AEB_J@Z'
+Args:
+  - NumStackBytes:   '16'
+  - String:          ' stack bytes in function '''
+  - Function:        '??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEAA@AEB_J@Z'
+  - String:          ''''
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        '??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEAA@AEB_J@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'movq	'
+  - String:          ': '
+  - INST_movq:       '6'
+  - String:          "\n"
+  - String:          '#SEH_EndPrologue'
+  - String:          ': '
+  - INST_#SEH_EndPrologue: '1'
+  - String:          "\n"
+  - String:          '#SEH_Epilogue'
+  - String:          ': '
+  - INST_#SEH_Epilogue: '1'
+  - String:          "\n"
+  - String:          '#SEH_StackAlloc '
+  - String:          ': '
+  - INST_#SEH_StackAlloc: '1'
+  - String:          "\n"
+  - String:          'addq	'
+  - String:          ': '
+  - INST_addq:       '1'
+  - String:          "\n"
+  - String:          retq
+  - String:          ': '
+  - INST_retq:       '1'
+  - String:          "\n"
+  - String:          'subq	'
+  - String:          ': '
+  - INST_subq:       '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                   Line: 98, Column: 0 }
+Function:        '??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEAA@AEB_J@Z'
+Args:
+  - NumInstructions: '12'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                   Line: 203, Column: 0 }
+Function:        '??0?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@@Z'
+Args:
+  - String:          'FastISel didn''t lower all arguments: '
+  - Prototype:       ''
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                   Line: 203, Column: 0 }
+Function:        '??0?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@@Z'
+Args:
+  - NumStackBytes:   '16'
+  - String:          ' stack bytes in function '''
+  - Function:        '??0?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@@Z'
+  - String:          ''''
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        '??0?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'movq	'
+  - String:          ': '
+  - INST_movq:       '6'
+  - String:          "\n"
+  - String:          '#SEH_EndPrologue'
+  - String:          ': '
+  - INST_#SEH_EndPrologue: '1'
+  - String:          "\n"
+  - String:          '#SEH_Epilogue'
+  - String:          ': '
+  - INST_#SEH_Epilogue: '1'
+  - String:          "\n"
+  - String:          '#SEH_StackAlloc '
+  - String:          ': '
+  - INST_#SEH_StackAlloc: '1'
+  - String:          "\n"
+  - String:          'addq	'
+  - String:          ': '
+  - INST_addq:       '1'
+  - String:          "\n"
+  - String:          retq
+  - String:          ': '
+  - INST_retq:       '1'
+  - String:          "\n"
+  - String:          'subq	'
+  - String:          ': '
+  - INST_subq:       '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                   Line: 203, Column: 0 }
+Function:        '??0?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@@Z'
+Args:
+  - NumInstructions: '12'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                   Line: 108, Column: 0 }
+Function:        '?count@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEBA_JXZ'
+Args:
+  - String:          'FastISel didn''t lower all arguments: '
+  - Prototype:       ''
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                   Line: 108, Column: 0 }
+Function:        '?count@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEBA_JXZ'
+Args:
+  - NumStackBytes:   '8'
+  - String:          ' stack bytes in function '''
+  - Function:        '?count@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEBA_JXZ'
+  - String:          ''''
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        '?count@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEBA_JXZ'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'movq	'
+  - String:          ': '
+  - INST_movq:       '3'
+  - String:          "\n"
+  - String:          '#SEH_EndPrologue'
+  - String:          ': '
+  - INST_#SEH_EndPrologue: '1'
+  - String:          "\n"
+  - String:          '#SEH_Epilogue'
+  - String:          ': '
+  - INST_#SEH_Epilogue: '1'
+  - String:          "\n"
+  - String:          '#SEH_StackAlloc '
+  - String:          ': '
+  - INST_#SEH_StackAlloc: '1'
+  - String:          "\n"
+  - String:          'popq	'
+  - String:          ': '
+  - INST_popq:       '1'
+  - String:          "\n"
+  - String:          'pushq	'
+  - String:          ': '
+  - INST_pushq:      '1'
+  - String:          "\n"
+  - String:          retq
+  - String:          ': '
+  - INST_retq:       '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                   Line: 108, Column: 0 }
+Function:        '?count@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEBA_JXZ'
+Args:
+  - NumInstructions: '9'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                   Line: 98, Column: 0 }
+Function:        '??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEAA@AEB_J@Z'
+Args:
+  - String:          'FastISel didn''t lower all arguments: '
+  - Prototype:       ''
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                   Line: 98, Column: 0 }
+Function:        '??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEAA@AEB_J@Z'
+Args:
+  - NumStackBytes:   '16'
+  - String:          ' stack bytes in function '''
+  - Function:        '??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEAA@AEB_J@Z'
+  - String:          ''''
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        '??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEAA@AEB_J@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'movq	'
+  - String:          ': '
+  - INST_movq:       '6'
+  - String:          "\n"
+  - String:          '#SEH_EndPrologue'
+  - String:          ': '
+  - INST_#SEH_EndPrologue: '1'
+  - String:          "\n"
+  - String:          '#SEH_Epilogue'
+  - String:          ': '
+  - INST_#SEH_Epilogue: '1'
+  - String:          "\n"
+  - String:          '#SEH_StackAlloc '
+  - String:          ': '
+  - INST_#SEH_StackAlloc: '1'
+  - String:          "\n"
+  - String:          'addq	'
+  - String:          ': '
+  - INST_addq:       '1'
+  - String:          "\n"
+  - String:          retq
+  - String:          ': '
+  - INST_retq:       '1'
+  - String:          "\n"
+  - String:          'subq	'
+  - String:          ': '
+  - INST_subq:       '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                   Line: 98, Column: 0 }
+Function:        '??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEAA@AEB_J@Z'
+Args:
+  - NumInstructions: '12'
+  - String:          ' instructions in function'
+...
+--- !Passed
+Pass:            stack-protector
+Name:            StackProtectorAddressTaken
+Function:        '??$?G_JU?$ratio@$00$0DLJKMKAA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV201@0@Z'
+Args:
+  - String:          'Stack protection applied to function '
+  - Function:        '??$?G_JU?$ratio@$00$0DLJKMKAA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV201@0@Z'
+    DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                       Line: 289, Column: 0 }
+  - String:          ' due to the address of a local variable being taken'
+...
+--- !Passed
+Pass:            stack-protector
+Name:            StackProtectorAddressTaken
+Function:        '??$?G_JU?$ratio@$00$0DLJKMKAA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV201@0@Z'
+Args:
+  - String:          'Stack protection applied to function '
+  - Function:        '??$?G_JU?$ratio@$00$0DLJKMKAA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV201@0@Z'
+    DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                       Line: 289, Column: 0 }
+  - String:          ' due to the address of a local variable being taken'
+...
+--- !Passed
+Pass:            stack-protector
+Name:            StackProtectorAddressTaken
+Function:        '??$?G_JU?$ratio@$00$0DLJKMKAA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV201@0@Z'
+Args:
+  - String:          'Stack protection applied to function '
+  - Function:        '??$?G_JU?$ratio@$00$0DLJKMKAA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV201@0@Z'
+    DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                       Line: 289, Column: 0 }
+  - String:          ' due to the address of a local variable being taken'
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                   Line: 289, Column: 0 }
+Function:        '??$?G_JU?$ratio@$00$0DLJKMKAA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV201@0@Z'
+Args:
+  - String:          'FastISel didn''t lower all arguments: '
+  - Prototype:       ''
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+Function:        '??$?G_JU?$ratio@$00$0DLJKMKAA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV201@0@Z'
+Args:
+  - String:          FastISel missed call
+  - String:          ' (in function: ??$?G_JU?$ratio@$00$0DLJKMKAA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV201@0@Z)'
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                   Line: 289, Column: 0 }
+Function:        '??$?G_JU?$ratio@$00$0DLJKMKAA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV201@0@Z'
+Args:
+  - NumStackBytes:   '120'
+  - String:          ' stack bytes in function '''
+  - Function:        '??$?G_JU?$ratio@$00$0DLJKMKAA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV201@0@Z'
+  - String:          ''''
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        '??$?G_JU?$ratio@$00$0DLJKMKAA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV201@0@Z'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'movq	'
+  - String:          ': '
+  - INST_movq:       '21'
+  - String:          "\n"
+  - String:          'callq	'
+  - String:          ': '
+  - INST_callq:      '4'
+  - String:          "\n"
+  - String:          'leaq	'
+  - String:          ': '
+  - INST_leaq:       '3'
+  - String:          "\n"
+  - String:          'subq	'
+  - String:          ': '
+  - INST_subq:       '2'
+  - String:          "\n"
+  - String:          'xorq	'
+  - String:          ': '
+  - INST_xorq:       '2'
+  - String:          "\n"
+  - String:          '#SEH_EndPrologue'
+  - String:          ': '
+  - INST_#SEH_EndPrologue: '1'
+  - String:          "\n"
+  - String:          '#SEH_Epilogue'
+  - String:          ': '
+  - INST_#SEH_Epilogue: '1'
+  - String:          "\n"
+  - String:          '#SEH_StackAlloc '
+  - String:          ': '
+  - INST_#SEH_StackAlloc: '1'
+  - String:          "\n"
+  - String:          'addq	'
+  - String:          ': '
+  - INST_addq:       '1'
+  - String:          "\n"
+  - String:          retq
+  - String:          ': '
+  - INST_retq:       '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                   Line: 289, Column: 0 }
+Function:        '??$?G_JU?$ratio@$00$0DLJKMKAA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV201@0@Z'
+Args:
+  - NumInstructions: '37'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            sdagisel
+Name:            FastISelFailure
+DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                   Line: 210, Column: 0 }
+Function:        '?time_since_epoch@?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEBA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@XZ'
+Args:
+  - String:          'FastISel didn''t lower all arguments: '
+  - Prototype:       ''
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                   Line: 210, Column: 0 }
+Function:        '?time_since_epoch@?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEBA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@XZ'
+Args:
+  - NumStackBytes:   '16'
+  - String:          ' stack bytes in function '''
+  - Function:        '?time_since_epoch@?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEBA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@XZ'
+  - String:          ''''
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+Function:        '?time_since_epoch@?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEBA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@XZ'
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          'movq	'
+  - String:          ': '
+  - INST_movq:       '6'
+  - String:          "\n"
+  - String:          '#SEH_EndPrologue'
+  - String:          ': '
+  - INST_#SEH_EndPrologue: '1'
+  - String:          "\n"
+  - String:          '#SEH_Epilogue'
+  - String:          ': '
+  - INST_#SEH_Epilogue: '1'
+  - String:          "\n"
+  - String:          '#SEH_StackAlloc '
+  - String:          ': '
+  - INST_#SEH_StackAlloc: '1'
+  - String:          "\n"
+  - String:          'addq	'
+  - String:          ': '
+  - INST_addq:       '1'
+  - String:          "\n"
+  - String:          retq
+  - String:          ': '
+  - INST_retq:       '1'
+  - String:          "\n"
+  - String:          'subq	'
+  - String:          ': '
+  - INST_subq:       '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.39.33519\include\__msvc_chrono.hpp', 
+                   Line: 210, Column: 0 }
+Function:        '?time_since_epoch@?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEBA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@XZ'
+Args:
+  - NumInstructions: '12'
+  - String:          ' instructions in function'
+...
