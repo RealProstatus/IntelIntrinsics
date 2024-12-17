@@ -1,5 +1,6 @@
 #include<intrin.h>
 #include<malloc.h>
+#include<random>
 #include<iostream>
 #include<chrono>
 
@@ -88,15 +89,24 @@ double scalarMult(const double* v1, const double* v2, int size) {
 int main() {
 	double* a, * b, * c;
 
+	random_device rd;
+	mt19937 gen(rd());
+	uniform_real_distribution<double> dis(-200.0, 250.0);
+
 	a = (double*)_mm_malloc(VEC_SIZE * sizeof(double), 32);
 	b = (double*)_mm_malloc(VEC_SIZE * sizeof(double), 32);
 	c = (double*)_mm_malloc(VEC_SIZE * sizeof(double), 32);
+
+	for (int i = 0; i < VEC_SIZE; i++) {
+		a[i] = dis(gen);
+		b[i] = dis(gen);
+	}
 	
-	auto start = chrono::high_resolution_clock::now();
+	/*auto start = chrono::high_resolution_clock::now();
  	addVectors(a, b, c, VEC_SIZE);
 	auto stop = chrono::high_resolution_clock::now();
 
-	auto res = chrono::duration_cast<chrono::milliseconds>(stop - start);
+	auto res = chrono::duration_cast<chrono::milliseconds>(stop - start);*/
 
 	cout << scalarMult(a,b,VEC_SIZE);
 
