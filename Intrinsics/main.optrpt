@@ -1,70 +1,207 @@
 Global optimization report for : ?addVectors@@YAXPEBN0PEANH@Z
 
 LOOP BEGIN at main.cpp (13, 0)
+    remark #25530: Stmt at line 13 sinked after loop using last value computation
+    remark #15300: LOOP WAS VECTORIZED
+    remark #15305: vectorization support: vector length 4
+    remark #15389: vectorization support: unmasked unaligned unit stride load: v1 [ C:\Users\Иван\Desktop\IntelIntrinsics\Intrinsics\main.cpp (14, 0) ] 
+    remark #15389: vectorization support: unmasked unaligned unit stride load: v2 [ C:\Users\Иван\Desktop\IntelIntrinsics\Intrinsics\main.cpp (15, 0) ] 
+    remark #15389: vectorization support: unmasked unaligned unit stride store: out [ C:\Users\Иван\Desktop\IntelIntrinsics\Intrinsics\main.cpp (19, 0) ] 
+    remark #15475: --- begin vector loop cost summary ---
+    remark #15476: scalar cost: 8.000000 
+    remark #15477: vector cost: 6.750000 
+    remark #15478: estimated potential speedup: 1.171875 
+    remark #15309: vectorization support: normalized vectorization overhead 0.281250
+    remark #15488: --- end vector loop cost summary ---
+    remark #15447: --- begin vector loop memory reference summary ---
+    remark #15450: unmasked unaligned unit stride loads: 2 
+    remark #15451: unmasked unaligned unit stride stores: 1 
+    remark #15474: --- end vector loop memory reference summary ---
+LOOP END
+
+LOOP BEGIN at main.cpp (13, 0)
+<Remainder loop for vectorization>
 LOOP END
 
 LOOP BEGIN at main.cpp (22, 0)
+    remark #25530: Stmt at line 22 sinked after loop using last value computation
+    remark #15300: LOOP WAS VECTORIZED
+    remark #15305: vectorization support: vector length 4
+    remark #15389: vectorization support: unmasked unaligned unit stride load: v1 [ C:\Users\Иван\Desktop\IntelIntrinsics\Intrinsics\main.cpp (23, 0) ] 
+    remark #15389: vectorization support: unmasked unaligned unit stride load: v2 [ C:\Users\Иван\Desktop\IntelIntrinsics\Intrinsics\main.cpp (24, 0) ] 
+    remark #15389: vectorization support: unmasked unaligned unit stride store: out [ C:\Users\Иван\Desktop\IntelIntrinsics\Intrinsics\main.cpp (28, 0) ] 
+    remark #15475: --- begin vector loop cost summary ---
+    remark #15476: scalar cost: 9.000000 
+    remark #15477: vector cost: 5.250000 
+    remark #15478: estimated potential speedup: 1.687500 
+    remark #15309: vectorization support: normalized vectorization overhead 0.375000
+    remark #15488: --- end vector loop cost summary ---
+    remark #15447: --- begin vector loop memory reference summary ---
+    remark #15450: unmasked unaligned unit stride loads: 2 
+    remark #15451: unmasked unaligned unit stride stores: 1 
+    remark #15474: --- end vector loop memory reference summary ---
+LOOP END
+
+LOOP BEGIN at main.cpp (22, 0)
+<Remainder loop for vectorization>
 LOOP END
 
 LOOP BEGIN at main.cpp (31, 0)
+    remark #15300: LOOP WAS VECTORIZED
+    remark #15305: vectorization support: vector length 4
+    remark #15389: vectorization support: unmasked unaligned unit stride load: v2 [ C:\Users\Иван\Desktop\IntelIntrinsics\Intrinsics\main.cpp (32, 0) ] 
+    remark #15389: vectorization support: unmasked unaligned unit stride load: v1 [ C:\Users\Иван\Desktop\IntelIntrinsics\Intrinsics\main.cpp (32, 0) ] 
+    remark #15389: vectorization support: unmasked unaligned unit stride store: out [ C:\Users\Иван\Desktop\IntelIntrinsics\Intrinsics\main.cpp (32, 0) ] 
+    remark #15475: --- begin vector loop cost summary ---
+    remark #15476: scalar cost: 7.000000 
+    remark #15477: vector cost: 2.687500 
+    remark #15478: estimated potential speedup: 2.531250 
+    remark #15309: vectorization support: normalized vectorization overhead 0.734375
+    remark #15488: --- end vector loop cost summary ---
+    remark #15447: --- begin vector loop memory reference summary ---
+    remark #15450: unmasked unaligned unit stride loads: 2 
+    remark #15451: unmasked unaligned unit stride stores: 1 
+    remark #15474: --- end vector loop memory reference summary ---
+LOOP END
+
+LOOP BEGIN at main.cpp (31, 0)
+<Remainder loop for vectorization>
 LOOP END
 =================================================================
 
 Global optimization report for : ?mulVectors@@YAXPEBN0PEANH@Z
 
 LOOP BEGIN at main.cpp (39, 0)
+    remark #25530: Stmt at line 39 sinked after loop using last value computation
+    remark #15300: LOOP WAS VECTORIZED
+    remark #15305: vectorization support: vector length 4
+    remark #15389: vectorization support: unmasked unaligned unit stride load: v1 [ C:\Users\Иван\Desktop\IntelIntrinsics\Intrinsics\main.cpp (40, 0) ] 
+    remark #15389: vectorization support: unmasked unaligned unit stride load: v2 [ C:\Users\Иван\Desktop\IntelIntrinsics\Intrinsics\main.cpp (41, 0) ] 
+    remark #15389: vectorization support: unmasked unaligned unit stride store: out [ C:\Users\Иван\Desktop\IntelIntrinsics\Intrinsics\main.cpp (45, 0) ] 
+    remark #15475: --- begin vector loop cost summary ---
+    remark #15476: scalar cost: 8.000000 
+    remark #15477: vector cost: 6.750000 
+    remark #15478: estimated potential speedup: 1.171875 
+    remark #15309: vectorization support: normalized vectorization overhead 0.281250
+    remark #15488: --- end vector loop cost summary ---
+    remark #15447: --- begin vector loop memory reference summary ---
+    remark #15450: unmasked unaligned unit stride loads: 2 
+    remark #15451: unmasked unaligned unit stride stores: 1 
+    remark #15474: --- end vector loop memory reference summary ---
+LOOP END
+
+LOOP BEGIN at main.cpp (39, 0)
+<Remainder loop for vectorization>
 LOOP END
 
 LOOP BEGIN at main.cpp (48, 0)
+    remark #25530: Stmt at line 48 sinked after loop using last value computation
+    remark #15300: LOOP WAS VECTORIZED
+    remark #15305: vectorization support: vector length 4
+    remark #15389: vectorization support: unmasked unaligned unit stride load: v1 [ C:\Users\Иван\Desktop\IntelIntrinsics\Intrinsics\main.cpp (49, 0) ] 
+    remark #15389: vectorization support: unmasked unaligned unit stride load: v2 [ C:\Users\Иван\Desktop\IntelIntrinsics\Intrinsics\main.cpp (50, 0) ] 
+    remark #15389: vectorization support: unmasked unaligned unit stride store: out [ C:\Users\Иван\Desktop\IntelIntrinsics\Intrinsics\main.cpp (54, 0) ] 
+    remark #15475: --- begin vector loop cost summary ---
+    remark #15476: scalar cost: 9.000000 
+    remark #15477: vector cost: 5.250000 
+    remark #15478: estimated potential speedup: 1.687500 
+    remark #15309: vectorization support: normalized vectorization overhead 0.375000
+    remark #15488: --- end vector loop cost summary ---
+    remark #15447: --- begin vector loop memory reference summary ---
+    remark #15450: unmasked unaligned unit stride loads: 2 
+    remark #15451: unmasked unaligned unit stride stores: 1 
+    remark #15474: --- end vector loop memory reference summary ---
+LOOP END
+
+LOOP BEGIN at main.cpp (48, 0)
+<Remainder loop for vectorization>
 LOOP END
 
 LOOP BEGIN at main.cpp (57, 0)
+    remark #15300: LOOP WAS VECTORIZED
+    remark #15305: vectorization support: vector length 4
+    remark #15389: vectorization support: unmasked unaligned unit stride load: v2 [ C:\Users\Иван\Desktop\IntelIntrinsics\Intrinsics\main.cpp (58, 0) ] 
+    remark #15389: vectorization support: unmasked unaligned unit stride load: v1 [ C:\Users\Иван\Desktop\IntelIntrinsics\Intrinsics\main.cpp (58, 0) ] 
+    remark #15389: vectorization support: unmasked unaligned unit stride store: out [ C:\Users\Иван\Desktop\IntelIntrinsics\Intrinsics\main.cpp (58, 0) ] 
+    remark #15475: --- begin vector loop cost summary ---
+    remark #15476: scalar cost: 7.000000 
+    remark #15477: vector cost: 2.687500 
+    remark #15478: estimated potential speedup: 2.531250 
+    remark #15309: vectorization support: normalized vectorization overhead 0.734375
+    remark #15488: --- end vector loop cost summary ---
+    remark #15447: --- begin vector loop memory reference summary ---
+    remark #15450: unmasked unaligned unit stride loads: 2 
+    remark #15451: unmasked unaligned unit stride stores: 1 
+    remark #15474: --- end vector loop memory reference summary ---
+LOOP END
+
+LOOP BEGIN at main.cpp (57, 0)
+<Remainder loop for vectorization>
 LOOP END
 =================================================================
 
 Global optimization report for : ?scalarMult@@YANPEBN0H@Z
 
 LOOP BEGIN at main.cpp (68, 0)
+    remark #25530: Stmt at line 68 sinked after loop using last value computation
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between x3 [ C:\Users\Иван\Desktop\IntelIntrinsics\Intrinsics\main.cpp (72, 0) ] and x3 [ C:\Users\Иван\Desktop\IntelIntrinsics\Intrinsics\main.cpp (72, 0) ] 
+    remark #25439: Loop unrolled with remainder by 8
 LOOP END
 
-LOOP BEGIN at main.cpp (78, 0)
+LOOP BEGIN at main.cpp (68, 0)
+<Remainder loop>
 LOOP END
 
 LOOP BEGIN at main.cpp (81, 0)
+    remark #15300: LOOP WAS VECTORIZED
+    remark #15305: vectorization support: vector length 4
+    remark #15389: vectorization support: unmasked unaligned unit stride load: v2 [ C:\Users\Иван\Desktop\IntelIntrinsics\Intrinsics\main.cpp (82, 0) ] 
+    remark #15389: vectorization support: unmasked unaligned unit stride load: v1 [ C:\Users\Иван\Desktop\IntelIntrinsics\Intrinsics\main.cpp (82, 0) ] 
+    remark #15475: --- begin vector loop cost summary ---
+    remark #15476: scalar cost: 7.000000 
+    remark #15477: vector cost: 2.593750 
+    remark #15478: estimated potential speedup: 2.609375 
+    remark #15309: vectorization support: normalized vectorization overhead 2.312500
+    remark #15488: --- end vector loop cost summary ---
+    remark #15447: --- begin vector loop memory reference summary ---
+    remark #15450: unmasked unaligned unit stride loads: 2 
+    remark #15474: --- end vector loop memory reference summary ---
+    remark #25587: Loop has reduction
+    remark #15590: vectorization support: add reduction with value type double [main.cpp:82]
+LOOP END
+
+LOOP BEGIN at main.cpp (81, 0)
+<Remainder loop for vectorization>
 LOOP END
 =================================================================
 
 Global optimization report for : main
-=================================================================
 
-Global optimization report for : ?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ
-=================================================================
+LOOP BEGIN at main.cpp (13, 0)
+    remark #15300: LOOP WAS VECTORIZED
+    remark #15305: vectorization support: vector length 4
+    remark #15389: vectorization support: unmasked unaligned unit stride load: v1 v1 a [ C:\Users\Иван\Desktop\IntelIntrinsics\Intrinsics\main.cpp (14, 0) ] 
+    remark #15389: vectorization support: unmasked unaligned unit stride load: v2 v2 b [ C:\Users\Иван\Desktop\IntelIntrinsics\Intrinsics\main.cpp (15, 0) ] 
+    remark #15389: vectorization support: unmasked unaligned unit stride store: out c [ C:\Users\Иван\Desktop\IntelIntrinsics\Intrinsics\main.cpp (19, 0) ] 
+    remark #15475: --- begin vector loop cost summary ---
+    remark #15476: scalar cost: 8.000000 
+    remark #15477: vector cost: 6.750000 
+    remark #15478: estimated potential speedup: 1.171875 
+    remark #15309: vectorization support: normalized vectorization overhead 0.000000
+    remark #15570: using scalar loop trip count: 1000000
+    remark #15488: --- end vector loop cost summary ---
+    remark #15447: --- begin vector loop memory reference summary ---
+    remark #15450: unmasked unaligned unit stride loads: 2 
+    remark #15451: unmasked unaligned unit stride stores: 1 
+    remark #15474: --- end vector loop memory reference summary ---
+LOOP END
 
-Global optimization report for : ??$duration_cast@V?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@_JU?$ratio@$00$0DLJKMKAA@@3@$0A@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DOI@@std@@@01@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@@Z
-=================================================================
-
-Global optimization report for : ??$?GUsteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@01@0@Z
-=================================================================
-
-Global optimization report for : ?count@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEBA_JXZ
-=================================================================
-
-Global optimization report for : ??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEAA@AEB_J@Z
-=================================================================
-
-Global optimization report for : ??0?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@@Z
-=================================================================
-
-Global optimization report for : ?count@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEBA_JXZ
-=================================================================
-
-Global optimization report for : ??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEAA@AEB_J@Z
-=================================================================
-
-Global optimization report for : ??$?G_JU?$ratio@$00$0DLJKMKAA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV201@0@Z
-=================================================================
-
-Global optimization report for : ?time_since_epoch@?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEBA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@XZ
+LOOP BEGIN at main.cpp (68, 0)
+    remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+    remark #15346: vector dependence: assumed FLOW dependence between x3 [ C:\Users\Иван\Desktop\IntelIntrinsics\Intrinsics\main.cpp (72, 0) ] and x3 [ C:\Users\Иван\Desktop\IntelIntrinsics\Intrinsics\main.cpp (72, 0) ] 
+    remark #25438: Loop unrolled without remainder by 8
+LOOP END
 =================================================================
 
 ---- Begin Inlining Report ----
@@ -73,6 +210,18 @@ Option Values:
   inlinehint-threshold: 325
   inlinecold-threshold: 45
   inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: ??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEAA@AEB_J@Z
+
+DEAD STATIC FUNC: ??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEAA@AEB_J@Z
+
+DEAD STATIC FUNC: ??$?GUsteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@01@0@Z
+
+DEAD STATIC FUNC: ??$?G_JU?$ratio@$00$0DLJKMKAA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV201@0@Z
+
+DEAD STATIC FUNC: ??$duration_cast@V?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@_JU?$ratio@$00$0DLJKMKAA@@3@$0A@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DOI@@std@@@01@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@@Z
+
+DEAD STATIC FUNC: ??0?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@@Z
 
 DEAD STATIC FUNC: ?_mm256_add_pd@@YA?AU__m256d@@U1@0@Z
 
@@ -94,13 +243,37 @@ DEAD STATIC FUNC: ?_mm_mul_pd@@YA?AU__m128d@@U1@0@Z
 
 DEAD STATIC FUNC: ?_mm_store_pd@@YAXPEANU__m128d@@@Z
 
+DEAD STATIC FUNC: ?count@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEBA_JXZ
+
+DEAD STATIC FUNC: ?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ
+
+DEAD STATIC FUNC: ?time_since_epoch@?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEBA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@XZ
+
+DEAD STATIC FUNC: llvm.memcpy.p0.p0.i64
+
+DEAD STATIC FUNC: llvm.ssa.copy.i64
+
 COMPILE FUNC: ?scalarMult@@YANPEBN0H@Z
    -> INLINE: ?_mm256_load_pd@@YA?AU__m256d@@PEBN@Z main.cpp (70,0)
    -> INLINE: ?_mm256_load_pd@@YA?AU__m256d@@PEBN@Z main.cpp (69,0)
    -> INLINE: ?_mm256_store_pd@@YAXPEANU__m256d@@@Z main.cpp (76,0)
    -> INLINE: ?_mm256_setzero_pd@@YA?AU__m256d@@XZ main.cpp (66,0)
    -> INLINE: ?_mm256_fmadd_pd@@YA?AU__m256d@@U1@00@Z main.cpp (72,0)
+      -> DELETE: llvm.fma.v4f64 main.cpp
       -> llvm.fma.v4f64 main.cpp
+      -> llvm.fma.v4f64 main.cpp
+      -> llvm.fma.v4f64 main.cpp
+      -> llvm.fma.v4f64 main.cpp
+      -> llvm.fma.v4f64 main.cpp
+      -> llvm.fma.v4f64 main.cpp
+      -> llvm.fma.v4f64 main.cpp
+      -> llvm.fma.v4f64 main.cpp
+      -> llvm.fma.v4f64 main.cpp
+   -> DELETE: llvm.vector.reduce.fadd.v4f64 main.cpp (82,0)
+   -> llvm.vector.reduce.fadd.v4f64 main.cpp (82,0)
+   -> DELETE: llvm.ssa.copy.i64 main.cpp (68,0)
+   -> DELETE: llvm.ssa.copy.i64 main.cpp (81,0)
+   -> llvm.vector.reduce.fadd.v4f64 main.cpp (78,0)
 
 COMPILE FUNC: ?mulVectors@@YAXPEBN0PEANH@Z
    -> INLINE: ?_mm256_load_pd@@YA?AU__m256d@@PEBN@Z main.cpp (41,0)
@@ -111,6 +284,15 @@ COMPILE FUNC: ?mulVectors@@YAXPEBN0PEANH@Z
    -> INLINE: ?_mm_store_pd@@YAXPEANU__m128d@@@Z main.cpp (54,0)
    -> INLINE: ?_mm256_mul_pd@@YA?AU__m256d@@U1@0@Z main.cpp (43,0)
    -> INLINE: ?_mm_mul_pd@@YA?AU__m128d@@U1@0@Z main.cpp (52,0)
+   -> DELETE: llvm.ssa.copy.i64 main.cpp (39,0)
+   -> DELETE: llvm.ssa.copy.i64 main.cpp (48,0)
+   -> DELETE: llvm.ssa.copy.i64 main.cpp (57,0)
+   -> DELETE: llvm.smax.i64 main.cpp (48,0)
+   -> DELETE: llvm.smax.i64 main.cpp (48,0)
+   -> DELETE: llvm.smax.i64 main.cpp
+   -> DELETE: llvm.smax.i64 main.cpp (39,0)
+   -> DELETE: llvm.smax.i64 main.cpp (48,0)
+   -> llvm.smax.i64 main.cpp (48,0)
 
 COMPILE FUNC: ?addVectors@@YAXPEBN0PEANH@Z
    -> INLINE: ?_mm256_load_pd@@YA?AU__m256d@@PEBN@Z main.cpp (15,0)
@@ -121,60 +303,78 @@ COMPILE FUNC: ?addVectors@@YAXPEBN0PEANH@Z
    -> INLINE: ?_mm_load_pd@@YA?AU__m128d@@PEBN@Z main.cpp (23,0)
    -> INLINE: ?_mm_add_pd@@YA?AU__m128d@@U1@0@Z main.cpp (26,0)
    -> INLINE: ?_mm_store_pd@@YAXPEANU__m128d@@@Z main.cpp (28,0)
+   -> DELETE: llvm.ssa.copy.i64 main.cpp (13,0)
+   -> DELETE: llvm.ssa.copy.i64 main.cpp (22,0)
+   -> DELETE: llvm.ssa.copy.i64 main.cpp (31,0)
+   -> DELETE: llvm.smax.i64 main.cpp (22,0)
+   -> DELETE: llvm.smax.i64 main.cpp (22,0)
+   -> DELETE: llvm.smax.i64 main.cpp
+   -> DELETE: llvm.smax.i64 main.cpp (13,0)
+   -> DELETE: llvm.smax.i64 main.cpp (22,0)
+   -> llvm.smax.i64 main.cpp (22,0)
 
 COMPILE FUNC: main
    -> EXTERN: _aligned_malloc main.cpp (91,0)
    -> EXTERN: _aligned_malloc main.cpp (92,0)
    -> EXTERN: _aligned_malloc main.cpp (93,0)
-   -> ?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ main.cpp (95,0)
-   -> ?addVectors@@YAXPEBN0PEANH@Z main.cpp (96,0)
-   -> ?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ main.cpp (97,0)
-   -> ??$?GUsteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@01@0@Z main.cpp (99,0)
-   -> ??$duration_cast@V?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@_JU?$ratio@$00$0DLJKMKAA@@3@$0A@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DOI@@std@@@01@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@@Z main.cpp (99,0)
-   -> ?count@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEBA_JXZ main.cpp (101,0)
-   -> EXTERN: ??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@_J@Z main.cpp (101,0)
+   -> INLINE: ?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ main.cpp (95,0) (125<=250)
+      -> EXTERN: _Query_perf_frequency main.cpp (679,0)
+      -> EXTERN: _Query_perf_counter main.cpp (680,0)
+      -> INLINE: ??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEAA@AEB_J@Z main.cpp (693,0) (-40<=375)
+      -> INLINE: ??0?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@@Z main.cpp (693,0) (-35<=375)
+      -> INLINE: ??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEAA@AEB_J@Z main.cpp (698,0) (-40<=45)
+      -> INLINE: ??0?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@@Z main.cpp (698,0) (-35<=45)
+      -> INLINE: ??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEAA@AEB_J@Z main.cpp (707,0) (-40<=45)
+      -> INLINE: ??0?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@@Z main.cpp (707,0) (-35<=45)
+   -> INLINE: ?addVectors@@YAXPEBN0PEANH@Z main.cpp (96,0) (75<=438)
+      -> INLINE: ?_mm256_load_pd@@YA?AU__m256d@@PEBN@Z main.cpp (15,0)
+      -> INLINE: ?_mm256_load_pd@@YA?AU__m256d@@PEBN@Z main.cpp (14,0)
+      -> INLINE: ?_mm256_add_pd@@YA?AU__m256d@@U1@0@Z main.cpp (17,0)
+      -> INLINE: ?_mm256_store_pd@@YAXPEANU__m256d@@@Z main.cpp (19,0)
+      -> INLINE: ?_mm_load_pd@@YA?AU__m128d@@PEBN@Z main.cpp (24,0)
+      -> INLINE: ?_mm_load_pd@@YA?AU__m128d@@PEBN@Z main.cpp (23,0)
+      -> INLINE: ?_mm_add_pd@@YA?AU__m128d@@U1@0@Z main.cpp (26,0)
+      -> INLINE: ?_mm_store_pd@@YAXPEANU__m128d@@@Z main.cpp (28,0)
+   -> INLINE: ?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ main.cpp (97,0) (-14875<=250)
+      -> EXTERN: _Query_perf_frequency main.cpp (679,0)
+      -> EXTERN: _Query_perf_counter main.cpp (680,0)
+      -> INLINE: ??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEAA@AEB_J@Z main.cpp (693,0) (-40<=375)
+      -> INLINE: ??0?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@@Z main.cpp (693,0) (-35<=375)
+      -> INLINE: ??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEAA@AEB_J@Z main.cpp (698,0) (-40<=45)
+      -> INLINE: ??0?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@@Z main.cpp (698,0) (-35<=45)
+      -> INLINE: ??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEAA@AEB_J@Z main.cpp (707,0) (-40<=45)
+      -> INLINE: ??0?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@@Z main.cpp (707,0) (-35<=45)
+   -> INLINE: ??$?GUsteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@01@0@Z main.cpp (99,0) (-15040<=375)
+      -> INLINE: ?time_since_epoch@?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEBA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@XZ main.cpp (549,0) (-35<=375)
+      -> INLINE: ?time_since_epoch@?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEBA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@XZ main.cpp (549,0) (-15035<=375)
+      -> INLINE: ??$?G_JU?$ratio@$00$0DLJKMKAA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV201@0@Z main.cpp (549,0) (-15035<=375)
+         -> INLINE: ?count@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEBA_JXZ main.cpp (291,0) (-35<=375)
+         -> INLINE: ?count@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEBA_JXZ main.cpp (291,0) (-35<=375)
+         -> INLINE: ??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEAA@AEB_J@Z main.cpp (291,0) (-15035<=375)
+   -> INLINE: ??$duration_cast@V?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@_JU?$ratio@$00$0DLJKMKAA@@3@$0A@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DOI@@std@@@01@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@@Z main.cpp (99,0) (-15035<=375)
+      -> INLINE: ?count@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEBA_JXZ main.cpp (440,0) (-15030<=375)
+      -> INLINE: ??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEAA@AEB_J@Z main.cpp (440,0) (-15035<=375)
+   -> INLINE: ?scalarMult@@YANPEBN0H@Z main.cpp (101,0) (60<=438)
+      -> INLINE: ?_mm256_load_pd@@YA?AU__m256d@@PEBN@Z main.cpp (70,0)
+      -> INLINE: ?_mm256_load_pd@@YA?AU__m256d@@PEBN@Z main.cpp (69,0)
+      -> INLINE: ?_mm256_store_pd@@YAXPEANU__m256d@@@Z main.cpp (76,0)
+      -> INLINE: ?_mm256_setzero_pd@@YA?AU__m256d@@XZ main.cpp (66,0)
+      -> INLINE: ?_mm256_fmadd_pd@@YA?AU__m256d@@U1@00@Z main.cpp (72,0)
+         -> DELETE: llvm.fma.v4f64 main.cpp
+         -> llvm.fma.v4f64 main.cpp
+         -> llvm.fma.v4f64 main.cpp
+         -> llvm.fma.v4f64 main.cpp
+         -> llvm.fma.v4f64 main.cpp
+         -> llvm.fma.v4f64 main.cpp
+         -> llvm.fma.v4f64 main.cpp
+         -> llvm.fma.v4f64 main.cpp
+         -> llvm.fma.v4f64 main.cpp
+   -> EXTERN: ??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@N@Z main.cpp (101,0)
    -> EXTERN: _aligned_free main.cpp (103,0)
    -> EXTERN: _aligned_free main.cpp (104,0)
    -> EXTERN: _aligned_free main.cpp (105,0)
-
-COMPILE FUNC: ?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ
-   -> EXTERN: _Query_perf_frequency main.cpp (679,0)
-   -> EXTERN: _Query_perf_counter main.cpp (680,0)
-   -> ??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEAA@AEB_J@Z main.cpp (693,0)
-   -> ??0?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@@Z main.cpp (693,0)
-   -> ??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEAA@AEB_J@Z main.cpp (698,0)
-   -> ??0?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@@Z main.cpp (698,0)
-   -> ??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEAA@AEB_J@Z main.cpp (707,0)
-   -> ??0?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@@Z main.cpp (707,0)
-
-COMPILE FUNC: ??$?GUsteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@01@0@Z
-   -> ?time_since_epoch@?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEBA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@XZ main.cpp (549,0)
-   -> ?time_since_epoch@?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEBA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@XZ main.cpp (549,0)
-   -> ??$?G_JU?$ratio@$00$0DLJKMKAA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV201@0@Z main.cpp (549,0)
-
-COMPILE FUNC: ??$duration_cast@V?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@_JU?$ratio@$00$0DLJKMKAA@@3@$0A@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DOI@@std@@@01@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@@Z
-   -> ?count@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEBA_JXZ main.cpp (440,0)
-   -> ??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEAA@AEB_J@Z main.cpp (440,0)
-
-COMPILE FUNC: ?count@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEBA_JXZ
-
-COMPILE FUNC: ??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEAA@AEB_J@Z
-
-COMPILE FUNC: ??0?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@@Z
-   -> llvm.memcpy.p0.p0.i64 main.cpp (203,0)
-
-COMPILE FUNC: ?count@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEBA_JXZ
-
-COMPILE FUNC: ??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEAA@AEB_J@Z
-
-COMPILE FUNC: ?time_since_epoch@?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEBA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@XZ
-   -> llvm.memcpy.p0.p0.i64 main.cpp (211,0)
-
-COMPILE FUNC: ??$?G_JU?$ratio@$00$0DLJKMKAA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV201@0@Z
-   -> llvm.memcpy.p0.p0.i64 main.cpp (291,0)
-   -> ?count@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEBA_JXZ main.cpp (291,0)
-   -> llvm.memcpy.p0.p0.i64 main.cpp (291,0)
-   -> ?count@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEBA_JXZ main.cpp (291,0)
-   -> ??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEAA@AEB_J@Z main.cpp (291,0)
+   -> DELETE: llvm.ssa.copy.i64 main.cpp (13,0)
+   -> DELETE: llvm.ssa.copy.i64 main.cpp (68,0)
+   -> llvm.vector.reduce.fadd.v4f64 main.cpp (78,0)
 
 ---- End Inlining Report ------

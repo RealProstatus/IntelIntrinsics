@@ -10,183 +10,252 @@
 	.scl	2;
 	.type	32;
 	.endef
+	.section	.text,"xr",one_only,"?addVectors@@YAXPEBN0PEANH@Z"
 	.globl	"?addVectors@@YAXPEBN0PEANH@Z"
 	.p2align	4, 0x90
 "?addVectors@@YAXPEBN0PEANH@Z":
 .Lfunc_begin0:
 	.cv_func_id 0
-	.cv_file	1 "C:\\Users\\\320\230\320\262\320\260\320\275\\Desktop\\IntelIntrinsics\\Intrinsics\\main.cpp" "A161924BD0ACC6B4BC66E248878A8B9D" 1
+	.cv_file	1 "C:\\Users\\\320\230\320\262\320\260\320\275\\Desktop\\IntelIntrinsics\\Intrinsics\\main.cpp" "D14B77FEAAC1572C31DC78F3DF5A7518" 1
 	.cv_loc	0 1 10 0
 .seh_proc "?addVectors@@YAXPEBN0PEANH@Z"
-	pushq	%rbp
-	.seh_pushreg %rbp
-	subq	$432, %rsp
-	.seh_stackalloc 432
-	leaq	128(%rsp), %rbp
-	.seh_setframe %rbp, 128
+	pushq	%r15
+	.seh_pushreg %r15
+	pushq	%r14
+	.seh_pushreg %r14
+	pushq	%r12
+	.seh_pushreg %r12
+	pushq	%rsi
+	.seh_pushreg %rsi
+	pushq	%rdi
+	.seh_pushreg %rdi
+	pushq	%rbx
+	.seh_pushreg %rbx
 	.seh_endprologue
-	andq	$-32, %rsp
 .Ltmp0:
-	movl	%r9d, 204(%rsp)
-	movq	%r8, 192(%rsp)
-	movq	%rdx, 184(%rsp)
-	movq	%rcx, 176(%rsp)
+	xorl	%eax, %eax
 .Ltmp1:
 	.cv_loc	0 1 13 0
-	movl	$0, 172(%rsp)
-.LBB0_1:
-	movl	172(%rsp), %eax
-	movl	%eax, 12(%rsp)
-	movl	204(%rsp), %eax
-	movl	$4, %ecx
-	cltd
-	idivl	%ecx
-	movl	%eax, %ecx
-	movl	12(%rsp), %eax
-	shll	$2, %ecx
-	cmpl	%ecx, %eax
-	jge	.LBB0_4
+	cmpl	$4, %r9d
+	jl	.LBB0_5
 .Ltmp2:
-	.cv_loc	0 1 14 0
-	movq	176(%rsp), %rax
-	movslq	172(%rsp), %rcx
-	shlq	$3, %rcx
-	addq	%rcx, %rax
-	movq	%rax, 216(%rsp)
-	movq	216(%rsp), %rax
-	vmovupd	(%rax), %ymm0
-	vmovupd	%ymm0, 128(%rsp)
-	.cv_loc	0 1 15 0
-	movq	184(%rsp), %rax
-	movslq	172(%rsp), %rcx
-	shlq	$3, %rcx
-	addq	%rcx, %rax
-	movq	%rax, 208(%rsp)
-	movq	208(%rsp), %rax
-	vmovupd	(%rax), %ymm0
-	vmovupd	%ymm0, 96(%rsp)
-	.cv_loc	0 1 17 0
-	vmovupd	96(%rsp), %ymm1
-	vmovupd	128(%rsp), %ymm0
-	vmovupd	%ymm1, 256(%rsp)
-	vmovupd	%ymm0, 224(%rsp)
-	vmovupd	224(%rsp), %ymm0
-	vaddpd	256(%rsp), %ymm0, %ymm0
-	vmovupd	%ymm0, 64(%rsp)
-	.cv_loc	0 1 19 0
-	vmovupd	64(%rsp), %ymm0
-	movq	192(%rsp), %rax
-	movslq	172(%rsp), %rcx
-	shlq	$3, %rcx
-	addq	%rcx, %rax
-	vmovupd	%ymm0, 320(%rsp)
-	movq	%rax, 312(%rsp)
-	vmovupd	320(%rsp), %ymm0
-	movq	312(%rsp), %rax
-	vmovupd	%ymm0, (%rax)
+	movl	%r9d, %eax
+	andl	$2147483644, %eax
+	decq	%rax
+	movq	%rax, %r10
+	shrq	$2, %r10
+	leaq	1(%r10), %rsi
+	movabsq	$9223372036854775804, %r11
+	andq	%rsi, %r11
+	je	.LBB0_2
 .Ltmp3:
-	.cv_loc	0 1 13 0
-	movl	172(%rsp), %eax
-	addl	$4, %eax
-	movl	%eax, 172(%rsp)
-	jmp	.LBB0_1
+	xorl	%edi, %edi
+	xorl	%ebx, %ebx
 .Ltmp4:
-.LBB0_4:
-	.cv_loc	0 1 22 0
-	jmp	.LBB0_5
-.LBB0_5:
+	.p2align	4, 0x90
+.LBB0_16:
+	.cv_loc	0 1 14 0
+	vmovupd	(%rcx,%rdi), %ymm0
+	vmovupd	32(%rcx,%rdi), %ymm1
+	vmovupd	64(%rcx,%rdi), %ymm2
+	vmovupd	96(%rcx,%rdi), %ymm3
+	.cv_loc	0 1 17 0
+	vaddpd	32(%rdx,%rdi), %ymm1, %ymm1
+	vaddpd	(%rdx,%rdi), %ymm0, %ymm0
+	vaddpd	96(%rdx,%rdi), %ymm3, %ymm3
+	vaddpd	64(%rdx,%rdi), %ymm2, %ymm2
+	.cv_loc	0 1 19 0
+	vmovupd	%ymm2, 64(%r8,%rdi)
+	vmovupd	%ymm3, 96(%r8,%rdi)
+	vmovupd	%ymm0, (%r8,%rdi)
+	vmovupd	%ymm1, 32(%r8,%rdi)
 .Ltmp5:
-	.cv_loc	0 1 22 0
-	movl	172(%rsp), %eax
-	movl	%eax, 8(%rsp)
-	movl	204(%rsp), %eax
-	movl	$2, %ecx
-	cltd
-	idivl	%ecx
-	movl	%eax, %ecx
-	movl	8(%rsp), %eax
-	shll	%ecx
-	cmpl	%ecx, %eax
-	jge	.LBB0_8
+	.cv_loc	0 1 13 0
+	addq	$4, %rbx
+	subq	$-128, %rdi
+	cmpq	%r11, %rbx
+	jb	.LBB0_16
 .Ltmp6:
-	.cv_loc	0 1 23 0
-	movq	176(%rsp), %rax
-	movslq	172(%rsp), %rcx
-	shlq	$3, %rcx
-	addq	%rcx, %rax
-	movq	%rax, 360(%rsp)
-	movq	360(%rsp), %rax
-	vmovupd	(%rax), %xmm0
-	vmovupd	%xmm0, 48(%rsp)
-	.cv_loc	0 1 24 0
-	movq	184(%rsp), %rax
-	movslq	172(%rsp), %rcx
-	shlq	$3, %rcx
-	addq	%rcx, %rax
-	movq	%rax, 352(%rsp)
-	movq	352(%rsp), %rax
-	vmovupd	(%rax), %xmm0
-	vmovupd	%xmm0, 32(%rsp)
-	.cv_loc	0 1 26 0
-	vmovupd	32(%rsp), %xmm1
-	vmovupd	48(%rsp), %xmm0
-	vmovupd	%xmm1, 384(%rsp)
-	vmovupd	%xmm0, 368(%rsp)
-	vmovupd	368(%rsp), %xmm0
-	vaddpd	384(%rsp), %xmm0, %xmm0
-	vmovupd	%xmm0, 16(%rsp)
-	.cv_loc	0 1 28 0
-	vmovupd	16(%rsp), %xmm0
-	movq	192(%rsp), %rax
-	movslq	172(%rsp), %rcx
-	shlq	$3, %rcx
-	addq	%rcx, %rax
-	vmovupd	%xmm0, 416(%rsp)
-	movq	%rax, 408(%rsp)
-	vmovupd	416(%rsp), %xmm0
-	movq	408(%rsp), %rax
-	vmovupd	%xmm0, (%rax)
+	cmpq	%r11, %rsi
+	jne	.LBB0_3
+	jmp	.LBB0_18
 .Ltmp7:
-	.cv_loc	0 1 22 0
-	movl	172(%rsp), %eax
-	addl	$2, %eax
-	movl	%eax, 172(%rsp)
-	jmp	.LBB0_5
+.LBB0_2:
+	xorl	%r11d, %r11d
 .Ltmp8:
-.LBB0_8:
-	.cv_loc	0 1 31 0
-	jmp	.LBB0_9
-.LBB0_9:
+.LBB0_3:
+	subq	%r11, %r10
+	shlq	$5, %r11
+	incq	%r10
 .Ltmp9:
-	.cv_loc	0 1 31 0
-	movl	172(%rsp), %eax
-	cmpl	204(%rsp), %eax
-	jge	.LBB0_12
+	.p2align	4, 0x90
+.LBB0_4:
+	.cv_loc	0 1 14 0
+	vmovupd	(%rcx,%r11), %ymm0
+	.cv_loc	0 1 17 0
+	vaddpd	(%rdx,%r11), %ymm0, %ymm0
 .Ltmp10:
-	.cv_loc	0 1 32 0
-	movq	176(%rsp), %rax
-	movslq	172(%rsp), %rcx
-	vmovsd	(%rax,%rcx,8), %xmm0
-	movq	184(%rsp), %rax
-	movslq	172(%rsp), %rcx
-	vaddsd	(%rax,%rcx,8), %xmm0, %xmm0
-	movq	192(%rsp), %rax
-	movslq	172(%rsp), %rcx
-	vmovsd	%xmm0, (%rax,%rcx,8)
+	.cv_loc	0 1 19 0
+	vmovupd	%ymm0, (%r8,%r11)
 .Ltmp11:
-	.cv_loc	0 1 31 0
-	movl	172(%rsp), %eax
-	addl	$1, %eax
-	movl	%eax, 172(%rsp)
-	jmp	.LBB0_9
+	.cv_loc	0 1 13 0
+	addq	$32, %r11
+	decq	%r10
+	jne	.LBB0_4
 .Ltmp12:
+.LBB0_18:
+	.cv_loc	0 1 22 0
+	andl	$-4, %eax
+.Ltmp13:
+	addl	$4, %eax
+.Ltmp14:
+.LBB0_5:
+	movl	%r9d, %r10d
+	shrl	$31, %r10d
+	addl	%r9d, %r10d
+	andl	$-2, %r10d
+.Ltmp15:
+	cmpl	%r10d, %eax
+	jge	.LBB0_10
+.Ltmp16:
+	movl	%eax, %esi
+	movslq	%r10d, %r11
+	leaq	2(%rsi), %rax
+.Ltmp17:
+	cmpq	%r11, %rax
+	cmovgq	%rax, %r11
+	movq	%rsi, %r10
+	notq	%r10
+	addq	%r11, %r10
+	movq	%r10, %r11
+	shrq	%r11
+	leaq	1(%r11), %rbx
+	movq	%rbx, %rdi
+	andq	$-4, %rdi
+	je	.LBB0_7
+.Ltmp18:
+	leaq	-1(%rdi), %r14
+	leaq	(,%rsi,8), %r15
+	xorl	%r12d, %r12d
+.Ltmp19:
+	.p2align	4, 0x90
+.LBB0_20:
+	.cv_loc	0 1 23 0
+	vmovupd	(%rcx,%r15), %ymm0
+	vmovupd	32(%rcx,%r15), %ymm1
+	.cv_loc	0 1 26 0
+	vaddpd	(%rdx,%r15), %ymm0, %ymm0
+	vaddpd	32(%rdx,%r15), %ymm1, %ymm1
+	.cv_loc	0 1 28 0
+	vmovupd	%ymm1, 32(%r8,%r15)
+	vmovupd	%ymm0, (%r8,%r15)
+.Ltmp20:
+	.cv_loc	0 1 22 0
+	addq	$4, %r12
+	addq	$64, %r15
+	cmpq	%r14, %r12
+	jle	.LBB0_20
+.Ltmp21:
+	cmpq	%rdi, %rbx
+	jne	.LBB0_8
+	jmp	.LBB0_22
+.Ltmp22:
+.LBB0_7:
+	xorl	%edi, %edi
+.Ltmp23:
+.LBB0_8:
+	movq	%rdi, %rbx
+	shlq	$4, %rbx
+	leaq	(%rbx,%rsi,8), %rsi
+.Ltmp24:
+	notq	%r11
+	addq	%rdi, %r11
+.Ltmp25:
+	.p2align	4, 0x90
+.LBB0_9:
+	.cv_loc	0 1 23 0
+	vmovupd	(%rcx,%rsi), %xmm0
+	.cv_loc	0 1 26 0
+	vaddpd	(%rdx,%rsi), %xmm0, %xmm0
+.Ltmp26:
+	.cv_loc	0 1 28 0
+	vmovupd	%xmm0, (%r8,%rsi)
+.Ltmp27:
+	.cv_loc	0 1 22 0
+	addq	$16, %rsi
+	incq	%r11
+	jne	.LBB0_9
+.Ltmp28:
+.LBB0_22:
+	.cv_loc	0 1 22 0
+	andl	$-2, %r10d
+	addl	%r10d, %eax
+.Ltmp29:
+.LBB0_10:
+	.cv_loc	0 1 31 0
+	cmpl	%r9d, %eax
+	jge	.LBB0_26
+.Ltmp30:
+	movl	%eax, %r10d
+	movslq	%r9d, %rax
+.Ltmp31:
+	movq	%rax, %r11
+	subq	%r10, %r11
+	movq	%r11, %r9
+.Ltmp32:
+	andq	$-4, %r9
+	je	.LBB0_12
+.Ltmp33:
+	leaq	(%r8,%r10,8), %rsi
+	leaq	(%rcx,%r10,8), %rdi
+	leaq	(%rdx,%r10,8), %rbx
+	xorl	%r14d, %r14d
+.Ltmp34:
+	.p2align	4, 0x90
+.LBB0_24:
+	.cv_loc	0 1 32 0
+	vmovupd	(%rbx,%r14,8), %ymm0
+	vaddpd	(%rdi,%r14,8), %ymm0, %ymm0
+	vmovupd	%ymm0, (%rsi,%r14,8)
+.Ltmp35:
+	.cv_loc	0 1 31 0
+	addq	$4, %r14
+	cmpq	%r9, %r14
+	jl	.LBB0_24
+.Ltmp36:
+	cmpq	%r9, %r11
+	jne	.LBB0_13
+	jmp	.LBB0_26
+.Ltmp37:
 .LBB0_12:
+	xorl	%r9d, %r9d
+.Ltmp38:
+.LBB0_13:
+	addq	%r10, %r9
+.Ltmp39:
+	.p2align	4, 0x90
+.LBB0_14:
+	.cv_loc	0 1 32 0
+	vmovsd	(%rdx,%r9,8), %xmm0
+	vaddsd	(%rcx,%r9,8), %xmm0, %xmm0
+	vmovsd	%xmm0, (%r8,%r9,8)
+.Ltmp40:
+	.cv_loc	0 1 31 0
+	incq	%r9
+	cmpq	%r9, %rax
+	jne	.LBB0_14
+.Ltmp41:
+.LBB0_26:
 	.cv_loc	0 1 34 0
-	leaq	304(%rbp), %rsp
-	popq	%rbp
+	popq	%rbx
+	popq	%rdi
+	popq	%rsi
+	popq	%r12
+	popq	%r14
+	popq	%r15
 	vzeroupper
 	retq
-.Ltmp13:
+.Ltmp42:
 .Lfunc_end0:
 	.seh_endproc
 
@@ -194,6 +263,7 @@
 	.scl	2;
 	.type	32;
 	.endef
+	.section	.text,"xr",one_only,"?mulVectors@@YAXPEBN0PEANH@Z"
 	.globl	"?mulVectors@@YAXPEBN0PEANH@Z"
 	.p2align	4, 0x90
 "?mulVectors@@YAXPEBN0PEANH@Z":
@@ -201,175 +271,243 @@
 	.cv_func_id 1
 	.cv_loc	1 1 36 0
 .seh_proc "?mulVectors@@YAXPEBN0PEANH@Z"
-	pushq	%rbp
-	.seh_pushreg %rbp
-	subq	$432, %rsp
-	.seh_stackalloc 432
-	leaq	128(%rsp), %rbp
-	.seh_setframe %rbp, 128
+	pushq	%r15
+	.seh_pushreg %r15
+	pushq	%r14
+	.seh_pushreg %r14
+	pushq	%r12
+	.seh_pushreg %r12
+	pushq	%rsi
+	.seh_pushreg %rsi
+	pushq	%rdi
+	.seh_pushreg %rdi
+	pushq	%rbx
+	.seh_pushreg %rbx
 	.seh_endprologue
-	andq	$-32, %rsp
-.Ltmp14:
-	movl	%r9d, 196(%rsp)
-	movq	%r8, 184(%rsp)
-	movq	%rdx, 176(%rsp)
-	movq	%rcx, 168(%rsp)
-.Ltmp15:
+.Ltmp43:
+	xorl	%eax, %eax
+.Ltmp44:
 	.cv_loc	1 1 39 0
-	movl	$0, 164(%rsp)
-.LBB1_1:
-	movl	164(%rsp), %eax
-	movl	%eax, 12(%rsp)
-	movl	196(%rsp), %eax
-	movl	$4, %ecx
-	cltd
-	idivl	%ecx
-	movl	%eax, %ecx
-	movl	12(%rsp), %eax
-	shll	$2, %ecx
-	cmpl	%ecx, %eax
-	jge	.LBB1_4
-.Ltmp16:
+	cmpl	$4, %r9d
+	jl	.LBB1_5
+.Ltmp45:
+	movl	%r9d, %eax
+	andl	$2147483644, %eax
+	decq	%rax
+	movq	%rax, %r10
+	shrq	$2, %r10
+	leaq	1(%r10), %rsi
+	movabsq	$9223372036854775804, %r11
+	andq	%rsi, %r11
+	je	.LBB1_2
+.Ltmp46:
+	xorl	%edi, %edi
+	xorl	%ebx, %ebx
+.Ltmp47:
+	.p2align	4, 0x90
+.LBB1_16:
 	.cv_loc	1 1 40 0
-	movq	168(%rsp), %rax
-	movslq	164(%rsp), %rcx
-	shlq	$3, %rcx
-	addq	%rcx, %rax
-	movq	%rax, 208(%rsp)
-	movq	208(%rsp), %rax
-	vmovupd	(%rax), %ymm0
-	vmovupd	%ymm0, 128(%rsp)
-	.cv_loc	1 1 41 0
-	movq	176(%rsp), %rax
-	movslq	164(%rsp), %rcx
-	shlq	$3, %rcx
-	addq	%rcx, %rax
-	movq	%rax, 200(%rsp)
-	movq	200(%rsp), %rax
-	vmovupd	(%rax), %ymm0
-	vmovupd	%ymm0, 96(%rsp)
+	vmovupd	(%rcx,%rdi), %ymm0
+	vmovupd	32(%rcx,%rdi), %ymm1
+	vmovupd	64(%rcx,%rdi), %ymm2
+	vmovupd	96(%rcx,%rdi), %ymm3
 	.cv_loc	1 1 43 0
-	vmovupd	96(%rsp), %ymm1
-	vmovupd	128(%rsp), %ymm0
-	vmovupd	%ymm1, 352(%rsp)
-	vmovupd	%ymm0, 320(%rsp)
-	vmovupd	320(%rsp), %ymm0
-	vmulpd	352(%rsp), %ymm0, %ymm0
-	vmovupd	%ymm0, 64(%rsp)
+	vmulpd	32(%rdx,%rdi), %ymm1, %ymm1
+	vmulpd	(%rdx,%rdi), %ymm0, %ymm0
+	vmulpd	96(%rdx,%rdi), %ymm3, %ymm3
+	vmulpd	64(%rdx,%rdi), %ymm2, %ymm2
 	.cv_loc	1 1 45 0
-	vmovupd	64(%rsp), %ymm0
-	movq	184(%rsp), %rax
-	movslq	164(%rsp), %rcx
-	shlq	$3, %rcx
-	addq	%rcx, %rax
-	vmovupd	%ymm0, 224(%rsp)
-	movq	%rax, 216(%rsp)
-	vmovupd	224(%rsp), %ymm0
-	movq	216(%rsp), %rax
-	vmovupd	%ymm0, (%rax)
-.Ltmp17:
+	vmovupd	%ymm2, 64(%r8,%rdi)
+	vmovupd	%ymm3, 96(%r8,%rdi)
+	vmovupd	%ymm0, (%r8,%rdi)
+	vmovupd	%ymm1, 32(%r8,%rdi)
+.Ltmp48:
 	.cv_loc	1 1 39 0
-	movl	164(%rsp), %eax
-	addl	$4, %eax
-	movl	%eax, 164(%rsp)
-	jmp	.LBB1_1
-.Ltmp18:
+	addq	$4, %rbx
+	subq	$-128, %rdi
+	cmpq	%r11, %rbx
+	jb	.LBB1_16
+.Ltmp49:
+	cmpq	%r11, %rsi
+	jne	.LBB1_3
+	jmp	.LBB1_18
+.Ltmp50:
+.LBB1_2:
+	xorl	%r11d, %r11d
+.Ltmp51:
+.LBB1_3:
+	subq	%r11, %r10
+	shlq	$5, %r11
+	incq	%r10
+.Ltmp52:
+	.p2align	4, 0x90
 .LBB1_4:
+	.cv_loc	1 1 40 0
+	vmovupd	(%rcx,%r11), %ymm0
+	.cv_loc	1 1 43 0
+	vmulpd	(%rdx,%r11), %ymm0, %ymm0
+.Ltmp53:
+	.cv_loc	1 1 45 0
+	vmovupd	%ymm0, (%r8,%r11)
+.Ltmp54:
+	.cv_loc	1 1 39 0
+	addq	$32, %r11
+	decq	%r10
+	jne	.LBB1_4
+.Ltmp55:
+.LBB1_18:
 	.cv_loc	1 1 48 0
-	jmp	.LBB1_5
+	andl	$-4, %eax
+.Ltmp56:
+	addl	$4, %eax
+.Ltmp57:
 .LBB1_5:
-.Ltmp19:
-	.cv_loc	1 1 48 0
-	movl	164(%rsp), %eax
-	movl	%eax, 8(%rsp)
-	movl	196(%rsp), %eax
-	movl	$2, %ecx
-	cltd
-	idivl	%ecx
-	movl	%eax, %ecx
-	movl	8(%rsp), %eax
-	shll	%ecx
-	cmpl	%ecx, %eax
-	jge	.LBB1_8
-.Ltmp20:
+	movl	%r9d, %r10d
+	shrl	$31, %r10d
+	addl	%r9d, %r10d
+	andl	$-2, %r10d
+.Ltmp58:
+	cmpl	%r10d, %eax
+	jge	.LBB1_10
+.Ltmp59:
+	movl	%eax, %esi
+	movslq	%r10d, %r11
+	leaq	2(%rsi), %rax
+.Ltmp60:
+	cmpq	%r11, %rax
+	cmovgq	%rax, %r11
+	movq	%rsi, %r10
+	notq	%r10
+	addq	%r11, %r10
+	movq	%r10, %r11
+	shrq	%r11
+	leaq	1(%r11), %rbx
+	movq	%rbx, %rdi
+	andq	$-4, %rdi
+	je	.LBB1_7
+.Ltmp61:
+	leaq	-1(%rdi), %r14
+	leaq	(,%rsi,8), %r15
+	xorl	%r12d, %r12d
+.Ltmp62:
+	.p2align	4, 0x90
+.LBB1_20:
 	.cv_loc	1 1 49 0
-	movq	168(%rsp), %rax
-	movslq	164(%rsp), %rcx
-	shlq	$3, %rcx
-	addq	%rcx, %rax
-	movq	%rax, 288(%rsp)
-	movq	288(%rsp), %rax
-	vmovupd	(%rax), %xmm0
-	vmovupd	%xmm0, 48(%rsp)
-	.cv_loc	1 1 50 0
-	movq	176(%rsp), %rax
-	movslq	164(%rsp), %rcx
-	shlq	$3, %rcx
-	addq	%rcx, %rax
-	movq	%rax, 280(%rsp)
-	movq	280(%rsp), %rax
-	vmovupd	(%rax), %xmm0
-	vmovupd	%xmm0, 32(%rsp)
+	vmovupd	(%rcx,%r15), %ymm0
+	vmovupd	32(%rcx,%r15), %ymm1
 	.cv_loc	1 1 52 0
-	vmovupd	32(%rsp), %xmm1
-	vmovupd	48(%rsp), %xmm0
-	vmovupd	%xmm1, 416(%rsp)
-	vmovupd	%xmm0, 400(%rsp)
-	vmovupd	400(%rsp), %xmm0
-	vmulpd	416(%rsp), %xmm0, %xmm0
-	vmovupd	%xmm0, 16(%rsp)
+	vmulpd	(%rdx,%r15), %ymm0, %ymm0
+	vmulpd	32(%rdx,%r15), %ymm1, %ymm1
 	.cv_loc	1 1 54 0
-	vmovupd	16(%rsp), %xmm0
-	movq	184(%rsp), %rax
-	movslq	164(%rsp), %rcx
-	shlq	$3, %rcx
-	addq	%rcx, %rax
-	vmovupd	%xmm0, 304(%rsp)
-	movq	%rax, 296(%rsp)
-	vmovupd	304(%rsp), %xmm0
-	movq	296(%rsp), %rax
-	vmovupd	%xmm0, (%rax)
-.Ltmp21:
+	vmovupd	%ymm1, 32(%r8,%r15)
+	vmovupd	%ymm0, (%r8,%r15)
+.Ltmp63:
 	.cv_loc	1 1 48 0
-	movl	164(%rsp), %eax
-	addl	$2, %eax
-	movl	%eax, 164(%rsp)
-	jmp	.LBB1_5
-.Ltmp22:
+	addq	$4, %r12
+	addq	$64, %r15
+	cmpq	%r14, %r12
+	jle	.LBB1_20
+.Ltmp64:
+	cmpq	%rdi, %rbx
+	jne	.LBB1_8
+	jmp	.LBB1_22
+.Ltmp65:
+.LBB1_7:
+	xorl	%edi, %edi
+.Ltmp66:
 .LBB1_8:
-	.cv_loc	1 1 57 0
-	jmp	.LBB1_9
+	movq	%rdi, %rbx
+	shlq	$4, %rbx
+	leaq	(%rbx,%rsi,8), %rsi
+.Ltmp67:
+	notq	%r11
+	addq	%rdi, %r11
+.Ltmp68:
+	.p2align	4, 0x90
 .LBB1_9:
-.Ltmp23:
+	.cv_loc	1 1 49 0
+	vmovupd	(%rcx,%rsi), %xmm0
+	.cv_loc	1 1 52 0
+	vmulpd	(%rdx,%rsi), %xmm0, %xmm0
+.Ltmp69:
+	.cv_loc	1 1 54 0
+	vmovupd	%xmm0, (%r8,%rsi)
+.Ltmp70:
+	.cv_loc	1 1 48 0
+	addq	$16, %rsi
+	incq	%r11
+	jne	.LBB1_9
+.Ltmp71:
+.LBB1_22:
+	.cv_loc	1 1 48 0
+	andl	$-2, %r10d
+	addl	%r10d, %eax
+.Ltmp72:
+.LBB1_10:
 	.cv_loc	1 1 57 0
-	movl	164(%rsp), %eax
-	cmpl	196(%rsp), %eax
-	jge	.LBB1_12
-.Ltmp24:
+	cmpl	%r9d, %eax
+	jge	.LBB1_26
+.Ltmp73:
+	movl	%eax, %r10d
+	movslq	%r9d, %rax
+.Ltmp74:
+	movq	%rax, %r11
+	subq	%r10, %r11
+	movq	%r11, %r9
+.Ltmp75:
+	andq	$-4, %r9
+	je	.LBB1_12
+.Ltmp76:
+	leaq	(%r8,%r10,8), %rsi
+	leaq	(%rcx,%r10,8), %rdi
+	leaq	(%rdx,%r10,8), %rbx
+	xorl	%r14d, %r14d
+.Ltmp77:
+	.p2align	4, 0x90
+.LBB1_24:
 	.cv_loc	1 1 58 0
-	movq	168(%rsp), %rax
-	movslq	164(%rsp), %rcx
-	vmovsd	(%rax,%rcx,8), %xmm0
-	movq	176(%rsp), %rax
-	movslq	164(%rsp), %rcx
-	vmulsd	(%rax,%rcx,8), %xmm0, %xmm0
-	movq	184(%rsp), %rax
-	movslq	164(%rsp), %rcx
-	vmovsd	%xmm0, (%rax,%rcx,8)
-.Ltmp25:
+	vmovupd	(%rbx,%r14,8), %ymm0
+	vmulpd	(%rdi,%r14,8), %ymm0, %ymm0
+	vmovupd	%ymm0, (%rsi,%r14,8)
+.Ltmp78:
 	.cv_loc	1 1 57 0
-	movl	164(%rsp), %eax
-	addl	$1, %eax
-	movl	%eax, 164(%rsp)
-	jmp	.LBB1_9
-.Ltmp26:
+	addq	$4, %r14
+	cmpq	%r9, %r14
+	jl	.LBB1_24
+.Ltmp79:
+	cmpq	%r9, %r11
+	jne	.LBB1_13
+	jmp	.LBB1_26
+.Ltmp80:
 .LBB1_12:
+	xorl	%r9d, %r9d
+.Ltmp81:
+.LBB1_13:
+	addq	%r10, %r9
+.Ltmp82:
+	.p2align	4, 0x90
+.LBB1_14:
+	.cv_loc	1 1 58 0
+	vmovsd	(%rdx,%r9,8), %xmm0
+	vmulsd	(%rcx,%r9,8), %xmm0, %xmm0
+	vmovsd	%xmm0, (%r8,%r9,8)
+.Ltmp83:
+	.cv_loc	1 1 57 0
+	incq	%r9
+	cmpq	%r9, %rax
+	jne	.LBB1_14
+.Ltmp84:
+.LBB1_26:
 	.cv_loc	1 1 60 0
-	leaq	304(%rbp), %rsp
-	popq	%rbp
+	popq	%rbx
+	popq	%rdi
+	popq	%rsi
+	popq	%r12
+	popq	%r14
+	popq	%r15
 	vzeroupper
 	retq
-.Ltmp27:
+.Ltmp85:
 .Lfunc_end1:
 	.seh_endproc
 
@@ -377,6 +515,7 @@
 	.scl	2;
 	.type	32;
 	.endef
+	.section	.text,"xr",one_only,"?scalarMult@@YANPEBN0H@Z"
 	.globl	"?scalarMult@@YANPEBN0H@Z"
 	.p2align	4, 0x90
 "?scalarMult@@YANPEBN0H@Z":
@@ -384,147 +523,181 @@
 	.cv_func_id 2
 	.cv_loc	2 1 62 0
 .seh_proc "?scalarMult@@YANPEBN0H@Z"
-	pushq	%rbp
-	.seh_pushreg %rbp
-	subq	$432, %rsp
-	.seh_stackalloc 432
-	leaq	128(%rsp), %rbp
-	.seh_setframe %rbp, 128
+	pushq	%rsi
+	.seh_pushreg %rsi
+	pushq	%rdi
+	.seh_pushreg %rdi
 	.seh_endprologue
-	andq	$-32, %rsp
-	movq	__security_cookie(%rip), %rax
-	xorq	%rbp, %rax
-	movq	%rax, 424(%rsp)
-.Ltmp28:
-	movl	%r8d, 196(%rsp)
-	movq	%rdx, 184(%rsp)
-	movq	%rcx, 176(%rsp)
-	.cv_loc	2 1 64 0
-	movq	$0, 160(%rsp)
-	.cv_loc	2 1 66 0
-	vxorps	%xmm0, %xmm0, %xmm0
-	vmovupd	%ymm0, 256(%rsp)
-	vmovupd	256(%rsp), %ymm0
-	vmovupd	%ymm0, 128(%rsp)
-.Ltmp29:
+.Ltmp86:
 	.cv_loc	2 1 68 0
-	movl	$0, 172(%rsp)
-.LBB2_1:
-	movl	172(%rsp), %eax
-	movl	%eax, 56(%rsp)
-	movl	196(%rsp), %eax
-	movl	$4, %ecx
-	cltd
-	idivl	%ecx
-	movl	%eax, %ecx
-	movl	56(%rsp), %eax
-	shll	$2, %ecx
-	cmpl	%ecx, %eax
-	jge	.LBB2_4
-.Ltmp30:
-	.cv_loc	2 1 69 0
-	movq	176(%rsp), %rax
-	movslq	172(%rsp), %rcx
-	shlq	$3, %rcx
-	addq	%rcx, %rax
-	movq	%rax, 208(%rsp)
-	movq	208(%rsp), %rax
-	vmovupd	(%rax), %ymm0
-	vmovupd	%ymm0, 96(%rsp)
-	.cv_loc	2 1 70 0
-	movq	184(%rsp), %rax
-	movslq	172(%rsp), %rcx
-	shlq	$3, %rcx
-	addq	%rcx, %rax
-	movq	%rax, 200(%rsp)
-	movq	200(%rsp), %rax
-	vmovupd	(%rax), %ymm0
-	vmovupd	%ymm0, 64(%rsp)
-	.cv_loc	2 1 72 0
-	vmovupd	128(%rsp), %ymm2
-	vmovupd	64(%rsp), %ymm1
-	vmovupd	96(%rsp), %ymm0
-	vmovupd	%ymm2, 352(%rsp)
-	vmovupd	%ymm1, 320(%rsp)
-	vmovupd	%ymm0, 288(%rsp)
-	vmovupd	288(%rsp), %ymm1
-	vmovupd	320(%rsp), %ymm0
-	vmovupd	352(%rsp), %ymm2
-	vfmadd213pd	%ymm2, %ymm1, %ymm0
-	vmovupd	%ymm0, 128(%rsp)
-.Ltmp31:
-	.cv_loc	2 1 68 0
-	movl	172(%rsp), %eax
-	addl	$4, %eax
-	movl	%eax, 172(%rsp)
-	jmp	.LBB2_1
-.Ltmp32:
-.LBB2_4:
-	.cv_loc	2 1 76 0
-	vmovupd	128(%rsp), %ymm0
-	leaq	384(%rsp), %rax
-	vmovupd	%ymm0, 224(%rsp)
-	movq	%rax, 216(%rsp)
-	vmovupd	224(%rsp), %ymm0
-	movq	216(%rsp), %rax
-	vmovupd	%ymm0, (%rax)
-.Ltmp33:
-	.cv_loc	2 1 78 0
-	movl	$0, 60(%rsp)
-.LBB2_5:
-	cmpl	$4, 60(%rsp)
-	jge	.LBB2_8
-.Ltmp34:
-	.cv_loc	2 1 79 0
-	movslq	172(%rsp), %rax
-	vmovsd	384(%rsp,%rax,8), %xmm0
-	vaddsd	160(%rsp), %xmm0, %xmm0
-	vmovsd	%xmm0, 160(%rsp)
-	.cv_loc	2 1 78 0
-	movl	60(%rsp), %eax
-	addl	$1, %eax
-	movl	%eax, 60(%rsp)
-	jmp	.LBB2_5
-.Ltmp35:
-.LBB2_8:
-	.cv_loc	2 1 81 0
-	jmp	.LBB2_9
+	cmpl	$4, %r8d
+	jl	.LBB2_1
+.Ltmp87:
+	movl	%r8d, %eax
+	andl	$2147483644, %eax
+.Ltmp88:
+	decq	%rax
+	movq	%rax, %r9
+	shrq	$2, %r9
+	leaq	1(%r9), %r10
+	vxorpd	%xmm0, %xmm0, %xmm0
+.Ltmp89:
+	cmpq	$28, %rax
+	jb	.LBB2_10
+.Ltmp90:
+	movq	%r10, %r11
+	shrq	$3, %r11
+	movl	$224, %esi
+.Ltmp91:
+	.p2align	4, 0x90
 .LBB2_9:
-.Ltmp36:
-	.cv_loc	2 1 81 0
-	movl	172(%rsp), %eax
-	cmpl	196(%rsp), %eax
-	jge	.LBB2_12
-.Ltmp37:
-	.cv_loc	2 1 82 0
-	movq	176(%rsp), %rax
-	movslq	172(%rsp), %rcx
-	vmovsd	(%rax,%rcx,8), %xmm0
-	movq	184(%rsp), %rax
-	movslq	172(%rsp), %rcx
-	vmulsd	(%rax,%rcx,8), %xmm0, %xmm0
-	vaddsd	160(%rsp), %xmm0, %xmm0
-	vmovsd	%xmm0, 160(%rsp)
-.Ltmp38:
-	.cv_loc	2 1 81 0
-	movl	172(%rsp), %eax
-	addl	$1, %eax
-	movl	%eax, 172(%rsp)
-	jmp	.LBB2_9
-.Ltmp39:
+	.cv_loc	2 1 69 0
+	vmovupd	-224(%rcx,%rsi), %ymm1
+	vmovupd	-192(%rcx,%rsi), %ymm2
+	vmovupd	-160(%rcx,%rsi), %ymm3
+	.cv_loc	2 1 72 0
+	vfmadd132pd	-224(%rdx,%rsi), %ymm0, %ymm1
+.Ltmp92:
+	vfmadd231pd	-192(%rdx,%rsi), %ymm2, %ymm1
+.Ltmp93:
+	vfmadd231pd	-160(%rdx,%rsi), %ymm3, %ymm1
+.Ltmp94:
+	.cv_loc	2 1 69 0
+	vmovupd	-128(%rcx,%rsi), %ymm0
+	.cv_loc	2 1 72 0
+	vfmadd231pd	-128(%rdx,%rsi), %ymm0, %ymm1
+.Ltmp95:
+	.cv_loc	2 1 69 0
+	vmovupd	-96(%rcx,%rsi), %ymm0
+	.cv_loc	2 1 72 0
+	vfmadd132pd	-96(%rdx,%rsi), %ymm1, %ymm0
+.Ltmp96:
+	.cv_loc	2 1 69 0
+	vmovupd	-64(%rcx,%rsi), %ymm1
+	.cv_loc	2 1 72 0
+	vfmadd132pd	-64(%rdx,%rsi), %ymm0, %ymm1
+.Ltmp97:
+	.cv_loc	2 1 69 0
+	vmovupd	-32(%rcx,%rsi), %ymm2
+	.cv_loc	2 1 72 0
+	vfmadd132pd	-32(%rdx,%rsi), %ymm1, %ymm2
+.Ltmp98:
+	.cv_loc	2 1 69 0
+	vmovupd	(%rcx,%rsi), %ymm0
+	.cv_loc	2 1 72 0
+	vfmadd132pd	(%rdx,%rsi), %ymm2, %ymm0
+.Ltmp99:
+	.cv_loc	2 1 68 0
+	addq	$256, %rsi
+	decq	%r11
+	jne	.LBB2_9
+.Ltmp100:
+.LBB2_10:
+	andq	$-8, %r10
+	cmpq	%r9, %r10
+	ja	.LBB2_13
+.Ltmp101:
+	subq	%r10, %r9
+	shlq	$5, %r10
+	incq	%r9
+.Ltmp102:
+	.p2align	4, 0x90
 .LBB2_12:
-	.cv_loc	2 1 85 0
-	vmovsd	160(%rsp), %xmm0
-	vmovsd	%xmm0, 48(%rsp)
-	movq	424(%rsp), %rcx
-	xorq	%rbp, %rcx
+	.cv_loc	2 1 69 0
+	vmovupd	(%rcx,%r10), %ymm1
+	.cv_loc	2 1 72 0
+	vfmadd231pd	(%rdx,%r10), %ymm1, %ymm0
+.Ltmp103:
+	.cv_loc	2 1 68 0
+	addq	$32, %r10
+	decq	%r9
+	jne	.LBB2_12
+.Ltmp104:
+.LBB2_13:
+	.cv_loc	2 1 78 0
+	andl	$-4, %eax
+.Ltmp105:
+	addl	$4, %eax
+	jmp	.LBB2_2
+.Ltmp106:
+.LBB2_1:
+	xorl	%eax, %eax
+	vxorpd	%xmm0, %xmm0, %xmm0
+.Ltmp107:
+.LBB2_2:
+	vextractf128	$1, %ymm0, %xmm1
+	vaddpd	%xmm1, %xmm0, %xmm0
+.Ltmp108:
+	vshufpd	$1, %xmm0, %xmm0, %xmm1
+	vaddsd	%xmm1, %xmm0, %xmm0
+.Ltmp109:
+	.cv_loc	2 1 81 0
+	cmpl	%r8d, %eax
+	jge	.LBB2_17
+.Ltmp110:
+	movl	%eax, %r9d
+	movslq	%r8d, %rax
+.Ltmp111:
+	movq	%rax, %r10
+	subq	%r9, %r10
+	movq	%r10, %r8
+.Ltmp112:
+	andq	$-4, %r8
+	je	.LBB2_4
+.Ltmp113:
+	leaq	(%rcx,%r9,8), %r11
+	leaq	(%rdx,%r9,8), %rsi
+	vxorpd	%xmm1, %xmm1, %xmm1
+	xorl	%edi, %edi
+.Ltmp114:
+	.p2align	4, 0x90
+.LBB2_15:
+	.cv_loc	2 1 82 0
+	vmovupd	(%rsi,%rdi,8), %ymm2
+	vfmadd231pd	(%r11,%rdi,8), %ymm2, %ymm1
+.Ltmp115:
+	.cv_loc	2 1 81 0
+	addq	$4, %rdi
+	cmpq	%r8, %rdi
+	jl	.LBB2_15
+.Ltmp116:
+	.cv_loc	2 1 82 0
+	vextractf128	$1, %ymm1, %xmm2
+	vaddpd	%xmm2, %xmm1, %xmm1
+	vshufpd	$1, %xmm1, %xmm1, %xmm2
+	vaddsd	%xmm2, %xmm1, %xmm1
+	vaddsd	%xmm1, %xmm0, %xmm0
+.Ltmp117:
+	.cv_loc	2 1 81 0
+	cmpq	%r8, %r10
+	jne	.LBB2_5
+	jmp	.LBB2_17
+.Ltmp118:
+.LBB2_4:
+	xorl	%r8d, %r8d
+.Ltmp119:
+.LBB2_5:
+	addq	%r9, %r8
+.Ltmp120:
+	.p2align	4, 0x90
+.LBB2_6:
+	.cv_loc	2 1 82 0
+	vmovsd	(%rdx,%r8,8), %xmm1
+	vfmadd231sd	(%rcx,%r8,8), %xmm1, %xmm0
+.Ltmp121:
+	.cv_loc	2 1 81 0
+	incq	%r8
+	cmpq	%r8, %rax
+	jne	.LBB2_6
+.Ltmp122:
+.LBB2_17:
+	.cv_loc	2 1 86 0
+	popq	%rdi
+	popq	%rsi
 	vzeroupper
-	callq	__security_check_cookie
-	vmovsd	48(%rsp), %xmm0
-	leaq	304(%rbp), %rsp
-	popq	%rbp
+.Ltmp123:
 	retq
-.Ltmp40:
+.Ltmp124:
 .Lfunc_end2:
 	.seh_endproc
 
@@ -532,6 +705,7 @@
 	.scl	2;
 	.type	32;
 	.endef
+	.section	.text,"xr",one_only,main
 	.globl	main
 	.p2align	4, 0x90
 main:
@@ -539,517 +713,224 @@ main:
 	.cv_func_id 3
 	.cv_loc	3 1 88 0
 .seh_proc main
-	subq	$104, %rsp
-	.seh_stackalloc 104
+	pushq	%r14
+	.seh_pushreg %r14
+	pushq	%rsi
+	.seh_pushreg %rsi
+	pushq	%rdi
+	.seh_pushreg %rdi
+	pushq	%rbx
+	.seh_pushreg %rbx
+	subq	$56, %rsp
+	.seh_stackalloc 56
 	.seh_endprologue
 	movq	__security_cookie(%rip), %rax
 	xorq	%rsp, %rax
-	movq	%rax, 96(%rsp)
-.Ltmp41:
-	.cv_loc	3 1 91 0
-	movl	$640000088, %ecx
-	movl	$32, %edx
-.Ltmp42:
-	callq	*__imp__aligned_malloc(%rip)
-.Ltmp43:
-	movq	%rax, 56(%rsp)
-	.cv_loc	3 1 92 0
-	movl	$640000088, %ecx
-	movl	$32, %edx
-.Ltmp44:
-	callq	*__imp__aligned_malloc(%rip)
-.Ltmp45:
 	movq	%rax, 48(%rsp)
-	.cv_loc	3 1 93 0
-	movl	$640000088, %ecx
+	vstmxcsr	44(%rsp)
+	orl	$32832, 44(%rsp)
+	vldmxcsr	44(%rsp)
+.Ltmp125:
+	.cv_loc	3 1 91 0
+	movq	__imp__aligned_malloc(%rip), %rbx
+	movl	$32000000, %ecx
 	movl	$32, %edx
-.Ltmp46:
-	callq	*__imp__aligned_malloc(%rip)
-.Ltmp47:
-	movq	%rax, 40(%rsp)
-	.cv_loc	3 1 95 0
-	leaq	88(%rsp), %rcx
-	callq	"?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ"
-	.cv_loc	3 1 96 0
-	movq	40(%rsp), %r8
-	movq	48(%rsp), %rdx
-	movq	56(%rsp), %rcx
-	movl	$80000011, %r9d
-	callq	"?addVectors@@YAXPEBN0PEANH@Z"
-	.cv_loc	3 1 97 0
-	leaq	80(%rsp), %rcx
-	callq	"?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ"
-	.cv_loc	3 1 99 0
-	leaq	64(%rsp), %rcx
-	leaq	80(%rsp), %rdx
-	leaq	88(%rsp), %r8
-	callq	"??$?GUsteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@01@0@Z"
-	leaq	72(%rsp), %rcx
-	leaq	64(%rsp), %rdx
-	callq	"??$duration_cast@V?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@_JU?$ratio@$00$0DLJKMKAA@@3@$0A@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DOI@@std@@@01@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@@Z"
-	.cv_loc	3 1 101 0
-	leaq	72(%rsp), %rcx
-	callq	"?count@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEBA_JXZ"
-	movq	%rax, %rdx
-	movq	"__imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"(%rip), %rcx
-	callq	*"__imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@_J@Z"(%rip)
-	.cv_loc	3 1 103 0
-	movq	56(%rsp), %rcx
-	callq	*__imp__aligned_free(%rip)
-	.cv_loc	3 1 104 0
-	movq	48(%rsp), %rcx
-	callq	*__imp__aligned_free(%rip)
-	.cv_loc	3 1 105 0
-	movq	40(%rsp), %rcx
-	callq	*__imp__aligned_free(%rip)
-	.cv_loc	3 1 106 0
-	xorl	%eax, %eax
-	movl	%eax, 36(%rsp)
-	movq	96(%rsp), %rcx
-	xorq	%rsp, %rcx
-	callq	__security_check_cookie
-	movl	36(%rsp), %eax
-	addq	$104, %rsp
-	retq
-.Ltmp48:
-.Lfunc_end3:
-	.seh_endproc
-
-	.def	"?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ";
-	.scl	2;
-	.type	32;
-	.endef
-	.section	.text,"xr",discard,"?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ"
-	.globl	"?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ"
-	.p2align	4, 0x90
-"?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ":
-.Lfunc_begin4:
-	.cv_func_id 4
+.Ltmp126:
+	callq	*%rbx
+.Ltmp127:
+	movq	%rax, %rsi
+.Ltmp128:
+	.cv_loc	3 1 92 0
+	movl	$32000000, %ecx
+	movl	$32, %edx
+.Ltmp129:
+	callq	*%rbx
+.Ltmp130:
+	movq	%rax, %rdi
+.Ltmp131:
+	.cv_loc	3 1 93 0
+	movl	$32000000, %ecx
+	movl	$32, %edx
+.Ltmp132:
+	callq	*%rbx
+.Ltmp133:
+	movq	%rax, %rbx
+.Ltmp134:
 	.cv_file	2 "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.39.33519\\include\\__msvc_chrono.hpp" "1F38FB01ECF955BBE5DB7E8CD44E32E7" 1
-	.cv_loc	4 2 678 0
-.seh_proc "?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ"
-	subq	$184, %rsp
-	.seh_stackalloc 184
-	.seh_endprologue
-	movq	%rcx, 32(%rsp)
-	movq	%rcx, %rax
-	movq	%rax, 40(%rsp)
-	movq	__security_cookie(%rip), %rax
-	xorq	%rsp, %rax
-	movq	%rax, 176(%rsp)
-.Ltmp49:
-	movq	%rcx, 120(%rsp)
+	.cv_inline_site_id 4 within 3 inlined_at 1 95 0
 	.cv_loc	4 2 679 0
 	callq	_Query_perf_frequency
-	movq	%rax, 112(%rsp)
+.Ltmp135:
 	.cv_loc	4 2 680 0
 	callq	_Query_perf_counter
-	movq	%rax, 104(%rsp)
-	.cv_loc	4 2 684 0
-	movq	$10000000, 96(%rsp)
-	.cv_loc	4 2 685 0
-	movq	$24000000, 88(%rsp)
-	.cv_loc	4 2 687 0
-	cmpq	$10000000, 112(%rsp)
-	jne	.LBB4_2
-.Ltmp50:
-	.cv_loc	4 2 692 0
-	movq	$100, 80(%rsp)
-	.cv_loc	4 2 693 0
-	imulq	$100, 104(%rsp), %rax
-	movq	%rax, 160(%rsp)
-	leaq	168(%rsp), %rcx
-	leaq	160(%rsp), %rdx
-	callq	"??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEAA@AEB_J@Z"
-	movq	32(%rsp), %rcx
-	leaq	168(%rsp), %rdx
-	callq	"??0?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@@Z"
-	jmp	.LBB4_5
-.Ltmp51:
-.LBB4_2:
-	.cv_loc	4 2 694 0
-	cmpq	$24000000, 112(%rsp)
-	jne	.LBB4_4
-.Ltmp52:
-	.cv_loc	4 2 696 0
-	movq	104(%rsp), %rax
-	movl	$24000000, %ecx
-	cqto
-	idivq	%rcx
-	imulq	$1000000000, %rax, %rax
-	movq	%rax, 72(%rsp)
-	.cv_loc	4 2 697 0
-	movq	104(%rsp), %rax
-	movl	$24000000, %ecx
-	cqto
-	idivq	%rcx
-	imulq	$1000000000, %rdx, %rax
-	movl	$24000000, %ecx
-	cqto
-	idivq	%rcx
-	movq	%rax, 64(%rsp)
-	.cv_loc	4 2 698 0
-	movq	72(%rsp), %rax
-	addq	64(%rsp), %rax
-	movq	%rax, 144(%rsp)
-	leaq	152(%rsp), %rcx
-	leaq	144(%rsp), %rdx
-	callq	"??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEAA@AEB_J@Z"
-	movq	32(%rsp), %rcx
-	leaq	152(%rsp), %rdx
-	callq	"??0?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@@Z"
-	jmp	.LBB4_5
-.Ltmp53:
-.LBB4_4:
-	.cv_loc	4 2 705 0
-	movq	104(%rsp), %rax
-	cqto
-	idivq	112(%rsp)
-	imulq	$1000000000, %rax, %rax
-	movq	%rax, 56(%rsp)
-	.cv_loc	4 2 706 0
-	movq	104(%rsp), %rax
-	cqto
-	idivq	112(%rsp)
-	imulq	$1000000000, %rdx, %rax
-	cqto
-	idivq	112(%rsp)
-	movq	%rax, 48(%rsp)
-	.cv_loc	4 2 707 0
-	movq	56(%rsp), %rax
-	addq	48(%rsp), %rax
-	movq	%rax, 128(%rsp)
-	leaq	136(%rsp), %rcx
-	leaq	128(%rsp), %rdx
-	callq	"??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEAA@AEB_J@Z"
-	movq	32(%rsp), %rcx
-	leaq	136(%rsp), %rdx
-	callq	"??0?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@@Z"
-.Ltmp54:
-.LBB4_5:
-	.cv_loc	4 2 710 0
-	movq	176(%rsp), %rcx
+.Ltmp136:
+	movl	$384, %eax
+.Ltmp137:
+	movq	$-4, %rcx
+.Ltmp138:
+	.p2align	4, 0x90
+.LBB3_1:
+	.cv_inline_site_id 5 within 3 inlined_at 1 96 0
+	.cv_loc	5 1 14 0
+	vmovupd	-384(%rsi,%rax), %ymm0
+	vmovupd	-352(%rsi,%rax), %ymm1
+	vmovupd	-320(%rsi,%rax), %ymm2
+	vmovupd	-288(%rsi,%rax), %ymm3
+	.cv_loc	5 1 17 0
+	vaddpd	-320(%rdi,%rax), %ymm2, %ymm2
+	vaddpd	-352(%rdi,%rax), %ymm1, %ymm1
+	vaddpd	-384(%rdi,%rax), %ymm0, %ymm0
+	vaddpd	-288(%rdi,%rax), %ymm3, %ymm3
+	.cv_loc	5 1 19 0
+	vmovupd	%ymm3, -288(%rbx,%rax)
+	vmovupd	%ymm0, -384(%rbx,%rax)
+	vmovupd	%ymm1, -352(%rbx,%rax)
+	vmovupd	%ymm2, -320(%rbx,%rax)
+	.cv_loc	5 1 14 0
+	vmovupd	-256(%rsi,%rax), %ymm0
+	vmovupd	-224(%rsi,%rax), %ymm1
+	vmovupd	-192(%rsi,%rax), %ymm2
+	vmovupd	-160(%rsi,%rax), %ymm3
+	.cv_loc	5 1 17 0
+	vaddpd	-192(%rdi,%rax), %ymm2, %ymm2
+	vaddpd	-224(%rdi,%rax), %ymm1, %ymm1
+	vaddpd	-256(%rdi,%rax), %ymm0, %ymm0
+	vaddpd	-160(%rdi,%rax), %ymm3, %ymm3
+	.cv_loc	5 1 19 0
+	vmovupd	%ymm3, -160(%rbx,%rax)
+	vmovupd	%ymm0, -256(%rbx,%rax)
+	vmovupd	%ymm1, -224(%rbx,%rax)
+	vmovupd	%ymm2, -192(%rbx,%rax)
+	.cv_loc	5 1 14 0
+	vmovupd	-128(%rsi,%rax), %ymm0
+	vmovupd	-96(%rsi,%rax), %ymm1
+	vmovupd	-64(%rsi,%rax), %ymm2
+	vmovupd	-32(%rsi,%rax), %ymm3
+	.cv_loc	5 1 17 0
+	vaddpd	-64(%rdi,%rax), %ymm2, %ymm2
+	vaddpd	-96(%rdi,%rax), %ymm1, %ymm1
+	vaddpd	-128(%rdi,%rax), %ymm0, %ymm0
+	vaddpd	-32(%rdi,%rax), %ymm3, %ymm3
+	.cv_loc	5 1 19 0
+	vmovupd	%ymm3, -32(%rbx,%rax)
+	vmovupd	%ymm0, -128(%rbx,%rax)
+	vmovupd	%ymm1, -96(%rbx,%rax)
+	vmovupd	%ymm2, -64(%rbx,%rax)
+	.cv_loc	5 1 14 0
+	vmovupd	(%rsi,%rax), %ymm0
+	vmovupd	32(%rsi,%rax), %ymm1
+	vmovupd	64(%rsi,%rax), %ymm2
+	vmovupd	96(%rsi,%rax), %ymm3
+	.cv_loc	5 1 17 0
+	vaddpd	32(%rdi,%rax), %ymm1, %ymm1
+	vaddpd	(%rdi,%rax), %ymm0, %ymm0
+	vaddpd	96(%rdi,%rax), %ymm3, %ymm3
+	vaddpd	64(%rdi,%rax), %ymm2, %ymm2
+	.cv_loc	5 1 19 0
+	vmovupd	%ymm2, 64(%rbx,%rax)
+	vmovupd	%ymm3, 96(%rbx,%rax)
+	vmovupd	%ymm0, (%rbx,%rax)
+	vmovupd	%ymm1, 32(%rbx,%rax)
+.Ltmp139:
+	.cv_loc	5 1 13 0
+	addq	$512, %rax
+	addq	$16, %rcx
+	cmpq	$999996, %rcx
+	jb	.LBB3_1
+.Ltmp140:
+	.cv_inline_site_id 6 within 3 inlined_at 1 97 0
+	.cv_loc	6 2 679 0
+	vzeroupper
+	callq	_Query_perf_frequency
+.Ltmp141:
+	.cv_loc	6 2 680 0
+	callq	_Query_perf_counter
+.Ltmp142:
+	vxorpd	%xmm0, %xmm0, %xmm0
+	movl	$224, %eax
+.Ltmp143:
+	.p2align	4, 0x90
+.LBB3_3:
+	.cv_inline_site_id 7 within 3 inlined_at 1 101 0
+	.cv_loc	7 1 69 0
+	vmovupd	-224(%rsi,%rax), %ymm1
+	vmovupd	-192(%rsi,%rax), %ymm2
+	vmovupd	-160(%rsi,%rax), %ymm3
+	.cv_loc	7 1 72 0
+	vfmadd132pd	-224(%rdi,%rax), %ymm0, %ymm1
+.Ltmp144:
+	vfmadd231pd	-192(%rdi,%rax), %ymm2, %ymm1
+.Ltmp145:
+	vfmadd231pd	-160(%rdi,%rax), %ymm3, %ymm1
+.Ltmp146:
+	.cv_loc	7 1 69 0
+	vmovupd	-128(%rsi,%rax), %ymm0
+	.cv_loc	7 1 72 0
+	vfmadd231pd	-128(%rdi,%rax), %ymm0, %ymm1
+.Ltmp147:
+	.cv_loc	7 1 69 0
+	vmovupd	-96(%rsi,%rax), %ymm0
+	.cv_loc	7 1 72 0
+	vfmadd132pd	-96(%rdi,%rax), %ymm1, %ymm0
+.Ltmp148:
+	.cv_loc	7 1 69 0
+	vmovupd	-64(%rsi,%rax), %ymm1
+	.cv_loc	7 1 72 0
+	vfmadd132pd	-64(%rdi,%rax), %ymm0, %ymm1
+.Ltmp149:
+	.cv_loc	7 1 69 0
+	vmovupd	-32(%rsi,%rax), %ymm2
+	.cv_loc	7 1 72 0
+	vfmadd132pd	-32(%rdi,%rax), %ymm1, %ymm2
+.Ltmp150:
+	.cv_loc	7 1 69 0
+	vmovupd	(%rsi,%rax), %ymm0
+	.cv_loc	7 1 72 0
+	vfmadd132pd	(%rdi,%rax), %ymm2, %ymm0
+.Ltmp151:
+	.cv_loc	7 1 68 0
+	addq	$256, %rax
+	cmpq	$32000224, %rax
+	jne	.LBB3_3
+.Ltmp152:
+	.cv_loc	7 1 78 0
+	vextractf128	$1, %ymm0, %xmm1
+	vaddpd	%xmm1, %xmm0, %xmm0
+.Ltmp153:
+	vshufpd	$1, %xmm0, %xmm0, %xmm1
+	vaddsd	%xmm1, %xmm0, %xmm1
+.Ltmp154:
+	.cv_loc	3 1 101 0
+	movq	"__imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A"(%rip), %rcx
+	vzeroupper
+.Ltmp155:
+	callq	*"__imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@N@Z"(%rip)
+	.cv_loc	3 1 103 0
+	movq	__imp__aligned_free(%rip), %r14
+	movq	%rsi, %rcx
+	callq	*%r14
+	.cv_loc	3 1 104 0
+	movq	%rdi, %rcx
+	callq	*%r14
+	.cv_loc	3 1 105 0
+	movq	%rbx, %rcx
+	callq	*%r14
+	movq	48(%rsp), %rcx
 	xorq	%rsp, %rcx
 	callq	__security_check_cookie
-	movq	40(%rsp), %rax
-	addq	$184, %rsp
+	.cv_loc	3 1 106 0
+	xorl	%eax, %eax
+	addq	$56, %rsp
+	popq	%rbx
+.Ltmp156:
+	popq	%rdi
+.Ltmp157:
+	popq	%rsi
+.Ltmp158:
+	popq	%r14
 	retq
-.Ltmp55:
-.Lfunc_end4:
-	.seh_endproc
-
-	.def	"??$duration_cast@V?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@_JU?$ratio@$00$0DLJKMKAA@@3@$0A@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DOI@@std@@@01@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@@Z";
-	.scl	2;
-	.type	32;
-	.endef
-	.section	.text,"xr",discard,"??$duration_cast@V?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@_JU?$ratio@$00$0DLJKMKAA@@3@$0A@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DOI@@std@@@01@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@@Z"
-	.globl	"??$duration_cast@V?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@_JU?$ratio@$00$0DLJKMKAA@@3@$0A@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DOI@@std@@@01@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@@Z"
-	.p2align	4, 0x90
-"??$duration_cast@V?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@_JU?$ratio@$00$0DLJKMKAA@@3@$0A@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DOI@@std@@@01@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@@Z":
-.Lfunc_begin5:
-	.cv_func_id 5
-	.cv_loc	5 2 421 0
-.seh_proc "??$duration_cast@V?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@_JU?$ratio@$00$0DLJKMKAA@@3@$0A@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DOI@@std@@@01@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@@Z"
-	subq	$88, %rsp
-	.seh_stackalloc 88
-	.seh_endprologue
-	movq	%rcx, 32(%rsp)
-	movq	%rcx, %rax
-	movq	%rax, 40(%rsp)
-	movq	__security_cookie(%rip), %rax
-	xorq	%rsp, %rax
-	movq	%rax, 80(%rsp)
-.Ltmp56:
-	movq	%rcx, 64(%rsp)
-	movq	%rdx, 56(%rsp)
-	.cv_loc	5 2 428 0
-	movb	$1, 55(%rsp)
-	.cv_loc	5 2 429 0
-	movb	$0, 54(%rsp)
-.Ltmp57:
-	.cv_loc	5 2 440 0
-	movq	56(%rsp), %rcx
-	callq	"?count@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEBA_JXZ"
-	movq	32(%rsp), %rcx
-	movl	$1000000, %r8d
-	cqto
-	idivq	%r8
-	movq	%rax, 72(%rsp)
-	leaq	72(%rsp), %rdx
-	callq	"??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEAA@AEB_J@Z"
-	movq	80(%rsp), %rcx
-	xorq	%rsp, %rcx
-	callq	__security_check_cookie
-	movq	40(%rsp), %rax
-	addq	$88, %rsp
-	retq
-.Ltmp58:
-.Lfunc_end5:
-	.seh_endproc
-
-	.def	"??$?GUsteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@01@0@Z";
-	.scl	2;
-	.type	32;
-	.endef
-	.section	.text,"xr",discard,"??$?GUsteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@01@0@Z"
-	.globl	"??$?GUsteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@01@0@Z"
-	.p2align	4, 0x90
-"??$?GUsteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@01@0@Z":
-.Lfunc_begin6:
-	.cv_func_id 6
-	.cv_loc	6 2 548 0
-.seh_proc "??$?GUsteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@01@0@Z"
-	subq	$104, %rsp
-	.seh_stackalloc 104
-	.seh_endprologue
-	movq	%rcx, 40(%rsp)
-	movq	%rcx, %rax
-	movq	%rax, 48(%rsp)
-	movq	__security_cookie(%rip), %rax
-	xorq	%rsp, %rax
-	movq	%rax, 96(%rsp)
-.Ltmp59:
-	movq	%rcx, 72(%rsp)
-	movq	%r8, 64(%rsp)
-	movq	%rdx, 56(%rsp)
-	.cv_loc	6 2 549 0
-	movq	64(%rsp), %rcx
-	leaq	88(%rsp), %rdx
-	callq	"?time_since_epoch@?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEBA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@XZ"
-	movq	56(%rsp), %rcx
-	leaq	80(%rsp), %rdx
-	callq	"?time_since_epoch@?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEBA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@XZ"
-	movq	40(%rsp), %rcx
-	leaq	80(%rsp), %rdx
-	leaq	88(%rsp), %r8
-	callq	"??$?G_JU?$ratio@$00$0DLJKMKAA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV201@0@Z"
-	movq	96(%rsp), %rcx
-	xorq	%rsp, %rcx
-	callq	__security_check_cookie
-	movq	48(%rsp), %rax
-	addq	$104, %rsp
-	retq
-.Ltmp60:
-.Lfunc_end6:
-	.seh_endproc
-
-	.def	"?count@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEBA_JXZ";
-	.scl	2;
-	.type	32;
-	.endef
-	.section	.text,"xr",discard,"?count@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEBA_JXZ"
-	.globl	"?count@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEBA_JXZ"
-	.p2align	4, 0x90
-"?count@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEBA_JXZ":
-.Lfunc_begin7:
-	.cv_func_id 7
-	.cv_loc	7 2 108 0
-.seh_proc "?count@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEBA_JXZ"
-	pushq	%rax
-	.seh_stackalloc 8
-	.seh_endprologue
-.Ltmp61:
-	movq	%rcx, (%rsp)
-	movq	(%rsp), %rax
-	.cv_loc	7 2 109 0
-	movq	(%rax), %rax
-	popq	%rcx
-	retq
-.Ltmp62:
-.Lfunc_end7:
-	.seh_endproc
-
-	.def	"??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEAA@AEB_J@Z";
-	.scl	2;
-	.type	32;
-	.endef
-	.section	.text,"xr",discard,"??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEAA@AEB_J@Z"
-	.globl	"??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEAA@AEB_J@Z"
-	.p2align	4, 0x90
-"??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEAA@AEB_J@Z":
-.Lfunc_begin8:
-	.cv_func_id 8
-	.cv_loc	8 2 98 0
-.seh_proc "??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEAA@AEB_J@Z"
-	subq	$16, %rsp
-	.seh_stackalloc 16
-	.seh_endprologue
-.Ltmp63:
-	movq	%rdx, 8(%rsp)
-	movq	%rcx, (%rsp)
-	movq	(%rsp), %rax
-	movq	8(%rsp), %rcx
-	movq	(%rcx), %rcx
-	movq	%rcx, (%rax)
-	addq	$16, %rsp
-	retq
-.Ltmp64:
-.Lfunc_end8:
-	.seh_endproc
-
-	.def	"??0?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@@Z";
-	.scl	2;
-	.type	32;
-	.endef
-	.section	.text,"xr",discard,"??0?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@@Z"
-	.globl	"??0?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@@Z"
-	.p2align	4, 0x90
-"??0?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@@Z":
-.Lfunc_begin9:
-	.cv_func_id 9
-	.cv_loc	9 2 203 0
-.seh_proc "??0?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@@Z"
-	subq	$16, %rsp
-	.seh_stackalloc 16
-	.seh_endprologue
-.Ltmp65:
-	movq	%rdx, 8(%rsp)
-	movq	%rcx, (%rsp)
-	movq	(%rsp), %rax
-	movq	8(%rsp), %rcx
-	movq	(%rcx), %rcx
-	movq	%rcx, (%rax)
-	addq	$16, %rsp
-	retq
-.Ltmp66:
-.Lfunc_end9:
-	.seh_endproc
-
-	.def	"?count@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEBA_JXZ";
-	.scl	2;
-	.type	32;
-	.endef
-	.section	.text,"xr",discard,"?count@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEBA_JXZ"
-	.globl	"?count@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEBA_JXZ"
-	.p2align	4, 0x90
-"?count@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEBA_JXZ":
-.Lfunc_begin10:
-	.cv_func_id 10
-	.cv_loc	10 2 108 0
-.seh_proc "?count@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEBA_JXZ"
-	pushq	%rax
-	.seh_stackalloc 8
-	.seh_endprologue
-.Ltmp67:
-	movq	%rcx, (%rsp)
-	movq	(%rsp), %rax
-	.cv_loc	10 2 109 0
-	movq	(%rax), %rax
-	popq	%rcx
-	retq
-.Ltmp68:
-.Lfunc_end10:
-	.seh_endproc
-
-	.def	"??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEAA@AEB_J@Z";
-	.scl	2;
-	.type	32;
-	.endef
-	.section	.text,"xr",discard,"??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEAA@AEB_J@Z"
-	.globl	"??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEAA@AEB_J@Z"
-	.p2align	4, 0x90
-"??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEAA@AEB_J@Z":
-.Lfunc_begin11:
-	.cv_func_id 11
-	.cv_loc	11 2 98 0
-.seh_proc "??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEAA@AEB_J@Z"
-	subq	$16, %rsp
-	.seh_stackalloc 16
-	.seh_endprologue
-.Ltmp69:
-	movq	%rdx, 8(%rsp)
-	movq	%rcx, (%rsp)
-	movq	(%rsp), %rax
-	movq	8(%rsp), %rcx
-	movq	(%rcx), %rcx
-	movq	%rcx, (%rax)
-	addq	$16, %rsp
-	retq
-.Ltmp70:
-.Lfunc_end11:
-	.seh_endproc
-
-	.def	"??$?G_JU?$ratio@$00$0DLJKMKAA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV201@0@Z";
-	.scl	2;
-	.type	32;
-	.endef
-	.section	.text,"xr",discard,"??$?G_JU?$ratio@$00$0DLJKMKAA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV201@0@Z"
-	.globl	"??$?G_JU?$ratio@$00$0DLJKMKAA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV201@0@Z"
-	.p2align	4, 0x90
-"??$?G_JU?$ratio@$00$0DLJKMKAA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV201@0@Z":
-.Lfunc_begin12:
-	.cv_func_id 12
-	.cv_loc	12 2 289 0
-.seh_proc "??$?G_JU?$ratio@$00$0DLJKMKAA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV201@0@Z"
-	subq	$120, %rsp
-	.seh_stackalloc 120
-	.seh_endprologue
-	movq	%rcx, 40(%rsp)
-	movq	%rcx, %rax
-	movq	%rax, 56(%rsp)
-	movq	__security_cookie(%rip), %rax
-	xorq	%rsp, %rax
-	movq	%rax, 112(%rsp)
-.Ltmp71:
-	movq	%rcx, 80(%rsp)
-	movq	%r8, 72(%rsp)
-	movq	%rdx, 64(%rsp)
-	.cv_loc	12 2 291 0
-	movq	64(%rsp), %rax
-	movq	(%rax), %rax
-	movq	%rax, 96(%rsp)
-	leaq	96(%rsp), %rcx
-	callq	"?count@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEBA_JXZ"
-	movq	%rax, 48(%rsp)
-	movq	72(%rsp), %rax
-	movq	(%rax), %rax
-	movq	%rax, 88(%rsp)
-	leaq	88(%rsp), %rcx
-	callq	"?count@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEBA_JXZ"
-	movq	40(%rsp), %rcx
-	movq	%rax, %rdx
-	movq	48(%rsp), %rax
-	subq	%rdx, %rax
-	movq	%rax, 104(%rsp)
-	leaq	104(%rsp), %rdx
-	callq	"??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEAA@AEB_J@Z"
-	movq	112(%rsp), %rcx
-	xorq	%rsp, %rcx
-	callq	__security_check_cookie
-	movq	56(%rsp), %rax
-	addq	$120, %rsp
-	retq
-.Ltmp72:
-.Lfunc_end12:
-	.seh_endproc
-
-	.def	"?time_since_epoch@?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEBA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@XZ";
-	.scl	2;
-	.type	32;
-	.endef
-	.section	.text,"xr",discard,"?time_since_epoch@?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEBA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@XZ"
-	.globl	"?time_since_epoch@?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEBA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@XZ"
-	.p2align	4, 0x90
-"?time_since_epoch@?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEBA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@XZ":
-.Lfunc_begin13:
-	.cv_func_id 13
-	.cv_loc	13 2 210 0
-.seh_proc "?time_since_epoch@?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEBA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@XZ"
-	subq	$16, %rsp
-	.seh_stackalloc 16
-	.seh_endprologue
-	movq	%rdx, %rax
-.Ltmp73:
-	movq	%rdx, 8(%rsp)
-	movq	%rcx, (%rsp)
-	movq	(%rsp), %rcx
-	.cv_loc	13 2 211 0
-	movq	(%rcx), %rcx
-	movq	%rcx, (%rdx)
-	addq	$16, %rsp
-	retq
-.Ltmp74:
-.Lfunc_end13:
+.Ltmp159:
+.Lfunc_end3:
 	.seh_endproc
 
 	.section	.drectve,"yni"
@@ -1070,17 +951,17 @@ main:
 	.p2align	2, 0x0
 	.long	4
 	.long	241
-	.long	.Ltmp76-.Ltmp75
-.Ltmp75:
-	.short	.Ltmp78-.Ltmp77
-.Ltmp77:
+	.long	.Ltmp161-.Ltmp160
+.Ltmp160:
+	.short	.Ltmp163-.Ltmp162
+.Ltmp162:
 	.short	4353
 	.long	0
 	.asciz	"C:\\Users\\\320\230\320\262\320\260\320\275\\Desktop\\IntelIntrinsics\\Intrinsics\\main.asm"
 	.p2align	2, 0x0
-.Ltmp78:
-	.short	.Ltmp80-.Ltmp79
-.Ltmp79:
+.Ltmp163:
+	.short	.Ltmp165-.Ltmp164
+.Ltmp164:
 	.short	4412
 	.long	1
 	.short	208
@@ -1094,14 +975,38 @@ main:
 	.short	0
 	.asciz	"clang based Intel(R) oneAPI DPC++/C++ Compiler 2024.2.1 (2024.2.1.20240711)"
 	.p2align	2, 0x0
-.Ltmp80:
-.Ltmp76:
+.Ltmp165:
+.Ltmp161:
 	.p2align	2, 0x0
+	.long	246
+	.long	.Ltmp167-.Ltmp166
+.Ltmp166:
+	.long	0
+
+
+	.long	4147
+	.cv_filechecksumoffset	2
+	.long	678
+
+
+	.long	4152
+	.cv_filechecksumoffset	1
+	.long	10
+
+
+	.long	4155
+	.cv_filechecksumoffset	1
+	.long	62
+.Ltmp167:
+	.p2align	2, 0x0
+	.section	.debug$S,"dr",associative,"?addVectors@@YAXPEBN0PEANH@Z"
+	.p2align	2, 0x0
+	.long	4
 	.long	241
-	.long	.Ltmp82-.Ltmp81
-.Ltmp81:
-	.short	.Ltmp84-.Ltmp83
-.Ltmp83:
+	.long	.Ltmp169-.Ltmp168
+.Ltmp168:
+	.short	.Ltmp171-.Ltmp170
+.Ltmp170:
 	.short	4423
 	.long	0
 	.long	0
@@ -1109,160 +1014,100 @@ main:
 	.long	.Lfunc_end0-"?addVectors@@YAXPEBN0PEANH@Z"
 	.long	0
 	.long	0
-	.long	4100
+	.long	4152
 	.secrel32	"?addVectors@@YAXPEBN0PEANH@Z"
 	.secidx	"?addVectors@@YAXPEBN0PEANH@Z"
-	.byte	193
+	.byte	128
 	.asciz	"addVectors"
 	.p2align	2, 0x0
-.Ltmp84:
-	.short	.Ltmp86-.Ltmp85
-.Ltmp85:
+.Ltmp171:
+	.short	.Ltmp173-.Ltmp172
+.Ltmp172:
 	.short	4114
-	.long	440
 	.long	0
 	.long	0
 	.long	0
+	.long	48
 	.long	0
 	.short	0
-	.long	147456
+	.long	1130496
 	.p2align	2, 0x0
-.Ltmp86:
-	.short	.Ltmp88-.Ltmp87
-.Ltmp87:
+.Ltmp173:
+	.short	.Ltmp175-.Ltmp174
+.Ltmp174:
 	.short	4414
-	.long	4097
+	.long	4149
 	.short	1
 	.asciz	"v1"
 	.p2align	2, 0x0
-.Ltmp88:
-	.cv_def_range	 .Ltmp0 .Ltmp13, reg_rel, 335, 0, 176
-	.short	.Ltmp90-.Ltmp89
-.Ltmp89:
+.Ltmp175:
+	.cv_def_range	 .Lfunc_begin0 .Lfunc_end0, reg, 330
+	.short	.Ltmp177-.Ltmp176
+.Ltmp176:
 	.short	4414
-	.long	4097
+	.long	4149
 	.short	1
 	.asciz	"v2"
 	.p2align	2, 0x0
-.Ltmp90:
-	.cv_def_range	 .Ltmp0 .Ltmp13, reg_rel, 335, 0, 184
-	.short	.Ltmp92-.Ltmp91
-.Ltmp91:
+.Ltmp177:
+	.cv_def_range	 .Lfunc_begin0 .Lfunc_end0, reg, 331
+	.short	.Ltmp179-.Ltmp178
+.Ltmp178:
 	.short	4414
 	.long	1601
 	.short	1
 	.asciz	"out"
 	.p2align	2, 0x0
-.Ltmp92:
-	.cv_def_range	 .Ltmp0 .Ltmp13, reg_rel, 335, 0, 192
-	.short	.Ltmp94-.Ltmp93
-.Ltmp93:
+.Ltmp179:
+	.cv_def_range	 .Lfunc_begin0 .Lfunc_end0, reg, 336
+	.short	.Ltmp181-.Ltmp180
+.Ltmp180:
 	.short	4414
 	.long	116
 	.short	1
 	.asciz	"size"
 	.p2align	2, 0x0
-.Ltmp94:
-	.cv_def_range	 .Ltmp0 .Ltmp13, reg_rel, 335, 0, 204
-	.short	.Ltmp96-.Ltmp95
-.Ltmp95:
-	.short	4414
+.Ltmp181:
+	.cv_def_range	 .Lfunc_begin0 .Ltmp32, reg, 361
+	.short	.Ltmp183-.Ltmp182
+.Ltmp182:
+	.short	4359
 	.long	116
-	.short	0
+	.byte	0x00, 0x00
 	.asciz	"i"
 	.p2align	2, 0x0
-.Ltmp96:
-	.cv_def_range	 .Ltmp0 .Ltmp13, frame_ptr_rel, 172
-	.short	.Ltmp98-.Ltmp97
-.Ltmp97:
-	.short	4355
-	.long	0
-	.long	0
-	.long	.Ltmp3-.Ltmp2
-	.secrel32	.Ltmp2
-	.secidx	.Lfunc_begin0
-	.byte	0
-	.p2align	2, 0x0
-.Ltmp98:
-	.short	.Ltmp100-.Ltmp99
-.Ltmp99:
+.Ltmp183:
+	.short	.Ltmp185-.Ltmp184
+.Ltmp184:
 	.short	4414
-	.long	4101
-	.short	0
-	.asciz	"x0"
-	.p2align	2, 0x0
-.Ltmp100:
-	.cv_def_range	 .Ltmp2 .Ltmp3, frame_ptr_rel, 128
-	.short	.Ltmp102-.Ltmp101
-.Ltmp101:
-	.short	4414
-	.long	4101
-	.short	0
-	.asciz	"x1"
-	.p2align	2, 0x0
-.Ltmp102:
-	.cv_def_range	 .Ltmp2 .Ltmp3, frame_ptr_rel, 96
-	.short	.Ltmp104-.Ltmp103
-.Ltmp103:
-	.short	4414
-	.long	4101
+	.long	4156
 	.short	0
 	.asciz	"x2"
 	.p2align	2, 0x0
-.Ltmp104:
-	.cv_def_range	 .Ltmp2 .Ltmp3, frame_ptr_rel, 64
-	.short	2
-	.short	6
-	.short	.Ltmp106-.Ltmp105
-.Ltmp105:
-	.short	4355
-	.long	0
-	.long	0
-	.long	.Ltmp7-.Ltmp6
-	.secrel32	.Ltmp6
-	.secidx	.Lfunc_begin0
-	.byte	0
-	.p2align	2, 0x0
-.Ltmp106:
-	.short	.Ltmp108-.Ltmp107
-.Ltmp107:
+.Ltmp185:
+	.cv_def_range	 .Ltmp10 .Ltmp12, reg, 368
+	.short	.Ltmp187-.Ltmp186
+.Ltmp186:
 	.short	4414
-	.long	4102
-	.short	0
-	.asciz	"x0"
-	.p2align	2, 0x0
-.Ltmp108:
-	.cv_def_range	 .Ltmp6 .Ltmp7, frame_ptr_rel, 48
-	.short	.Ltmp110-.Ltmp109
-.Ltmp109:
-	.short	4414
-	.long	4102
-	.short	0
-	.asciz	"x1"
-	.p2align	2, 0x0
-.Ltmp110:
-	.cv_def_range	 .Ltmp6 .Ltmp7, frame_ptr_rel, 32
-	.short	.Ltmp112-.Ltmp111
-.Ltmp111:
-	.short	4414
-	.long	4102
+	.long	4157
 	.short	0
 	.asciz	"x2"
 	.p2align	2, 0x0
-.Ltmp112:
-	.cv_def_range	 .Ltmp6 .Ltmp7, frame_ptr_rel, 16
-	.short	2
-	.short	6
+.Ltmp187:
+	.cv_def_range	 .Ltmp26 .Ltmp28, reg, 154
 	.short	2
 	.short	4431
-.Ltmp82:
+.Ltmp169:
 	.p2align	2, 0x0
 	.cv_linetable	0, "?addVectors@@YAXPEBN0PEANH@Z", .Lfunc_end0
+	.section	.debug$S,"dr",associative,"?mulVectors@@YAXPEBN0PEANH@Z"
+	.p2align	2, 0x0
+	.long	4
 	.long	241
-	.long	.Ltmp114-.Ltmp113
-.Ltmp113:
-	.short	.Ltmp116-.Ltmp115
-.Ltmp115:
+	.long	.Ltmp189-.Ltmp188
+.Ltmp188:
+	.short	.Ltmp191-.Ltmp190
+.Ltmp190:
 	.short	4423
 	.long	0
 	.long	0
@@ -1270,160 +1115,100 @@ main:
 	.long	.Lfunc_end1-"?mulVectors@@YAXPEBN0PEANH@Z"
 	.long	0
 	.long	0
-	.long	4103
+	.long	4158
 	.secrel32	"?mulVectors@@YAXPEBN0PEANH@Z"
 	.secidx	"?mulVectors@@YAXPEBN0PEANH@Z"
-	.byte	193
+	.byte	128
 	.asciz	"mulVectors"
 	.p2align	2, 0x0
-.Ltmp116:
-	.short	.Ltmp118-.Ltmp117
-.Ltmp117:
+.Ltmp191:
+	.short	.Ltmp193-.Ltmp192
+.Ltmp192:
 	.short	4114
-	.long	440
 	.long	0
 	.long	0
 	.long	0
+	.long	48
 	.long	0
 	.short	0
-	.long	147456
+	.long	1130496
 	.p2align	2, 0x0
-.Ltmp118:
-	.short	.Ltmp120-.Ltmp119
-.Ltmp119:
+.Ltmp193:
+	.short	.Ltmp195-.Ltmp194
+.Ltmp194:
 	.short	4414
-	.long	4097
+	.long	4149
 	.short	1
 	.asciz	"v1"
 	.p2align	2, 0x0
-.Ltmp120:
-	.cv_def_range	 .Ltmp14 .Ltmp27, reg_rel, 335, 0, 168
-	.short	.Ltmp122-.Ltmp121
-.Ltmp121:
+.Ltmp195:
+	.cv_def_range	 .Lfunc_begin1 .Lfunc_end1, reg, 330
+	.short	.Ltmp197-.Ltmp196
+.Ltmp196:
 	.short	4414
-	.long	4097
+	.long	4149
 	.short	1
 	.asciz	"v2"
 	.p2align	2, 0x0
-.Ltmp122:
-	.cv_def_range	 .Ltmp14 .Ltmp27, reg_rel, 335, 0, 176
-	.short	.Ltmp124-.Ltmp123
-.Ltmp123:
+.Ltmp197:
+	.cv_def_range	 .Lfunc_begin1 .Lfunc_end1, reg, 331
+	.short	.Ltmp199-.Ltmp198
+.Ltmp198:
 	.short	4414
 	.long	1601
 	.short	1
 	.asciz	"out"
 	.p2align	2, 0x0
-.Ltmp124:
-	.cv_def_range	 .Ltmp14 .Ltmp27, reg_rel, 335, 0, 184
-	.short	.Ltmp126-.Ltmp125
-.Ltmp125:
+.Ltmp199:
+	.cv_def_range	 .Lfunc_begin1 .Lfunc_end1, reg, 336
+	.short	.Ltmp201-.Ltmp200
+.Ltmp200:
 	.short	4414
 	.long	116
 	.short	1
 	.asciz	"size"
 	.p2align	2, 0x0
-.Ltmp126:
-	.cv_def_range	 .Ltmp14 .Ltmp27, reg_rel, 335, 0, 196
-	.short	.Ltmp128-.Ltmp127
-.Ltmp127:
-	.short	4414
+.Ltmp201:
+	.cv_def_range	 .Lfunc_begin1 .Ltmp75, reg, 361
+	.short	.Ltmp203-.Ltmp202
+.Ltmp202:
+	.short	4359
 	.long	116
-	.short	0
+	.byte	0x00, 0x00
 	.asciz	"i"
 	.p2align	2, 0x0
-.Ltmp128:
-	.cv_def_range	 .Ltmp14 .Ltmp27, frame_ptr_rel, 164
-	.short	.Ltmp130-.Ltmp129
-.Ltmp129:
-	.short	4355
-	.long	0
-	.long	0
-	.long	.Ltmp17-.Ltmp16
-	.secrel32	.Ltmp16
-	.secidx	.Lfunc_begin1
-	.byte	0
-	.p2align	2, 0x0
-.Ltmp130:
-	.short	.Ltmp132-.Ltmp131
-.Ltmp131:
+.Ltmp203:
+	.short	.Ltmp205-.Ltmp204
+.Ltmp204:
 	.short	4414
-	.long	4101
-	.short	0
-	.asciz	"x0"
-	.p2align	2, 0x0
-.Ltmp132:
-	.cv_def_range	 .Ltmp16 .Ltmp17, frame_ptr_rel, 128
-	.short	.Ltmp134-.Ltmp133
-.Ltmp133:
-	.short	4414
-	.long	4101
-	.short	0
-	.asciz	"x1"
-	.p2align	2, 0x0
-.Ltmp134:
-	.cv_def_range	 .Ltmp16 .Ltmp17, frame_ptr_rel, 96
-	.short	.Ltmp136-.Ltmp135
-.Ltmp135:
-	.short	4414
-	.long	4101
+	.long	4156
 	.short	0
 	.asciz	"x2"
 	.p2align	2, 0x0
-.Ltmp136:
-	.cv_def_range	 .Ltmp16 .Ltmp17, frame_ptr_rel, 64
-	.short	2
-	.short	6
-	.short	.Ltmp138-.Ltmp137
-.Ltmp137:
-	.short	4355
-	.long	0
-	.long	0
-	.long	.Ltmp21-.Ltmp20
-	.secrel32	.Ltmp20
-	.secidx	.Lfunc_begin1
-	.byte	0
-	.p2align	2, 0x0
-.Ltmp138:
-	.short	.Ltmp140-.Ltmp139
-.Ltmp139:
+.Ltmp205:
+	.cv_def_range	 .Ltmp53 .Ltmp55, reg, 368
+	.short	.Ltmp207-.Ltmp206
+.Ltmp206:
 	.short	4414
-	.long	4102
-	.short	0
-	.asciz	"x0"
-	.p2align	2, 0x0
-.Ltmp140:
-	.cv_def_range	 .Ltmp20 .Ltmp21, frame_ptr_rel, 48
-	.short	.Ltmp142-.Ltmp141
-.Ltmp141:
-	.short	4414
-	.long	4102
-	.short	0
-	.asciz	"x1"
-	.p2align	2, 0x0
-.Ltmp142:
-	.cv_def_range	 .Ltmp20 .Ltmp21, frame_ptr_rel, 32
-	.short	.Ltmp144-.Ltmp143
-.Ltmp143:
-	.short	4414
-	.long	4102
+	.long	4157
 	.short	0
 	.asciz	"x2"
 	.p2align	2, 0x0
-.Ltmp144:
-	.cv_def_range	 .Ltmp20 .Ltmp21, frame_ptr_rel, 16
-	.short	2
-	.short	6
+.Ltmp207:
+	.cv_def_range	 .Ltmp69 .Ltmp71, reg, 154
 	.short	2
 	.short	4431
-.Ltmp114:
+.Ltmp189:
 	.p2align	2, 0x0
 	.cv_linetable	1, "?mulVectors@@YAXPEBN0PEANH@Z", .Lfunc_end1
+	.section	.debug$S,"dr",associative,"?scalarMult@@YANPEBN0H@Z"
+	.p2align	2, 0x0
+	.long	4
 	.long	241
-	.long	.Ltmp146-.Ltmp145
-.Ltmp145:
-	.short	.Ltmp148-.Ltmp147
-.Ltmp147:
+	.long	.Ltmp209-.Ltmp208
+.Ltmp208:
+	.short	.Ltmp211-.Ltmp210
+.Ltmp210:
 	.short	4423
 	.long	0
 	.long	0
@@ -1431,151 +1216,103 @@ main:
 	.long	.Lfunc_end2-"?scalarMult@@YANPEBN0H@Z"
 	.long	0
 	.long	0
-	.long	4106
+	.long	4155
 	.secrel32	"?scalarMult@@YANPEBN0H@Z"
 	.secidx	"?scalarMult@@YANPEBN0H@Z"
-	.byte	193
+	.byte	128
 	.asciz	"scalarMult"
 	.p2align	2, 0x0
-.Ltmp148:
-	.short	.Ltmp150-.Ltmp149
-.Ltmp149:
+.Ltmp211:
+	.short	.Ltmp213-.Ltmp212
+.Ltmp212:
 	.short	4114
-	.long	440
 	.long	0
 	.long	0
 	.long	0
+	.long	16
 	.long	0
 	.short	0
-	.long	151808
+	.long	1130496
 	.p2align	2, 0x0
-.Ltmp150:
-	.short	.Ltmp152-.Ltmp151
-.Ltmp151:
+.Ltmp213:
+	.short	.Ltmp215-.Ltmp214
+.Ltmp214:
 	.short	4414
-	.long	4097
+	.long	4149
 	.short	1
 	.asciz	"v1"
 	.p2align	2, 0x0
-.Ltmp152:
-	.cv_def_range	 .Ltmp28 .Ltmp40, reg_rel, 335, 0, 176
-	.short	.Ltmp154-.Ltmp153
-.Ltmp153:
+.Ltmp215:
+	.cv_def_range	 .Lfunc_begin2 .Lfunc_end2, reg, 330
+	.short	.Ltmp217-.Ltmp216
+.Ltmp216:
 	.short	4414
-	.long	4097
+	.long	4149
 	.short	1
 	.asciz	"v2"
 	.p2align	2, 0x0
-.Ltmp154:
-	.cv_def_range	 .Ltmp28 .Ltmp40, reg_rel, 335, 0, 184
-	.short	.Ltmp156-.Ltmp155
-.Ltmp155:
+.Ltmp217:
+	.cv_def_range	 .Lfunc_begin2 .Lfunc_end2, reg, 331
+	.short	.Ltmp219-.Ltmp218
+.Ltmp218:
 	.short	4414
 	.long	116
 	.short	1
 	.asciz	"size"
 	.p2align	2, 0x0
-.Ltmp156:
-	.cv_def_range	 .Ltmp28 .Ltmp40, reg_rel, 335, 0, 196
-	.short	.Ltmp158-.Ltmp157
-.Ltmp157:
-	.short	4414
-	.long	116
-	.short	0
-	.asciz	"i"
-	.p2align	2, 0x0
-.Ltmp158:
-	.cv_def_range	 .Ltmp28 .Ltmp40, frame_ptr_rel, 172
-	.short	.Ltmp160-.Ltmp159
-.Ltmp159:
+.Ltmp219:
+	.cv_def_range	 .Lfunc_begin2 .Ltmp112, reg, 360
+	.short	.Ltmp221-.Ltmp220
+.Ltmp220:
 	.short	4414
 	.long	65
 	.short	0
 	.asciz	"res"
 	.p2align	2, 0x0
-.Ltmp160:
-	.cv_def_range	 .Ltmp28 .Ltmp40, frame_ptr_rel, 160
-	.short	.Ltmp162-.Ltmp161
-.Ltmp161:
+.Ltmp221:
+	.cv_def_range	 .Ltmp109 .Ltmp123, reg, 154
+	.short	.Ltmp223-.Ltmp222
+.Ltmp222:
+	.short	4359
+	.long	116
+	.byte	0x00, 0x00
+	.asciz	"i"
+	.p2align	2, 0x0
+.Ltmp223:
+	.short	.Ltmp225-.Ltmp224
+.Ltmp224:
 	.short	4414
-	.long	4101
+	.long	4156
 	.short	0
 	.asciz	"x3"
 	.p2align	2, 0x0
-.Ltmp162:
-	.cv_def_range	 .Ltmp28 .Ltmp40, frame_ptr_rel, 128
-	.short	.Ltmp164-.Ltmp163
-.Ltmp163:
+.Ltmp225:
+	.cv_def_range	 .Ltmp89 .Ltmp91 .Ltmp107 .Ltmp107, reg, 154
+	.cv_def_range	 .Ltmp91 .Ltmp92 .Ltmp96 .Ltmp97 .Ltmp99 .Ltmp106, reg, 368
+	.cv_def_range	 .Ltmp92 .Ltmp96 .Ltmp97 .Ltmp98, reg, 369
+	.cv_def_range	 .Ltmp98 .Ltmp99, reg, 370
+	.short	.Ltmp227-.Ltmp226
+.Ltmp226:
 	.short	4414
-	.long	4101
+	.long	4156
 	.short	0
 	.asciz	"horizontal_sum"
 	.p2align	2, 0x0
-.Ltmp164:
-	.cv_def_range	 .Ltmp28 .Ltmp40, frame_ptr_rel, 384
-	.short	.Ltmp166-.Ltmp165
-.Ltmp165:
-	.short	4355
-	.long	0
-	.long	0
-	.long	.Ltmp31-.Ltmp30
-	.secrel32	.Ltmp30
-	.secidx	.Lfunc_begin2
-	.byte	0
-	.p2align	2, 0x0
-.Ltmp166:
-	.short	.Ltmp168-.Ltmp167
-.Ltmp167:
-	.short	4414
-	.long	4101
-	.short	0
-	.asciz	"x0"
-	.p2align	2, 0x0
-.Ltmp168:
-	.cv_def_range	 .Ltmp30 .Ltmp31, frame_ptr_rel, 96
-	.short	.Ltmp170-.Ltmp169
-.Ltmp169:
-	.short	4414
-	.long	4101
-	.short	0
-	.asciz	"x1"
-	.p2align	2, 0x0
-.Ltmp170:
-	.cv_def_range	 .Ltmp30 .Ltmp31, frame_ptr_rel, 64
-	.short	2
-	.short	6
-	.short	.Ltmp172-.Ltmp171
-.Ltmp171:
-	.short	4355
-	.long	0
-	.long	0
-	.long	.Ltmp35-.Ltmp33
-	.secrel32	.Ltmp33
-	.secidx	.Lfunc_begin2
-	.byte	0
-	.p2align	2, 0x0
-.Ltmp172:
-	.short	.Ltmp174-.Ltmp173
-.Ltmp173:
-	.short	4414
-	.long	116
-	.short	0
-	.asciz	"j"
-	.p2align	2, 0x0
-.Ltmp174:
-	.cv_def_range	 .Ltmp33 .Ltmp35, frame_ptr_rel, 60
-	.short	2
-	.short	6
+.Ltmp227:
+	.cv_def_range	 .Ltmp107 .Ltmp108, reg, 368
 	.short	2
 	.short	4431
-.Ltmp146:
+.Ltmp209:
 	.p2align	2, 0x0
 	.cv_linetable	2, "?scalarMult@@YANPEBN0H@Z", .Lfunc_end2
+	.section	.debug$S,"dr",associative,main
+	.p2align	2, 0x0
+	.long	4
 	.long	241
-	.long	.Ltmp176-.Ltmp175
-.Ltmp175:
-	.short	.Ltmp178-.Ltmp177
-.Ltmp177:
+	.long	.Ltmp229-.Ltmp228
+.Ltmp228:
+	.short	.Ltmp231-.Ltmp230
+.Ltmp230:
 	.short	4423
 	.long	0
 	.long	0
@@ -1583,999 +1320,1142 @@ main:
 	.long	.Lfunc_end3-main
 	.long	0
 	.long	0
-	.long	4109
+	.long	4160
 	.secrel32	main
 	.secidx	main
-	.byte	192
+	.byte	128
 	.asciz	"main"
 	.p2align	2, 0x0
-.Ltmp178:
-	.short	.Ltmp180-.Ltmp179
-.Ltmp179:
+.Ltmp231:
+	.short	.Ltmp233-.Ltmp232
+.Ltmp232:
 	.short	4114
-	.long	104
+	.long	56
 	.long	0
 	.long	0
-	.long	0
+	.long	32
 	.long	0
 	.short	0
-	.long	86272
+	.long	1134848
 	.p2align	2, 0x0
-.Ltmp180:
-	.short	.Ltmp182-.Ltmp181
-.Ltmp181:
+.Ltmp233:
+	.short	.Ltmp235-.Ltmp234
+.Ltmp234:
+	.short	4456
+	.long	3
+	.long	4147
+	.long	4152
+	.long	4155
+	.p2align	2, 0x0
+.Ltmp235:
+	.short	.Ltmp237-.Ltmp236
+.Ltmp236:
 	.short	4414
 	.long	1601
 	.short	0
 	.asciz	"a"
 	.p2align	2, 0x0
-.Ltmp182:
-	.cv_def_range	 .Ltmp41 .Ltmp48, frame_ptr_rel, 56
-	.short	.Ltmp184-.Ltmp183
-.Ltmp183:
+.Ltmp237:
+	.cv_def_range	 .Ltmp128 .Ltmp158, reg, 332
+	.short	.Ltmp239-.Ltmp238
+.Ltmp238:
 	.short	4414
 	.long	1601
 	.short	0
 	.asciz	"b"
 	.p2align	2, 0x0
-.Ltmp184:
-	.cv_def_range	 .Ltmp41 .Ltmp48, frame_ptr_rel, 48
-	.short	.Ltmp186-.Ltmp185
-.Ltmp185:
+.Ltmp239:
+	.cv_def_range	 .Ltmp131 .Ltmp157, reg, 333
+	.short	.Ltmp241-.Ltmp240
+.Ltmp240:
 	.short	4414
 	.long	1601
 	.short	0
 	.asciz	"c"
 	.p2align	2, 0x0
-.Ltmp186:
-	.cv_def_range	 .Ltmp41 .Ltmp48, frame_ptr_rel, 40
-	.short	.Ltmp188-.Ltmp187
-.Ltmp187:
+.Ltmp241:
+	.cv_def_range	 .Ltmp134 .Ltmp156, reg, 329
+	.short	.Ltmp243-.Ltmp242
+.Ltmp242:
 	.short	4414
-	.long	4128
-	.short	0
+	.long	4121
+	.short	256
 	.asciz	"start"
 	.p2align	2, 0x0
-.Ltmp188:
-	.cv_def_range	 .Ltmp41 .Ltmp48, frame_ptr_rel, 88
-	.short	.Ltmp190-.Ltmp189
-.Ltmp189:
+.Ltmp243:
+	.short	.Ltmp245-.Ltmp244
+.Ltmp244:
 	.short	4414
-	.long	4128
-	.short	0
+	.long	4121
+	.short	256
 	.asciz	"stop"
 	.p2align	2, 0x0
-.Ltmp190:
-	.cv_def_range	 .Ltmp41 .Ltmp48, frame_ptr_rel, 80
-	.short	.Ltmp192-.Ltmp191
-.Ltmp191:
+.Ltmp245:
+	.short	.Ltmp247-.Ltmp246
+.Ltmp246:
 	.short	4414
-	.long	4179
-	.short	0
+	.long	4180
+	.short	256
 	.asciz	"res"
 	.p2align	2, 0x0
-.Ltmp192:
-	.cv_def_range	 .Ltmp41 .Ltmp48, frame_ptr_rel, 72
-	.short	.Ltmp194-.Ltmp193
-.Ltmp193:
-	.short	4446
-	.secrel32	.Ltmp42
-	.secidx	.Ltmp42
-	.short	.Ltmp43-.Ltmp42
-	.long	65
+.Ltmp247:
+	.short	.Ltmp249-.Ltmp248
+.Ltmp248:
+	.short	4429
+	.long	0
+	.long	0
+	.long	4147
+	.cv_inline_linetable	4 2 678 .Lfunc_begin3 .Lfunc_end3
 	.p2align	2, 0x0
-.Ltmp194:
-	.short	.Ltmp196-.Ltmp195
-.Ltmp195:
-	.short	4446
-	.secrel32	.Ltmp44
-	.secidx	.Ltmp44
-	.short	.Ltmp45-.Ltmp44
-	.long	65
-	.p2align	2, 0x0
-.Ltmp196:
-	.short	.Ltmp198-.Ltmp197
-.Ltmp197:
-	.short	4446
-	.secrel32	.Ltmp46
-	.secidx	.Ltmp46
-	.short	.Ltmp47-.Ltmp46
-	.long	65
-	.p2align	2, 0x0
-.Ltmp198:
-	.short	2
-	.short	4431
-.Ltmp176:
-	.p2align	2, 0x0
-	.cv_linetable	3, main, .Lfunc_end3
-	.section	.debug$S,"dr",associative,"?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ"
-	.p2align	2, 0x0
-	.long	4
-	.long	241
-	.long	.Ltmp200-.Ltmp199
-.Ltmp199:
-	.short	.Ltmp202-.Ltmp201
-.Ltmp201:
-	.short	4423
-	.long	0
-	.long	0
-	.long	0
-	.long	.Lfunc_end4-"?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ"
-	.long	0
-	.long	0
-	.long	4184
-	.secrel32	"?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ"
-	.secidx	"?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ"
-	.byte	192
-	.asciz	"std::chrono::steady_clock::now"
-	.p2align	2, 0x0
-.Ltmp202:
-	.short	.Ltmp204-.Ltmp203
-.Ltmp203:
-	.short	4114
-	.long	184
-	.long	0
-	.long	0
-	.long	0
-	.long	0
-	.short	0
-	.long	86272
-	.p2align	2, 0x0
-.Ltmp204:
-	.short	.Ltmp206-.Ltmp205
-.Ltmp205:
+.Ltmp249:
+	.short	.Ltmp251-.Ltmp250
+.Ltmp250:
 	.short	4414
-	.long	4142
+	.long	4123
 	.short	0
 	.asciz	"_Freq"
 	.p2align	2, 0x0
-.Ltmp206:
-	.cv_def_range	 .Ltmp49 .Ltmp55, frame_ptr_rel, 112
-	.short	.Ltmp208-.Ltmp207
-.Ltmp207:
+.Ltmp251:
+	.cv_def_range	 .Ltmp135 .Ltmp136, reg, 328
+	.short	.Ltmp253-.Ltmp252
+.Ltmp252:
 	.short	4414
-	.long	4142
+	.long	4123
 	.short	0
 	.asciz	"_Ctr"
 	.p2align	2, 0x0
-.Ltmp208:
-	.cv_def_range	 .Ltmp49 .Ltmp55, frame_ptr_rel, 104
-	.short	.Ltmp210-.Ltmp209
-.Ltmp209:
-	.short	4414
-	.long	4142
-	.short	0
+.Ltmp253:
+	.cv_def_range	 .Ltmp136 .Ltmp137, reg, 328
+	.short	.Ltmp255-.Ltmp254
+.Ltmp254:
+	.short	4359
+	.long	4123
+	.byte	0x03, 0x80, 0x80, 0x96
+	.byte	0x98, 0x00
 	.asciz	"_TenMHz"
 	.p2align	2, 0x0
-.Ltmp210:
-	.cv_def_range	 .Ltmp49 .Ltmp55, frame_ptr_rel, 96
-	.short	.Ltmp212-.Ltmp211
-.Ltmp211:
-	.short	4414
-	.long	4142
-	.short	0
+.Ltmp255:
+	.short	.Ltmp257-.Ltmp256
+.Ltmp256:
+	.short	4359
+	.long	4123
+	.byte	0x03, 0x80, 0x00, 0x36
+	.byte	0x6e, 0x01
 	.asciz	"_TwentyFourMHz"
 	.p2align	2, 0x0
-.Ltmp212:
-	.cv_def_range	 .Ltmp49 .Ltmp55, frame_ptr_rel, 88
-	.short	.Ltmp214-.Ltmp213
-.Ltmp213:
-	.short	4355
-	.long	0
-	.long	0
-	.long	.Ltmp51-.Ltmp50
-	.secrel32	.Ltmp50
-	.secidx	.Lfunc_begin4
-	.byte	0
-	.p2align	2, 0x0
-.Ltmp214:
-	.short	.Ltmp216-.Ltmp215
-.Ltmp215:
-	.short	4414
-	.long	4142
-	.short	0
-	.asciz	"_Multiplier"
-	.p2align	2, 0x0
-.Ltmp216:
-	.cv_def_range	 .Ltmp50 .Ltmp51, frame_ptr_rel, 80
-	.short	2
-	.short	6
-	.short	.Ltmp218-.Ltmp217
-.Ltmp217:
-	.short	4355
-	.long	0
-	.long	0
-	.long	.Ltmp53-.Ltmp52
-	.secrel32	.Ltmp52
-	.secidx	.Lfunc_begin4
-	.byte	0
-	.p2align	2, 0x0
-.Ltmp218:
-	.short	.Ltmp220-.Ltmp219
-.Ltmp219:
-	.short	4414
-	.long	4142
-	.short	0
-	.asciz	"_Whole"
-	.p2align	2, 0x0
-.Ltmp220:
-	.cv_def_range	 .Ltmp52 .Ltmp53, frame_ptr_rel, 72
-	.short	.Ltmp222-.Ltmp221
-.Ltmp221:
-	.short	4414
-	.long	4142
-	.short	0
-	.asciz	"_Part"
-	.p2align	2, 0x0
-.Ltmp222:
-	.cv_def_range	 .Ltmp52 .Ltmp53, frame_ptr_rel, 64
-	.short	2
-	.short	6
-	.short	.Ltmp224-.Ltmp223
-.Ltmp223:
-	.short	4355
-	.long	0
-	.long	0
-	.long	.Ltmp54-.Ltmp53
-	.secrel32	.Ltmp53
-	.secidx	.Lfunc_begin4
-	.byte	0
-	.p2align	2, 0x0
-.Ltmp224:
-	.short	.Ltmp226-.Ltmp225
-.Ltmp225:
-	.short	4414
-	.long	4142
-	.short	0
-	.asciz	"_Whole"
-	.p2align	2, 0x0
-.Ltmp226:
-	.cv_def_range	 .Ltmp53 .Ltmp54, frame_ptr_rel, 56
-	.short	.Ltmp228-.Ltmp227
-.Ltmp227:
-	.short	4414
-	.long	4142
-	.short	0
-	.asciz	"_Part"
-	.p2align	2, 0x0
-.Ltmp228:
-	.cv_def_range	 .Ltmp53 .Ltmp54, frame_ptr_rel, 48
-	.short	2
-	.short	6
-	.short	2
-	.short	4431
-.Ltmp200:
-	.p2align	2, 0x0
-	.cv_linetable	4, "?now@steady_clock@chrono@std@@SA?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@23@XZ", .Lfunc_end4
-	.section	.debug$S,"dr",associative,"??$duration_cast@V?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@_JU?$ratio@$00$0DLJKMKAA@@3@$0A@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DOI@@std@@@01@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@@Z"
-	.p2align	2, 0x0
-	.long	4
-	.long	241
-	.long	.Ltmp230-.Ltmp229
-.Ltmp229:
-	.short	.Ltmp232-.Ltmp231
-.Ltmp231:
-	.short	4423
-	.long	0
-	.long	0
-	.long	0
-	.long	.Lfunc_end5-"??$duration_cast@V?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@_JU?$ratio@$00$0DLJKMKAA@@3@$0A@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DOI@@std@@@01@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@@Z"
-	.long	0
-	.long	0
-	.long	4187
-	.secrel32	"??$duration_cast@V?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@_JU?$ratio@$00$0DLJKMKAA@@3@$0A@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DOI@@std@@@01@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@@Z"
-	.secidx	"??$duration_cast@V?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@_JU?$ratio@$00$0DLJKMKAA@@3@$0A@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DOI@@std@@@01@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@@Z"
-	.byte	192
-	.asciz	"std::chrono::duration_cast<std::chrono::duration<long long,std::ratio<1,1000> >,long long,std::ratio<1,1000000000>,0>"
-	.p2align	2, 0x0
-.Ltmp232:
-	.short	.Ltmp234-.Ltmp233
-.Ltmp233:
-	.short	4114
-	.long	88
-	.long	0
-	.long	0
-	.long	0
-	.long	0
-	.short	0
-	.long	86272
-	.p2align	2, 0x0
-.Ltmp234:
-	.short	.Ltmp236-.Ltmp235
-.Ltmp235:
-	.short	4414
-	.long	4115
-	.short	1
-	.asciz	"_Dur"
-	.p2align	2, 0x0
-.Ltmp236:
-	.cv_def_range	 .Ltmp56 .Ltmp58, frame_ptr_rel, 56
-	.short	.Ltmp238-.Ltmp237
-.Ltmp237:
-	.short	4414
-	.long	4151
-	.short	0
-	.asciz	"_Num_is_one"
-	.p2align	2, 0x0
-.Ltmp238:
-	.cv_def_range	 .Ltmp56 .Ltmp58, frame_ptr_rel, 55
-	.short	.Ltmp240-.Ltmp239
-.Ltmp239:
-	.short	4414
-	.long	4151
-	.short	0
-	.asciz	"_Den_is_one"
-	.p2align	2, 0x0
-.Ltmp240:
-	.cv_def_range	 .Ltmp56 .Ltmp58, frame_ptr_rel, 54
-	.short	2
-	.short	4431
-.Ltmp230:
-	.p2align	2, 0x0
-	.cv_linetable	5, "??$duration_cast@V?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@_JU?$ratio@$00$0DLJKMKAA@@3@$0A@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DOI@@std@@@01@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@@Z", .Lfunc_end5
-	.section	.debug$S,"dr",associative,"??$?GUsteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@01@0@Z"
-	.p2align	2, 0x0
-	.long	4
-	.long	241
-	.long	.Ltmp242-.Ltmp241
-.Ltmp241:
-	.short	.Ltmp244-.Ltmp243
-.Ltmp243:
-	.short	4423
-	.long	0
-	.long	0
-	.long	0
-	.long	.Lfunc_end6-"??$?GUsteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@01@0@Z"
-	.long	0
-	.long	0
-	.long	4191
-	.secrel32	"??$?GUsteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@01@0@Z"
-	.secidx	"??$?GUsteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@01@0@Z"
-	.byte	192
-	.asciz	"std::chrono::operator-<std::chrono::steady_clock,std::chrono::duration<long long,std::ratio<1,1000000000> >,std::chrono::duration<long long,std::ratio<1,1000000000> > >"
-	.p2align	2, 0x0
-.Ltmp244:
-	.short	.Ltmp246-.Ltmp245
-.Ltmp245:
-	.short	4114
-	.long	104
-	.long	0
-	.long	0
-	.long	0
-	.long	0
-	.short	0
-	.long	86272
-	.p2align	2, 0x0
-.Ltmp246:
-	.short	.Ltmp248-.Ltmp247
-.Ltmp247:
-	.short	4414
-	.long	4188
-	.short	1
-	.asciz	"_Left"
-	.p2align	2, 0x0
-.Ltmp248:
-	.cv_def_range	 .Ltmp59 .Ltmp60, frame_ptr_rel, 56
-	.short	.Ltmp250-.Ltmp249
-.Ltmp249:
-	.short	4414
-	.long	4188
-	.short	1
-	.asciz	"_Right"
-	.p2align	2, 0x0
-.Ltmp250:
-	.cv_def_range	 .Ltmp59 .Ltmp60, frame_ptr_rel, 64
-	.short	2
-	.short	4431
-.Ltmp242:
-	.p2align	2, 0x0
-	.cv_linetable	6, "??$?GUsteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@01@0@Z", .Lfunc_end6
-	.section	.debug$S,"dr",associative,"?count@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEBA_JXZ"
-	.p2align	2, 0x0
-	.long	4
-	.long	241
-	.long	.Ltmp252-.Ltmp251
-.Ltmp251:
-	.short	.Ltmp254-.Ltmp253
-.Ltmp253:
-	.short	4423
-	.long	0
-	.long	0
-	.long	0
-	.long	.Lfunc_end7-"?count@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEBA_JXZ"
-	.long	0
-	.long	0
-	.long	4192
-	.secrel32	"?count@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEBA_JXZ"
-	.secidx	"?count@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEBA_JXZ"
-	.byte	192
-	.asciz	"std::chrono::duration<long long,std::ratio<1,1000> >::count"
-	.p2align	2, 0x0
-.Ltmp254:
-	.short	.Ltmp256-.Ltmp255
-.Ltmp255:
-	.short	4114
-	.long	8
-	.long	0
-	.long	0
-	.long	0
-	.long	0
-	.short	0
-	.long	81920
-	.p2align	2, 0x0
-.Ltmp256:
-	.short	.Ltmp258-.Ltmp257
 .Ltmp257:
-	.short	4414
-	.long	4193
-	.short	1
-	.asciz	"this"
-	.p2align	2, 0x0
+	.short	2
+	.short	4430
+	.short	.Ltmp259-.Ltmp258
 .Ltmp258:
-	.cv_def_range	 .Ltmp61 .Ltmp62, frame_ptr_rel, 0
-	.short	2
-	.short	4431
-.Ltmp252:
+	.short	4429
+	.long	0
+	.long	0
+	.long	4152
+	.cv_inline_linetable	5 1 10 .Lfunc_begin3 .Lfunc_end3
 	.p2align	2, 0x0
-	.cv_linetable	7, "?count@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEBA_JXZ", .Lfunc_end7
-	.section	.debug$S,"dr",associative,"??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEAA@AEB_J@Z"
-	.p2align	2, 0x0
-	.long	4
-	.long	241
-	.long	.Ltmp260-.Ltmp259
 .Ltmp259:
-	.short	.Ltmp262-.Ltmp261
-.Ltmp261:
-	.short	4423
-	.long	0
-	.long	0
-	.long	0
-	.long	.Lfunc_end8-"??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEAA@AEB_J@Z"
-	.long	0
-	.long	0
-	.long	4195
-	.secrel32	"??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEAA@AEB_J@Z"
-	.secidx	"??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEAA@AEB_J@Z"
-	.byte	192
-	.asciz	"std::chrono::duration<long long,std::ratio<1,1000000000> >::duration<long long,0>"
-	.p2align	2, 0x0
-.Ltmp262:
-	.short	.Ltmp264-.Ltmp263
-.Ltmp263:
-	.short	4114
-	.long	16
-	.long	0
-	.long	0
-	.long	0
-	.long	0
-	.short	0
-	.long	81920
-	.p2align	2, 0x0
-.Ltmp264:
-	.short	.Ltmp266-.Ltmp265
-.Ltmp265:
-	.short	4414
-	.long	4196
-	.short	1
-	.asciz	"this"
-	.p2align	2, 0x0
-.Ltmp266:
-	.cv_def_range	 .Ltmp63 .Ltmp64, frame_ptr_rel, 0
-	.short	.Ltmp268-.Ltmp267
-.Ltmp267:
-	.short	4414
-	.long	4143
-	.short	1
-	.asciz	"_Val"
-	.p2align	2, 0x0
-.Ltmp268:
-	.cv_def_range	 .Ltmp63 .Ltmp64, frame_ptr_rel, 8
-	.short	2
-	.short	4431
+	.short	.Ltmp261-.Ltmp260
 .Ltmp260:
+	.short	4414
+	.long	4149
+	.short	1
+	.asciz	"v1"
 	.p2align	2, 0x0
-	.cv_linetable	8, "??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEAA@AEB_J@Z", .Lfunc_end8
-	.section	.debug$S,"dr",associative,"??0?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@@Z"
+.Ltmp261:
+	.cv_def_range	 .Ltmp138 .Ltmp140, reg, 332
+	.short	.Ltmp263-.Ltmp262
+.Ltmp262:
+	.short	4414
+	.long	4149
+	.short	1
+	.asciz	"v2"
 	.p2align	2, 0x0
-	.long	4
-	.long	241
-	.long	.Ltmp270-.Ltmp269
+.Ltmp263:
+	.cv_def_range	 .Ltmp138 .Ltmp140, reg, 333
+	.short	.Ltmp265-.Ltmp264
+.Ltmp264:
+	.short	4414
+	.long	1601
+	.short	1
+	.asciz	"out"
+	.p2align	2, 0x0
+.Ltmp265:
+	.cv_def_range	 .Ltmp138 .Ltmp140, reg, 329
+	.short	.Ltmp267-.Ltmp266
+.Ltmp266:
+	.short	4414
+	.long	116
+	.short	257
+	.asciz	"size"
+	.p2align	2, 0x0
+.Ltmp267:
+	.short	.Ltmp269-.Ltmp268
+.Ltmp268:
+	.short	4359
+	.long	116
+	.byte	0x00, 0x00
+	.asciz	"i"
+	.p2align	2, 0x0
 .Ltmp269:
-	.short	.Ltmp272-.Ltmp271
-.Ltmp271:
-	.short	4423
-	.long	0
-	.long	0
-	.long	0
-	.long	.Lfunc_end9-"??0?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@@Z"
-	.long	0
-	.long	0
-	.long	4197
-	.secrel32	"??0?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@@Z"
-	.secidx	"??0?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@@Z"
-	.byte	192
-	.asciz	"std::chrono::time_point<std::chrono::steady_clock,std::chrono::duration<long long,std::ratio<1,1000000000> > >::time_point"
-	.p2align	2, 0x0
-.Ltmp272:
-	.short	.Ltmp274-.Ltmp273
-.Ltmp273:
-	.short	4114
-	.long	16
-	.long	0
-	.long	0
-	.long	0
-	.long	0
-	.short	0
-	.long	81920
-	.p2align	2, 0x0
-.Ltmp274:
-	.short	.Ltmp276-.Ltmp275
-.Ltmp275:
-	.short	4414
-	.long	4198
-	.short	1
-	.asciz	"this"
-	.p2align	2, 0x0
-.Ltmp276:
-	.cv_def_range	 .Ltmp65 .Ltmp66, frame_ptr_rel, 0
-	.short	.Ltmp278-.Ltmp277
-.Ltmp277:
-	.short	4414
-	.long	4115
-	.short	1
-	.asciz	"_Other"
-	.p2align	2, 0x0
-.Ltmp278:
-	.cv_def_range	 .Ltmp65 .Ltmp66, frame_ptr_rel, 8
 	.short	2
-	.short	4431
+	.short	4430
+	.short	.Ltmp271-.Ltmp270
 .Ltmp270:
+	.short	4429
+	.long	0
+	.long	0
+	.long	4147
+	.cv_inline_linetable	6 2 678 .Lfunc_begin3 .Lfunc_end3
 	.p2align	2, 0x0
-	.cv_linetable	9, "??0?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@12@@Z", .Lfunc_end9
-	.section	.debug$S,"dr",associative,"?count@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEBA_JXZ"
+.Ltmp271:
+	.short	.Ltmp273-.Ltmp272
+.Ltmp272:
+	.short	4414
+	.long	4123
+	.short	0
+	.asciz	"_Freq"
 	.p2align	2, 0x0
-	.long	4
-	.long	241
-	.long	.Ltmp280-.Ltmp279
+.Ltmp273:
+	.cv_def_range	 .Ltmp141 .Ltmp142, reg, 328
+	.short	.Ltmp275-.Ltmp274
+.Ltmp274:
+	.short	4414
+	.long	4123
+	.short	0
+	.asciz	"_Ctr"
+	.p2align	2, 0x0
+.Ltmp275:
+	.cv_def_range	 .Ltmp142 .Ltmp143, reg, 328
+	.short	.Ltmp277-.Ltmp276
+.Ltmp276:
+	.short	4359
+	.long	4123
+	.byte	0x03, 0x80, 0x80, 0x96
+	.byte	0x98, 0x00
+	.asciz	"_TenMHz"
+	.p2align	2, 0x0
+.Ltmp277:
+	.short	.Ltmp279-.Ltmp278
+.Ltmp278:
+	.short	4359
+	.long	4123
+	.byte	0x03, 0x80, 0x00, 0x36
+	.byte	0x6e, 0x01
+	.asciz	"_TwentyFourMHz"
+	.p2align	2, 0x0
 .Ltmp279:
-	.short	.Ltmp282-.Ltmp281
-.Ltmp281:
-	.short	4423
-	.long	0
-	.long	0
-	.long	0
-	.long	.Lfunc_end10-"?count@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEBA_JXZ"
-	.long	0
-	.long	0
-	.long	4199
-	.secrel32	"?count@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEBA_JXZ"
-	.secidx	"?count@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEBA_JXZ"
-	.byte	192
-	.asciz	"std::chrono::duration<long long,std::ratio<1,1000000000> >::count"
-	.p2align	2, 0x0
-.Ltmp282:
-	.short	.Ltmp284-.Ltmp283
-.Ltmp283:
-	.short	4114
-	.long	8
-	.long	0
-	.long	0
-	.long	0
-	.long	0
-	.short	0
-	.long	81920
-	.p2align	2, 0x0
-.Ltmp284:
-	.short	.Ltmp286-.Ltmp285
-.Ltmp285:
-	.short	4414
-	.long	4200
-	.short	1
-	.asciz	"this"
-	.p2align	2, 0x0
-.Ltmp286:
-	.cv_def_range	 .Ltmp67 .Ltmp68, frame_ptr_rel, 0
 	.short	2
-	.short	4431
+	.short	4430
+	.short	.Ltmp281-.Ltmp280
 .Ltmp280:
+	.short	4429
+	.long	0
+	.long	0
+	.long	4155
+	.cv_inline_linetable	7 1 62 .Lfunc_begin3 .Lfunc_end3
 	.p2align	2, 0x0
-	.cv_linetable	10, "?count@?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@QEBA_JXZ", .Lfunc_end10
-	.section	.debug$S,"dr",associative,"??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEAA@AEB_J@Z"
+.Ltmp281:
+	.short	.Ltmp283-.Ltmp282
+.Ltmp282:
+	.short	4414
+	.long	4149
+	.short	1
+	.asciz	"v1"
 	.p2align	2, 0x0
-	.long	4
-	.long	241
-	.long	.Ltmp288-.Ltmp287
+.Ltmp283:
+	.cv_def_range	 .Ltmp143 .Ltmp158, reg, 332
+	.short	.Ltmp285-.Ltmp284
+.Ltmp284:
+	.short	4414
+	.long	4149
+	.short	1
+	.asciz	"v2"
+	.p2align	2, 0x0
+.Ltmp285:
+	.cv_def_range	 .Ltmp143 .Ltmp157, reg, 333
+	.short	.Ltmp287-.Ltmp286
+.Ltmp286:
+	.short	4414
+	.long	116
+	.short	257
+	.asciz	"size"
+	.p2align	2, 0x0
 .Ltmp287:
-	.short	.Ltmp290-.Ltmp289
-.Ltmp289:
-	.short	4423
-	.long	0
-	.long	0
-	.long	0
-	.long	.Lfunc_end11-"??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEAA@AEB_J@Z"
-	.long	0
-	.long	0
-	.long	4202
-	.secrel32	"??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEAA@AEB_J@Z"
-	.secidx	"??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEAA@AEB_J@Z"
-	.byte	192
-	.asciz	"std::chrono::duration<long long,std::ratio<1,1000> >::duration<long long,0>"
-	.p2align	2, 0x0
-.Ltmp290:
-	.short	.Ltmp292-.Ltmp291
-.Ltmp291:
-	.short	4114
-	.long	16
-	.long	0
-	.long	0
-	.long	0
-	.long	0
-	.short	0
-	.long	81920
-	.p2align	2, 0x0
-.Ltmp292:
-	.short	.Ltmp294-.Ltmp293
-.Ltmp293:
-	.short	4414
-	.long	4203
-	.short	1
-	.asciz	"this"
-	.p2align	2, 0x0
-.Ltmp294:
-	.cv_def_range	 .Ltmp69 .Ltmp70, frame_ptr_rel, 0
-	.short	.Ltmp296-.Ltmp295
-.Ltmp295:
-	.short	4414
-	.long	4143
-	.short	1
-	.asciz	"_Val"
-	.p2align	2, 0x0
-.Ltmp296:
-	.cv_def_range	 .Ltmp69 .Ltmp70, frame_ptr_rel, 8
-	.short	2
-	.short	4431
+	.short	.Ltmp289-.Ltmp288
 .Ltmp288:
+	.short	4414
+	.long	4156
+	.short	0
+	.asciz	"x3"
 	.p2align	2, 0x0
-	.cv_linetable	11, "??$?0_J$0A@@?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@QEAA@AEB_J@Z", .Lfunc_end11
-	.section	.debug$S,"dr",associative,"??$?G_JU?$ratio@$00$0DLJKMKAA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV201@0@Z"
+.Ltmp289:
+	.cv_def_range	 .Ltmp143 .Ltmp144 .Ltmp148 .Ltmp149 .Ltmp151 .Ltmp153, reg, 368
+	.cv_def_range	 .Ltmp144 .Ltmp148 .Ltmp149 .Ltmp150, reg, 369
+	.cv_def_range	 .Ltmp150 .Ltmp151, reg, 370
+	.short	.Ltmp291-.Ltmp290
+.Ltmp290:
+	.short	4414
+	.long	65
+	.short	0
+	.asciz	"res"
 	.p2align	2, 0x0
-	.long	4
-	.long	241
-	.long	.Ltmp298-.Ltmp297
+.Ltmp291:
+	.cv_def_range	 .Ltmp154 .Ltmp155, reg, 155
+	.short	.Ltmp293-.Ltmp292
+.Ltmp292:
+	.short	4359
+	.long	116
+	.byte	0x00, 0x00
+	.asciz	"i"
+	.p2align	2, 0x0
+.Ltmp293:
+	.short	.Ltmp295-.Ltmp294
+.Ltmp294:
+	.short	4414
+	.long	4156
+	.short	0
+	.asciz	"horizontal_sum"
+	.p2align	2, 0x0
+.Ltmp295:
+	.cv_def_range	 .Ltmp152 .Ltmp153, reg, 368
+	.short	2
+	.short	4430
+	.short	.Ltmp297-.Ltmp296
+.Ltmp296:
+	.short	4446
+	.secrel32	.Ltmp126
+	.secidx	.Ltmp126
+	.short	.Ltmp127-.Ltmp126
+	.long	65
+	.p2align	2, 0x0
 .Ltmp297:
-	.short	.Ltmp300-.Ltmp299
-.Ltmp299:
-	.short	4423
-	.long	0
-	.long	0
-	.long	0
-	.long	.Lfunc_end12-"??$?G_JU?$ratio@$00$0DLJKMKAA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV201@0@Z"
-	.long	0
-	.long	0
-	.long	4206
-	.secrel32	"??$?G_JU?$ratio@$00$0DLJKMKAA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV201@0@Z"
-	.secidx	"??$?G_JU?$ratio@$00$0DLJKMKAA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV201@0@Z"
-	.byte	192
-	.asciz	"std::chrono::operator-<long long,std::ratio<1,1000000000>,long long,std::ratio<1,1000000000> >"
-	.p2align	2, 0x0
-.Ltmp300:
-	.short	.Ltmp302-.Ltmp301
-.Ltmp301:
-	.short	4114
-	.long	120
-	.long	0
-	.long	0
-	.long	0
-	.long	0
-	.short	0
-	.long	86272
-	.p2align	2, 0x0
-.Ltmp302:
-	.short	.Ltmp304-.Ltmp303
-.Ltmp303:
-	.short	4414
-	.long	4115
-	.short	1
-	.asciz	"_Left"
-	.p2align	2, 0x0
-.Ltmp304:
-	.cv_def_range	 .Ltmp71 .Ltmp72, frame_ptr_rel, 64
-	.short	.Ltmp306-.Ltmp305
-.Ltmp305:
-	.short	4414
-	.long	4115
-	.short	1
-	.asciz	"_Right"
-	.p2align	2, 0x0
-.Ltmp306:
-	.cv_def_range	 .Ltmp71 .Ltmp72, frame_ptr_rel, 72
-	.short	2
-	.short	4431
+	.short	.Ltmp299-.Ltmp298
 .Ltmp298:
+	.short	4446
+	.secrel32	.Ltmp129
+	.secidx	.Ltmp129
+	.short	.Ltmp130-.Ltmp129
+	.long	65
 	.p2align	2, 0x0
-	.cv_linetable	12, "??$?G_JU?$ratio@$00$0DLJKMKAA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@01@AEBV201@0@Z", .Lfunc_end12
-	.section	.debug$S,"dr",associative,"?time_since_epoch@?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEBA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@XZ"
+.Ltmp299:
+	.short	.Ltmp301-.Ltmp300
+.Ltmp300:
+	.short	4446
+	.secrel32	.Ltmp132
+	.secidx	.Ltmp132
+	.short	.Ltmp133-.Ltmp132
+	.long	65
 	.p2align	2, 0x0
-	.long	4
-	.long	241
-	.long	.Ltmp308-.Ltmp307
-.Ltmp307:
-	.short	.Ltmp310-.Ltmp309
-.Ltmp309:
-	.short	4423
-	.long	0
-	.long	0
-	.long	0
-	.long	.Lfunc_end13-"?time_since_epoch@?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEBA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@XZ"
-	.long	0
-	.long	0
-	.long	4207
-	.secrel32	"?time_since_epoch@?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEBA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@XZ"
-	.secidx	"?time_since_epoch@?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEBA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@XZ"
-	.byte	192
-	.asciz	"std::chrono::time_point<std::chrono::steady_clock,std::chrono::duration<long long,std::ratio<1,1000000000> > >::time_since_epoch"
-	.p2align	2, 0x0
-.Ltmp310:
-	.short	.Ltmp312-.Ltmp311
-.Ltmp311:
-	.short	4114
-	.long	16
-	.long	0
-	.long	0
-	.long	0
-	.long	0
-	.short	0
-	.long	81920
-	.p2align	2, 0x0
-.Ltmp312:
-	.short	.Ltmp314-.Ltmp313
-.Ltmp313:
-	.short	4414
-	.long	4208
-	.short	1
-	.asciz	"this"
-	.p2align	2, 0x0
-.Ltmp314:
-	.cv_def_range	 .Ltmp73 .Ltmp74, frame_ptr_rel, 0
+.Ltmp301:
 	.short	2
 	.short	4431
-.Ltmp308:
+.Ltmp229:
 	.p2align	2, 0x0
-	.cv_linetable	13, "?time_since_epoch@?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@QEBA?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@XZ", .Lfunc_end13
+	.cv_linetable	3, main, .Lfunc_end3
 	.section	.debug$S,"dr"
 	.long	241
-	.long	.Ltmp316-.Ltmp315
-.Ltmp315:
-	.short	.Ltmp318-.Ltmp317
-.Ltmp317:
+	.long	.Ltmp303-.Ltmp302
+.Ltmp302:
+	.short	.Ltmp305-.Ltmp304
+.Ltmp304:
 	.short	4359
-	.long	4209
-	.byte	0x03, 0x80, 0x0b, 0xb4
-	.byte	0xc4, 0x04
+	.long	4185
+	.byte	0x03, 0x80, 0x00, 0x09
+	.byte	0x3d, 0x00
 	.asciz	"VEC_SIZE"
 	.p2align	2, 0x0
-.Ltmp318:
-	.short	.Ltmp320-.Ltmp319
-.Ltmp319:
+.Ltmp305:
+	.short	.Ltmp307-.Ltmp306
+.Ltmp306:
 	.short	4359
-	.long	4151
+	.long	4097
 	.byte	0x01, 0x00
 	.asciz	"std::chrono::steady_clock::is_steady"
 	.p2align	2, 0x0
-.Ltmp320:
-	.short	.Ltmp322-.Ltmp321
-.Ltmp321:
+.Ltmp307:
+	.short	.Ltmp309-.Ltmp308
+.Ltmp308:
 	.short	4359
-	.long	4142
+	.long	4123
 	.byte	0x01, 0x00
 	.asciz	"std::ratio<1,1000000000>::num"
 	.p2align	2, 0x0
-.Ltmp322:
-	.short	.Ltmp324-.Ltmp323
-.Ltmp323:
+.Ltmp309:
+	.short	.Ltmp311-.Ltmp310
+.Ltmp310:
 	.short	4359
-	.long	4142
+	.long	4123
 	.byte	0x03, 0x80, 0x00, 0xca
 	.byte	0x9a, 0x3b
 	.asciz	"std::ratio<1,1000000000>::den"
 	.p2align	2, 0x0
-.Ltmp324:
-	.short	.Ltmp326-.Ltmp325
-.Ltmp325:
+.Ltmp311:
+	.short	.Ltmp313-.Ltmp312
+.Ltmp312:
 	.short	4359
-	.long	4142
+	.long	4123
 	.byte	0x01, 0x00
 	.asciz	"std::ratio<1,1000>::num"
 	.p2align	2, 0x0
-.Ltmp326:
-	.short	.Ltmp328-.Ltmp327
-.Ltmp327:
+.Ltmp313:
+	.short	.Ltmp315-.Ltmp314
+.Ltmp314:
 	.short	4359
-	.long	4142
+	.long	4123
 	.byte	0xe8, 0x03
 	.asciz	"std::ratio<1,1000>::den"
 	.p2align	2, 0x0
-.Ltmp328:
-	.short	.Ltmp330-.Ltmp329
-.Ltmp329:
+.Ltmp315:
+	.short	.Ltmp317-.Ltmp316
+.Ltmp316:
 	.short	4359
-	.long	4142
+	.long	4123
 	.byte	0x01, 0x00
 	.asciz	"std::ratio<1,1000000>::num"
 	.p2align	2, 0x0
-.Ltmp330:
-	.short	.Ltmp332-.Ltmp331
-.Ltmp331:
+.Ltmp317:
+	.short	.Ltmp319-.Ltmp318
+.Ltmp318:
 	.short	4359
-	.long	4142
+	.long	4123
 	.byte	0x03, 0x80, 0x40, 0x42
 	.byte	0x0f, 0x00
 	.asciz	"std::ratio<1,1000000>::den"
 	.p2align	2, 0x0
-.Ltmp332:
-.Ltmp316:
+.Ltmp319:
+.Ltmp303:
 	.p2align	2, 0x0
 	.long	241
-	.long	.Ltmp334-.Ltmp333
-.Ltmp333:
-	.short	.Ltmp336-.Ltmp335
-.Ltmp335:
+	.long	.Ltmp321-.Ltmp320
+.Ltmp320:
+	.short	.Ltmp323-.Ltmp322
+.Ltmp322:
 	.short	4360
-	.long	4101
-	.asciz	"__m256d"
-	.p2align	2, 0x0
-.Ltmp336:
-	.short	.Ltmp338-.Ltmp337
-.Ltmp337:
-	.short	4360
-	.long	4102
-	.asciz	"__m128d"
-	.p2align	2, 0x0
-.Ltmp338:
-	.short	.Ltmp340-.Ltmp339
-.Ltmp339:
-	.short	4360
-	.long	4128
-	.asciz	"std::chrono::time_point<std::chrono::steady_clock,std::chrono::duration<long long,std::ratio<1,1000000000> > >"
-	.p2align	2, 0x0
-.Ltmp340:
-	.short	.Ltmp342-.Ltmp341
-.Ltmp341:
-	.short	4360
-	.long	4149
-	.asciz	"std::common_type_t<duration<long long,ratio<1,1000000000> > >"
-	.p2align	2, 0x0
-.Ltmp342:
-	.short	.Ltmp344-.Ltmp343
-.Ltmp343:
-	.short	4360
-	.long	4149
-	.asciz	"std::chrono::duration<long long,std::ratio<1,1000000000> >"
-	.p2align	2, 0x0
-.Ltmp344:
-	.short	.Ltmp346-.Ltmp345
-.Ltmp345:
-	.short	4360
-	.long	4157
+	.long	4125
 	.asciz	"std::nano"
 	.p2align	2, 0x0
-.Ltmp346:
-	.short	.Ltmp348-.Ltmp347
-.Ltmp347:
+.Ltmp323:
+	.short	.Ltmp325-.Ltmp324
+.Ltmp324:
 	.short	4360
-	.long	4149
+	.long	4145
 	.asciz	"std::chrono::nanoseconds"
 	.p2align	2, 0x0
-.Ltmp348:
-	.short	.Ltmp350-.Ltmp349
-.Ltmp349:
+.Ltmp325:
+	.short	.Ltmp327-.Ltmp326
+.Ltmp326:
 	.short	4360
-	.long	4154
+	.long	4104
 	.asciz	"std::chrono::steady_clock"
 	.p2align	2, 0x0
-.Ltmp350:
-	.short	.Ltmp352-.Ltmp351
-.Ltmp351:
+.Ltmp327:
+	.short	.Ltmp329-.Ltmp328
+.Ltmp328:
+	.short	4360
+	.long	4121
+	.asciz	"std::chrono::time_point<std::chrono::steady_clock,std::chrono::duration<long long,std::ratio<1,1000000000> > >"
+	.p2align	2, 0x0
+.Ltmp329:
+	.short	.Ltmp331-.Ltmp330
+.Ltmp330:
 	.short	4360
 	.long	19
 	.asciz	"intmax_t"
 	.p2align	2, 0x0
-.Ltmp352:
-	.short	.Ltmp354-.Ltmp353
-.Ltmp353:
+.Ltmp331:
+	.short	.Ltmp333-.Ltmp332
+.Ltmp332:
 	.short	4360
-	.long	4157
+	.long	4125
 	.asciz	"std::ratio<1,1000000000>"
 	.p2align	2, 0x0
-.Ltmp354:
-	.short	.Ltmp356-.Ltmp355
-.Ltmp355:
+.Ltmp333:
+	.short	.Ltmp335-.Ltmp334
+.Ltmp334:
 	.short	4360
-	.long	4179
+	.long	4145
+	.asciz	"std::common_type_t<duration<long long,ratio<1,1000000000> > >"
+	.p2align	2, 0x0
+.Ltmp335:
+	.short	.Ltmp337-.Ltmp336
+.Ltmp336:
+	.short	4360
+	.long	4145
+	.asciz	"std::chrono::duration<long long,std::ratio<1,1000000000> >"
+	.p2align	2, 0x0
+.Ltmp337:
+	.short	.Ltmp339-.Ltmp338
+.Ltmp338:
+	.short	4360
+	.long	4156
+	.asciz	"__m256d"
+	.p2align	2, 0x0
+.Ltmp339:
+	.short	.Ltmp341-.Ltmp340
+.Ltmp340:
+	.short	4360
+	.long	4157
+	.asciz	"__m128d"
+	.p2align	2, 0x0
+.Ltmp341:
+	.short	.Ltmp343-.Ltmp342
+.Ltmp342:
+	.short	4360
+	.long	4180
 	.asciz	"std::common_type_t<duration<long long,ratio<1,1000> > >"
 	.p2align	2, 0x0
-.Ltmp356:
-	.short	.Ltmp358-.Ltmp357
-.Ltmp357:
+.Ltmp343:
+	.short	.Ltmp345-.Ltmp344
+.Ltmp344:
 	.short	4360
-	.long	4179
+	.long	4180
 	.asciz	"std::chrono::duration<long long,std::ratio<1,1000> >"
 	.p2align	2, 0x0
-.Ltmp358:
-	.short	.Ltmp360-.Ltmp359
-.Ltmp359:
+.Ltmp345:
+	.short	.Ltmp347-.Ltmp346
+.Ltmp346:
 	.short	4360
-	.long	4182
+	.long	4183
 	.asciz	"std::ratio<1,1000>"
 	.p2align	2, 0x0
-.Ltmp360:
-	.short	.Ltmp362-.Ltmp361
-.Ltmp361:
+.Ltmp347:
+	.short	.Ltmp349-.Ltmp348
+.Ltmp348:
 	.short	4360
-	.long	4149
-	.asciz	"std::common_type_t<std::chrono::duration<long long,std::ratio<1,1000000000> >,std::chrono::duration<long long,std::ratio<1,1000000000> > >"
-	.p2align	2, 0x0
-.Ltmp362:
-	.short	.Ltmp364-.Ltmp363
-.Ltmp363:
-	.short	4360
-	.long	4149
-	.asciz	"std::common_type_t<duration<long long,ratio<1,1000000000> >,duration<long long,ratio<1,1000000000> > >"
-	.p2align	2, 0x0
-.Ltmp364:
-	.short	.Ltmp366-.Ltmp365
-.Ltmp365:
-	.short	4360
-	.long	4101
+	.long	4156
 	.asciz	"__v4df"
 	.p2align	2, 0x0
-.Ltmp366:
-	.short	.Ltmp368-.Ltmp367
-.Ltmp367:
+.Ltmp349:
+	.short	.Ltmp351-.Ltmp350
+.Ltmp350:
 	.short	4360
-	.long	4102
+	.long	4157
 	.asciz	"__v2df"
 	.p2align	2, 0x0
-.Ltmp368:
-	.short	.Ltmp370-.Ltmp369
-.Ltmp369:
+.Ltmp351:
+	.short	.Ltmp353-.Ltmp352
+.Ltmp352:
 	.short	4360
 	.long	19
 	.asciz	"std::decay_t<_Conditional_type<long long,long long> >"
 	.p2align	2, 0x0
-.Ltmp370:
-	.short	.Ltmp372-.Ltmp371
-.Ltmp371:
+.Ltmp353:
+	.short	.Ltmp355-.Ltmp354
+.Ltmp354:
 	.short	4360
 	.long	19
 	.asciz	"std::common_type_t<_ToRep,long long,intmax_t>"
 	.p2align	2, 0x0
-.Ltmp372:
-	.short	.Ltmp374-.Ltmp373
-.Ltmp373:
+.Ltmp355:
+	.short	.Ltmp357-.Ltmp356
+.Ltmp356:
 	.short	4360
-	.long	4218
+	.long	4145
+	.asciz	"std::common_type_t<duration<long long,ratio<1,1000000000> >,duration<long long,ratio<1,1000000000> > >"
+	.p2align	2, 0x0
+.Ltmp357:
+	.short	.Ltmp359-.Ltmp358
+.Ltmp358:
+	.short	4360
+	.long	4194
 	.asciz	"std::ratio<1,1000000>"
 	.p2align	2, 0x0
-.Ltmp374:
-.Ltmp334:
+.Ltmp359:
+.Ltmp321:
 	.p2align	2, 0x0
 	.cv_filechecksums
 	.cv_stringtable
 	.long	241
-	.long	.Ltmp376-.Ltmp375
-.Ltmp375:
-	.short	.Ltmp378-.Ltmp377
-.Ltmp377:
+	.long	.Ltmp361-.Ltmp360
+.Ltmp360:
+	.short	.Ltmp363-.Ltmp362
+.Ltmp362:
 	.short	4428
-	.long	4225
+	.long	4201
 	.p2align	2, 0x0
-.Ltmp378:
-.Ltmp376:
+.Ltmp363:
+.Ltmp361:
 	.p2align	2, 0x0
 	.section	.debug$T,"dr"
 	.p2align	2, 0x0
 	.long	4
+	.short	0x4e
+	.short	0x1505
+	.short	0x0
+	.short	0x280
+	.long	0x0
+	.long	0x0
+	.long	0x0
+	.short	0x0
+	.asciz	"std::chrono::steady_clock"
+	.asciz	".?AUsteady_clock@chrono@std@@"
+	.byte	242
+	.byte	241
+	.short	0xa
+	.short	0x1001
+	.long	0x30
+	.short	0x1
+	.byte	242
+	.byte	241
+	.short	0xee
+	.short	0x1504
+	.short	0x0
+	.short	0x280
+	.long	0x0
+	.long	0x0
+	.long	0x0
+	.short	0x0
+	.asciz	"std::chrono::time_point<std::chrono::steady_clock,std::chrono::duration<long long,std::ratio<1,1000000000> > >"
+	.asciz	".?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@"
+	.byte	243
+	.byte	242
+	.byte	241
+	.short	0x6
+	.short	0x1201
+	.long	0x0
+	.short	0x1a
+	.short	0x1009
+	.long	0x1002
+	.long	0x1000
+	.long	0x0
+	.byte	0x0
+	.byte	0x0
+	.short	0x0
+	.long	0x1003
+	.long	0x0
+	.short	0x4e
+	.short	0x1505
+	.short	0x0
+	.short	0x280
+	.long	0x0
+	.long	0x0
+	.long	0x0
+	.short	0x0
+	.asciz	"std::ratio<1,1000000000>"
+	.asciz	".?AU?$ratio@$00$0DLJKMKAA@@std@@"
+	.short	0x8e
+	.short	0x1504
+	.short	0x0
+	.short	0x280
+	.long	0x0
+	.long	0x0
+	.long	0x0
+	.short	0x0
+	.asciz	"std::chrono::duration<long long,std::ratio<1,1000000000> >"
+	.asciz	".?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@"
+	.byte	243
+	.byte	242
+	.byte	241
+	.short	0x66
+	.short	0x1203
+	.short	0x150e
+	.short	0x3
+	.long	0x1001
+	.asciz	"is_steady"
+	.byte	242
+	.byte	241
+	.short	0x1511
+	.short	0xb
+	.long	0x1004
+	.asciz	"now"
+	.short	0x1510
+	.short	0x0
+	.long	0x13
+	.asciz	"rep"
+	.short	0x1510
+	.short	0x0
+	.long	0x1005
+	.asciz	"period"
+	.byte	241
+	.short	0x1510
+	.short	0x0
+	.long	0x1006
+	.asciz	"duration"
+	.byte	243
+	.byte	242
+	.byte	241
+	.short	0x1510
+	.short	0x0
+	.long	0x1002
+	.asciz	"time_point"
+	.byte	241
+	.short	0x4e
+	.short	0x1505
+	.short	0x6
+	.short	0x210
+	.long	0x1007
+	.long	0x0
+	.long	0x0
+	.short	0x1
+	.asciz	"std::chrono::steady_clock"
+	.asciz	".?AUsteady_clock@chrono@std@@"
+	.byte	242
+	.byte	241
+	.short	0x76
+	.short	0x1605
+	.long	0x0
+	.asciz	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.39.33519\\include\\__msvc_chrono.hpp"
+	.byte	243
+	.byte	242
+	.byte	241
+	.short	0xe
+	.short	0x1606
+	.long	0x1008
+	.long	0x1009
+	.long	0x295
+	.short	0xa
+	.short	0x1002
+	.long	0x1002
+	.long	0x1040c
+	.short	0x1a
+	.short	0x1009
+	.long	0x3
+	.long	0x1002
+	.long	0x100b
+	.byte	0x0
+	.byte	0x0
+	.short	0x0
+	.long	0x1003
+	.long	0x0
+	.short	0xa
+	.short	0x1001
+	.long	0x1006
+	.short	0x1
+	.byte	242
+	.byte	241
+	.short	0xa
+	.short	0x1002
+	.long	0x100d
+	.long	0x1002c
+	.short	0xa
+	.short	0x1201
+	.long	0x1
+	.long	0x100e
+	.short	0x1a
+	.short	0x1009
+	.long	0x3
+	.long	0x1002
+	.long	0x100b
+	.byte	0x0
+	.byte	0x0
+	.short	0x1
+	.long	0x100f
+	.long	0x0
+	.short	0x12
+	.short	0x1206
+	.short	0x3
+	.short	0x0
+	.long	0x100c
+	.short	0x3
+	.short	0x0
+	.long	0x1010
+	.short	0xa
+	.short	0x1001
+	.long	0x1002
+	.short	0x1
+	.byte	242
+	.byte	241
+	.short	0xa
+	.short	0x1002
+	.long	0x1012
+	.long	0x1040c
+	.short	0x1a
+	.short	0x1009
+	.long	0x1006
+	.long	0x1002
+	.long	0x1013
+	.byte	0x0
+	.byte	0x1
+	.short	0x0
+	.long	0x1003
+	.long	0x0
+	.short	0xa
+	.short	0x1002
+	.long	0x1002
+	.long	0x1002c
+	.short	0x1a
+	.short	0x1009
+	.long	0x1015
+	.long	0x1002
+	.long	0x100b
+	.byte	0x0
+	.byte	0x0
+	.short	0x1
+	.long	0x100f
+	.long	0x0
+	.short	0x1a
+	.short	0x1009
+	.long	0x1002
+	.long	0x1002
+	.long	0x0
+	.byte	0x0
+	.byte	0x1
+	.short	0x0
+	.long	0x1003
+	.long	0x0
+	.short	0xc6
+	.short	0x1203
+	.short	0x150d
+	.short	0x1
+	.long	0x1006
+	.short	0x0
+	.asciz	"_MyDur"
+	.byte	243
+	.byte	242
+	.byte	241
+	.short	0x150f
+	.short	0x2
+	.long	0x1011
+	.asciz	"time_point"
+	.byte	241
+	.short	0x1511
+	.short	0x3
+	.long	0x1014
+	.asciz	"time_since_epoch"
+	.byte	243
+	.byte	242
+	.byte	241
+	.short	0x1511
+	.short	0x3
+	.long	0x1016
+	.asciz	"operator+="
+	.byte	241
+	.short	0x1511
+	.short	0x3
+	.long	0x1016
+	.asciz	"operator-="
+	.byte	241
+	.short	0x1511
+	.short	0xb
+	.long	0x1017
+	.asciz	"min"
+	.short	0x1511
+	.short	0xb
+	.long	0x1017
+	.asciz	"max"
+	.short	0x1510
+	.short	0x0
+	.long	0x1000
+	.asciz	"clock"
+	.byte	242
+	.byte	241
+	.short	0x1510
+	.short	0x0
+	.long	0x1006
+	.asciz	"duration"
+	.byte	243
+	.byte	242
+	.byte	241
+	.short	0x1510
+	.short	0x0
+	.long	0x13
+	.asciz	"rep"
+	.short	0x1510
+	.short	0x0
+	.long	0x1005
+	.asciz	"period"
+	.byte	241
+	.short	0xee
+	.short	0x1504
+	.short	0xc
+	.short	0x212
+	.long	0x1018
+	.long	0x0
+	.long	0x0
+	.short	0x8
+	.asciz	"std::chrono::time_point<std::chrono::steady_clock,std::chrono::duration<long long,std::ratio<1,1000000000> > >"
+	.asciz	".?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@"
+	.byte	243
+	.byte	242
+	.byte	241
+	.short	0xe
+	.short	0x1606
+	.long	0x1019
+	.long	0x1009
+	.long	0xbe
+	.short	0xa
+	.short	0x1001
+	.long	0x13
+	.short	0x1
+	.byte	242
+	.byte	241
+	.short	0x2a
+	.short	0x1203
+	.short	0x150e
+	.short	0x3
+	.long	0x101b
+	.asciz	"num"
+	.short	0x150e
+	.short	0x3
+	.long	0x101b
+	.asciz	"den"
+	.short	0x1510
+	.short	0x0
+	.long	0x1005
+	.asciz	"type"
+	.byte	243
+	.byte	242
+	.byte	241
+	.short	0x4e
+	.short	0x1505
+	.short	0x3
+	.short	0x210
+	.long	0x101c
+	.long	0x0
+	.long	0x0
+	.short	0x1
+	.asciz	"std::ratio<1,1000000000>"
+	.asciz	".?AU?$ratio@$00$0DLJKMKAA@@std@@"
+	.short	0x6a
+	.short	0x1605
+	.long	0x0
+	.asciz	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.39.33519\\include\\ratio"
+	.byte	243
+	.byte	242
+	.byte	241
+	.short	0xe
+	.short	0x1606
+	.long	0x101d
+	.long	0x101e
+	.long	0x43
+	.short	0xa
+	.short	0x1002
+	.long	0x1006
+	.long	0x1040c
+	.short	0x1a
+	.short	0x1009
+	.long	0x3
+	.long	0x1006
+	.long	0x1020
+	.byte	0x0
+	.byte	0x0
+	.short	0x0
+	.long	0x1003
+	.long	0x0
+	.short	0xa
+	.short	0x1002
+	.long	0x100d
+	.long	0x1040c
+	.short	0x1a
+	.short	0x1009
+	.long	0x13
+	.long	0x1006
+	.long	0x1022
+	.byte	0x0
+	.byte	0x0
+	.short	0x0
+	.long	0x1003
+	.long	0x0
+	.short	0x1a
+	.short	0x1009
+	.long	0x1006
+	.long	0x1006
+	.long	0x1022
+	.byte	0x0
+	.byte	0x0
+	.short	0x0
+	.long	0x1003
+	.long	0x0
+	.short	0xa
+	.short	0x1002
+	.long	0x1006
+	.long	0x1002c
+	.short	0x1a
+	.short	0x1009
+	.long	0x1025
+	.long	0x1006
+	.long	0x1020
+	.byte	0x0
+	.byte	0x0
+	.short	0x0
+	.long	0x1003
+	.long	0x0
+	.short	0xa
+	.short	0x1201
+	.long	0x1
+	.long	0x74
+	.short	0x1a
+	.short	0x1009
+	.long	0x1006
+	.long	0x1006
+	.long	0x1020
+	.byte	0x0
+	.byte	0x1
+	.short	0x1
+	.long	0x1027
+	.long	0x0
+	.short	0x12
+	.short	0x1206
+	.short	0x3
+	.short	0x0
+	.long	0x1026
+	.short	0x3
+	.short	0x0
+	.long	0x1028
+	.short	0x1a
+	.short	0x1009
+	.long	0x1025
+	.long	0x1006
+	.long	0x1020
+	.byte	0x0
+	.byte	0x0
+	.short	0x1
+	.long	0x100f
+	.long	0x0
+	.short	0xa
+	.short	0x1002
+	.long	0x101b
+	.long	0x1002c
+	.short	0xa
+	.short	0x1201
+	.long	0x1
+	.long	0x102b
+	.short	0x1a
+	.short	0x1009
+	.long	0x1025
+	.long	0x1006
+	.long	0x1020
+	.byte	0x0
+	.byte	0x0
+	.short	0x1
+	.long	0x102c
+	.long	0x0
+	.short	0x12
+	.short	0x1206
+	.short	0x3
+	.short	0x0
+	.long	0x102d
+	.short	0x3
+	.short	0x0
+	.long	0x102a
+	.short	0x1a
+	.short	0x1009
+	.long	0x1006
+	.long	0x1006
+	.long	0x0
+	.byte	0x0
+	.byte	0x1
+	.short	0x0
+	.long	0x1003
+	.long	0x0
+	.short	0x132
+	.short	0x1203
+	.short	0x150d
+	.short	0x1
+	.long	0x13
+	.short	0x0
+	.asciz	"_MyRep"
+	.byte	243
+	.byte	242
+	.byte	241
+	.short	0x1511
+	.short	0x3
+	.long	0x1021
+	.asciz	"duration"
+	.byte	243
+	.byte	242
+	.byte	241
+	.short	0x1511
+	.short	0x3
+	.long	0x1023
+	.asciz	"count"
+	.byte	242
+	.byte	241
+	.short	0x1511
+	.short	0x3
+	.long	0x1024
+	.asciz	"operator+"
+	.byte	242
+	.byte	241
+	.short	0x1511
+	.short	0x3
+	.long	0x1024
+	.asciz	"operator-"
+	.byte	242
+	.byte	241
+	.short	0x150f
+	.short	0x2
+	.long	0x1029
+	.asciz	"operator++"
+	.byte	241
+	.short	0x150f
+	.short	0x2
+	.long	0x1029
+	.asciz	"operator--"
+	.byte	241
+	.short	0x1511
+	.short	0x3
+	.long	0x102a
+	.asciz	"operator+="
+	.byte	241
+	.short	0x1511
+	.short	0x3
+	.long	0x102a
+	.asciz	"operator-="
+	.byte	241
+	.short	0x1511
+	.short	0x3
+	.long	0x102d
+	.asciz	"operator*="
+	.byte	241
+	.short	0x1511
+	.short	0x3
+	.long	0x102d
+	.asciz	"operator/="
+	.byte	241
+	.short	0x150f
+	.short	0x2
+	.long	0x102e
+	.asciz	"operator%="
+	.byte	241
+	.short	0x1511
+	.short	0xb
+	.long	0x102f
+	.asciz	"zero"
+	.byte	243
+	.byte	242
+	.byte	241
+	.short	0x1511
+	.short	0xb
+	.long	0x102f
+	.asciz	"min"
+	.short	0x1511
+	.short	0xb
+	.long	0x102f
+	.asciz	"max"
+	.short	0x1510
+	.short	0x0
+	.long	0x13
+	.asciz	"rep"
+	.short	0x1510
+	.short	0x0
+	.long	0x1005
+	.asciz	"period"
+	.byte	241
+	.short	0x8e
+	.short	0x1504
+	.short	0x14
+	.short	0x210
+	.long	0x1030
+	.long	0x0
+	.long	0x0
+	.short	0x8
+	.asciz	"std::chrono::duration<long long,std::ratio<1,1000000000> >"
+	.asciz	".?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@"
+	.byte	243
+	.byte	242
+	.byte	241
+	.short	0xe
+	.short	0x1606
+	.long	0x1031
+	.long	0x1009
+	.long	0x51
+	.short	0xe
+	.short	0x1602
+	.long	0x1000
+	.long	0x1004
+	.asciz	"now"
 	.short	0xa
 	.short	0x1001
 	.long	0x41
@@ -2584,13 +2464,13 @@ main:
 	.byte	241
 	.short	0xa
 	.short	0x1002
-	.long	0x1000
+	.long	0x1034
 	.long	0x1000c
 	.short	0x16
 	.short	0x1201
 	.long	0x4
-	.long	0x1001
-	.long	0x1001
+	.long	0x1035
+	.long	0x1035
 	.long	0x641
 	.long	0x74
 	.short	0xe
@@ -2599,12 +2479,31 @@ main:
 	.byte	0x0
 	.byte	0x0
 	.short	0x4
-	.long	0x1002
+	.long	0x1036
 	.short	0x16
 	.short	0x1601
 	.long	0x0
-	.long	0x1003
+	.long	0x1037
 	.asciz	"addVectors"
+	.byte	241
+	.short	0x12
+	.short	0x1201
+	.long	0x3
+	.long	0x1035
+	.long	0x1035
+	.long	0x74
+	.short	0xe
+	.short	0x1008
+	.long	0x41
+	.byte	0x0
+	.byte	0x0
+	.short	0x3
+	.long	0x1039
+	.short	0x16
+	.short	0x1601
+	.long	0x0
+	.long	0x103a
+	.asciz	"scalarMult"
 	.byte	241
 	.short	0xe
 	.short	0x1503
@@ -2623,614 +2522,24 @@ main:
 	.short	0x16
 	.short	0x1601
 	.long	0x0
-	.long	0x1003
+	.long	0x1037
 	.asciz	"mulVectors"
 	.byte	241
-	.short	0x12
-	.short	0x1201
-	.long	0x3
-	.long	0x1001
-	.long	0x1001
-	.long	0x74
-	.short	0xe
-	.short	0x1008
-	.long	0x41
-	.byte	0x0
-	.byte	0x0
-	.short	0x3
-	.long	0x1008
-	.short	0x16
-	.short	0x1601
-	.long	0x0
-	.long	0x1009
-	.asciz	"scalarMult"
-	.byte	241
-	.short	0x6
-	.short	0x1201
-	.long	0x0
 	.short	0xe
 	.short	0x1008
 	.long	0x74
 	.byte	0x0
 	.byte	0x0
 	.short	0x0
-	.long	0x100b
+	.long	0x1003
 	.short	0x12
 	.short	0x1601
 	.long	0x0
-	.long	0x100c
+	.long	0x103f
 	.asciz	"main"
 	.byte	243
 	.byte	242
 	.byte	241
-	.short	0xee
-	.short	0x1504
-	.short	0x0
-	.short	0x280
-	.long	0x0
-	.long	0x0
-	.long	0x0
-	.short	0x0
-	.asciz	"std::chrono::time_point<std::chrono::steady_clock,std::chrono::duration<long long,std::ratio<1,1000000000> > >"
-	.asciz	".?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@"
-	.byte	243
-	.byte	242
-	.byte	241
-	.short	0x8e
-	.short	0x1504
-	.short	0x0
-	.short	0x280
-	.long	0x0
-	.long	0x0
-	.long	0x0
-	.short	0x0
-	.asciz	"std::chrono::duration<long long,std::ratio<1,1000000000> >"
-	.asciz	".?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@"
-	.byte	243
-	.byte	242
-	.byte	241
-	.short	0xa
-	.short	0x1002
-	.long	0x100e
-	.long	0x1040c
-	.short	0x1a
-	.short	0x1009
-	.long	0x3
-	.long	0x100e
-	.long	0x1010
-	.byte	0x0
-	.byte	0x0
-	.short	0x0
-	.long	0x100b
-	.long	0x0
-	.short	0xa
-	.short	0x1001
-	.long	0x100f
-	.short	0x1
-	.byte	242
-	.byte	241
-	.short	0xa
-	.short	0x1002
-	.long	0x1012
-	.long	0x1002c
-	.short	0xa
-	.short	0x1201
-	.long	0x1
-	.long	0x1013
-	.short	0x1a
-	.short	0x1009
-	.long	0x3
-	.long	0x100e
-	.long	0x1010
-	.byte	0x0
-	.byte	0x0
-	.short	0x1
-	.long	0x1014
-	.long	0x0
-	.short	0x12
-	.short	0x1206
-	.short	0x3
-	.short	0x0
-	.long	0x1011
-	.short	0x3
-	.short	0x0
-	.long	0x1015
-	.short	0xa
-	.short	0x1001
-	.long	0x100e
-	.short	0x1
-	.byte	242
-	.byte	241
-	.short	0xa
-	.short	0x1002
-	.long	0x1017
-	.long	0x1040c
-	.short	0x1a
-	.short	0x1009
-	.long	0x100f
-	.long	0x100e
-	.long	0x1018
-	.byte	0x0
-	.byte	0x1
-	.short	0x0
-	.long	0x100b
-	.long	0x0
-	.short	0xa
-	.short	0x1002
-	.long	0x100e
-	.long	0x1002c
-	.short	0x1a
-	.short	0x1009
-	.long	0x101a
-	.long	0x100e
-	.long	0x1010
-	.byte	0x0
-	.byte	0x0
-	.short	0x1
-	.long	0x1014
-	.long	0x0
-	.short	0x1a
-	.short	0x1009
-	.long	0x100e
-	.long	0x100e
-	.long	0x0
-	.byte	0x0
-	.byte	0x1
-	.short	0x0
-	.long	0x100b
-	.long	0x0
-	.short	0x4e
-	.short	0x1505
-	.short	0x0
-	.short	0x280
-	.long	0x0
-	.long	0x0
-	.long	0x0
-	.short	0x0
-	.asciz	"std::chrono::steady_clock"
-	.asciz	".?AUsteady_clock@chrono@std@@"
-	.byte	242
-	.byte	241
-	.short	0x4e
-	.short	0x1505
-	.short	0x0
-	.short	0x280
-	.long	0x0
-	.long	0x0
-	.long	0x0
-	.short	0x0
-	.asciz	"std::ratio<1,1000000000>"
-	.asciz	".?AU?$ratio@$00$0DLJKMKAA@@std@@"
-	.short	0xc6
-	.short	0x1203
-	.short	0x150d
-	.short	0x1
-	.long	0x100f
-	.short	0x0
-	.asciz	"_MyDur"
-	.byte	243
-	.byte	242
-	.byte	241
-	.short	0x150f
-	.short	0x2
-	.long	0x1016
-	.asciz	"time_point"
-	.byte	241
-	.short	0x1511
-	.short	0x3
-	.long	0x1019
-	.asciz	"time_since_epoch"
-	.byte	243
-	.byte	242
-	.byte	241
-	.short	0x1511
-	.short	0x3
-	.long	0x101b
-	.asciz	"operator+="
-	.byte	241
-	.short	0x1511
-	.short	0x3
-	.long	0x101b
-	.asciz	"operator-="
-	.byte	241
-	.short	0x1511
-	.short	0xb
-	.long	0x101c
-	.asciz	"min"
-	.short	0x1511
-	.short	0xb
-	.long	0x101c
-	.asciz	"max"
-	.short	0x1510
-	.short	0x0
-	.long	0x101d
-	.asciz	"clock"
-	.byte	242
-	.byte	241
-	.short	0x1510
-	.short	0x0
-	.long	0x100f
-	.asciz	"duration"
-	.byte	243
-	.byte	242
-	.byte	241
-	.short	0x1510
-	.short	0x0
-	.long	0x13
-	.asciz	"rep"
-	.short	0x1510
-	.short	0x0
-	.long	0x101e
-	.asciz	"period"
-	.byte	241
-	.short	0xee
-	.short	0x1504
-	.short	0xc
-	.short	0x212
-	.long	0x101f
-	.long	0x0
-	.long	0x0
-	.short	0x8
-	.asciz	"std::chrono::time_point<std::chrono::steady_clock,std::chrono::duration<long long,std::ratio<1,1000000000> > >"
-	.asciz	".?AV?$time_point@Usteady_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@23@@chrono@std@@"
-	.byte	243
-	.byte	242
-	.byte	241
-	.short	0x76
-	.short	0x1605
-	.long	0x0
-	.asciz	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.39.33519\\include\\__msvc_chrono.hpp"
-	.byte	243
-	.byte	242
-	.byte	241
-	.short	0xe
-	.short	0x1606
-	.long	0x1020
-	.long	0x1021
-	.long	0xbe
-	.short	0xa
-	.short	0x1002
-	.long	0x100f
-	.long	0x1040c
-	.short	0x1a
-	.short	0x1009
-	.long	0x3
-	.long	0x100f
-	.long	0x1023
-	.byte	0x0
-	.byte	0x0
-	.short	0x0
-	.long	0x100b
-	.long	0x0
-	.short	0xa
-	.short	0x1002
-	.long	0x1012
-	.long	0x1040c
-	.short	0x1a
-	.short	0x1009
-	.long	0x13
-	.long	0x100f
-	.long	0x1025
-	.byte	0x0
-	.byte	0x0
-	.short	0x0
-	.long	0x100b
-	.long	0x0
-	.short	0x1a
-	.short	0x1009
-	.long	0x100f
-	.long	0x100f
-	.long	0x1025
-	.byte	0x0
-	.byte	0x0
-	.short	0x0
-	.long	0x100b
-	.long	0x0
-	.short	0xa
-	.short	0x1002
-	.long	0x100f
-	.long	0x1002c
-	.short	0x1a
-	.short	0x1009
-	.long	0x1028
-	.long	0x100f
-	.long	0x1023
-	.byte	0x0
-	.byte	0x0
-	.short	0x0
-	.long	0x100b
-	.long	0x0
-	.short	0xa
-	.short	0x1201
-	.long	0x1
-	.long	0x74
-	.short	0x1a
-	.short	0x1009
-	.long	0x100f
-	.long	0x100f
-	.long	0x1023
-	.byte	0x0
-	.byte	0x1
-	.short	0x1
-	.long	0x102a
-	.long	0x0
-	.short	0x12
-	.short	0x1206
-	.short	0x3
-	.short	0x0
-	.long	0x1029
-	.short	0x3
-	.short	0x0
-	.long	0x102b
-	.short	0x1a
-	.short	0x1009
-	.long	0x1028
-	.long	0x100f
-	.long	0x1023
-	.byte	0x0
-	.byte	0x0
-	.short	0x1
-	.long	0x1014
-	.long	0x0
-	.short	0xa
-	.short	0x1001
-	.long	0x13
-	.short	0x1
-	.byte	242
-	.byte	241
-	.short	0xa
-	.short	0x1002
-	.long	0x102e
-	.long	0x1002c
-	.short	0xa
-	.short	0x1201
-	.long	0x1
-	.long	0x102f
-	.short	0x1a
-	.short	0x1009
-	.long	0x1028
-	.long	0x100f
-	.long	0x1023
-	.byte	0x0
-	.byte	0x0
-	.short	0x1
-	.long	0x1030
-	.long	0x0
-	.short	0x12
-	.short	0x1206
-	.short	0x3
-	.short	0x0
-	.long	0x1031
-	.short	0x3
-	.short	0x0
-	.long	0x102d
-	.short	0x1a
-	.short	0x1009
-	.long	0x100f
-	.long	0x100f
-	.long	0x0
-	.byte	0x0
-	.byte	0x1
-	.short	0x0
-	.long	0x100b
-	.long	0x0
-	.short	0x132
-	.short	0x1203
-	.short	0x150d
-	.short	0x1
-	.long	0x13
-	.short	0x0
-	.asciz	"_MyRep"
-	.byte	243
-	.byte	242
-	.byte	241
-	.short	0x1511
-	.short	0x3
-	.long	0x1024
-	.asciz	"duration"
-	.byte	243
-	.byte	242
-	.byte	241
-	.short	0x1511
-	.short	0x3
-	.long	0x1026
-	.asciz	"count"
-	.byte	242
-	.byte	241
-	.short	0x1511
-	.short	0x3
-	.long	0x1027
-	.asciz	"operator+"
-	.byte	242
-	.byte	241
-	.short	0x1511
-	.short	0x3
-	.long	0x1027
-	.asciz	"operator-"
-	.byte	242
-	.byte	241
-	.short	0x150f
-	.short	0x2
-	.long	0x102c
-	.asciz	"operator++"
-	.byte	241
-	.short	0x150f
-	.short	0x2
-	.long	0x102c
-	.asciz	"operator--"
-	.byte	241
-	.short	0x1511
-	.short	0x3
-	.long	0x102d
-	.asciz	"operator+="
-	.byte	241
-	.short	0x1511
-	.short	0x3
-	.long	0x102d
-	.asciz	"operator-="
-	.byte	241
-	.short	0x1511
-	.short	0x3
-	.long	0x1031
-	.asciz	"operator*="
-	.byte	241
-	.short	0x1511
-	.short	0x3
-	.long	0x1031
-	.asciz	"operator/="
-	.byte	241
-	.short	0x150f
-	.short	0x2
-	.long	0x1032
-	.asciz	"operator%="
-	.byte	241
-	.short	0x1511
-	.short	0xb
-	.long	0x1033
-	.asciz	"zero"
-	.byte	243
-	.byte	242
-	.byte	241
-	.short	0x1511
-	.short	0xb
-	.long	0x1033
-	.asciz	"min"
-	.short	0x1511
-	.short	0xb
-	.long	0x1033
-	.asciz	"max"
-	.short	0x1510
-	.short	0x0
-	.long	0x13
-	.asciz	"rep"
-	.short	0x1510
-	.short	0x0
-	.long	0x101e
-	.asciz	"period"
-	.byte	241
-	.short	0x8e
-	.short	0x1504
-	.short	0x14
-	.short	0x210
-	.long	0x1034
-	.long	0x0
-	.long	0x0
-	.short	0x8
-	.asciz	"std::chrono::duration<long long,std::ratio<1,1000000000> >"
-	.asciz	".?AV?$duration@_JU?$ratio@$00$0DLJKMKAA@@std@@@chrono@std@@"
-	.byte	243
-	.byte	242
-	.byte	241
-	.short	0xe
-	.short	0x1606
-	.long	0x1035
-	.long	0x1021
-	.long	0x51
-	.short	0xa
-	.short	0x1001
-	.long	0x30
-	.short	0x1
-	.byte	242
-	.byte	241
-	.short	0x1a
-	.short	0x1009
-	.long	0x100e
-	.long	0x101d
-	.long	0x0
-	.byte	0x0
-	.byte	0x0
-	.short	0x0
-	.long	0x100b
-	.long	0x0
-	.short	0x66
-	.short	0x1203
-	.short	0x150e
-	.short	0x3
-	.long	0x1037
-	.asciz	"is_steady"
-	.byte	242
-	.byte	241
-	.short	0x1511
-	.short	0xb
-	.long	0x1038
-	.asciz	"now"
-	.short	0x1510
-	.short	0x0
-	.long	0x13
-	.asciz	"rep"
-	.short	0x1510
-	.short	0x0
-	.long	0x101e
-	.asciz	"period"
-	.byte	241
-	.short	0x1510
-	.short	0x0
-	.long	0x100f
-	.asciz	"duration"
-	.byte	243
-	.byte	242
-	.byte	241
-	.short	0x1510
-	.short	0x0
-	.long	0x100e
-	.asciz	"time_point"
-	.byte	241
-	.short	0x4e
-	.short	0x1505
-	.short	0x6
-	.short	0x210
-	.long	0x1039
-	.long	0x0
-	.long	0x0
-	.short	0x1
-	.asciz	"std::chrono::steady_clock"
-	.asciz	".?AUsteady_clock@chrono@std@@"
-	.byte	242
-	.byte	241
-	.short	0xe
-	.short	0x1606
-	.long	0x103a
-	.long	0x1021
-	.long	0x295
-	.short	0x2a
-	.short	0x1203
-	.short	0x150e
-	.short	0x3
-	.long	0x102e
-	.asciz	"num"
-	.short	0x150e
-	.short	0x3
-	.long	0x102e
-	.asciz	"den"
-	.short	0x1510
-	.short	0x0
-	.long	0x101e
-	.asciz	"type"
-	.byte	243
-	.byte	242
-	.byte	241
-	.short	0x4e
-	.short	0x1505
-	.short	0x3
-	.short	0x210
-	.long	0x103c
-	.long	0x0
-	.long	0x0
-	.short	0x1
-	.asciz	"std::ratio<1,1000000000>"
-	.asciz	".?AU?$ratio@$00$0DLJKMKAA@@std@@"
-	.short	0x6a
-	.short	0x1605
-	.long	0x0
-	.asciz	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.39.33519\\include\\ratio"
-	.byte	243
-	.byte	242
-	.byte	241
-	.short	0xe
-	.short	0x1606
-	.long	0x103d
-	.long	0x103e
-	.long	0x43
 	.short	0x82
 	.short	0x1504
 	.short	0x0
@@ -3245,125 +2554,125 @@ main:
 	.byte	241
 	.short	0xa
 	.short	0x1002
-	.long	0x1040
+	.long	0x1041
 	.long	0x1040c
 	.short	0x1a
 	.short	0x1009
 	.long	0x3
-	.long	0x1040
 	.long	0x1041
+	.long	0x1042
 	.byte	0x0
 	.byte	0x0
 	.short	0x0
-	.long	0x100b
+	.long	0x1003
 	.long	0x0
 	.short	0xa
 	.short	0x1001
-	.long	0x1040
+	.long	0x1041
 	.short	0x1
 	.byte	242
 	.byte	241
 	.short	0xa
 	.short	0x1002
-	.long	0x1043
+	.long	0x1044
 	.long	0x1040c
 	.short	0x1a
 	.short	0x1009
 	.long	0x13
-	.long	0x1040
-	.long	0x1044
+	.long	0x1041
+	.long	0x1045
 	.byte	0x0
 	.byte	0x0
 	.short	0x0
-	.long	0x100b
+	.long	0x1003
 	.long	0x0
 	.short	0x1a
 	.short	0x1009
-	.long	0x1040
-	.long	0x1040
-	.long	0x1044
+	.long	0x1041
+	.long	0x1041
+	.long	0x1045
 	.byte	0x0
 	.byte	0x0
 	.short	0x0
-	.long	0x100b
+	.long	0x1003
 	.long	0x0
 	.short	0xa
 	.short	0x1002
-	.long	0x1040
+	.long	0x1041
 	.long	0x1002c
 	.short	0x1a
 	.short	0x1009
-	.long	0x1047
-	.long	0x1040
+	.long	0x1048
 	.long	0x1041
+	.long	0x1042
 	.byte	0x0
 	.byte	0x0
 	.short	0x0
-	.long	0x100b
+	.long	0x1003
 	.long	0x0
 	.short	0x1a
 	.short	0x1009
-	.long	0x1040
-	.long	0x1040
 	.long	0x1041
+	.long	0x1041
+	.long	0x1042
 	.byte	0x0
 	.byte	0x1
 	.short	0x1
-	.long	0x102a
+	.long	0x1027
 	.long	0x0
 	.short	0x12
 	.short	0x1206
-	.short	0x3
-	.short	0x0
-	.long	0x1048
 	.short	0x3
 	.short	0x0
 	.long	0x1049
+	.short	0x3
+	.short	0x0
+	.long	0x104a
 	.short	0xa
 	.short	0x1002
-	.long	0x1043
+	.long	0x1044
 	.long	0x1002c
 	.short	0xa
 	.short	0x1201
 	.long	0x1
-	.long	0x104b
+	.long	0x104c
 	.short	0x1a
 	.short	0x1009
-	.long	0x1047
-	.long	0x1040
+	.long	0x1048
 	.long	0x1041
+	.long	0x1042
 	.byte	0x0
 	.byte	0x0
 	.short	0x1
-	.long	0x104c
+	.long	0x104d
 	.long	0x0
 	.short	0x1a
 	.short	0x1009
-	.long	0x1047
-	.long	0x1040
+	.long	0x1048
 	.long	0x1041
+	.long	0x1042
 	.byte	0x0
 	.byte	0x0
 	.short	0x1
-	.long	0x1030
+	.long	0x102c
 	.long	0x0
 	.short	0x12
 	.short	0x1206
 	.short	0x3
 	.short	0x0
-	.long	0x104e
+	.long	0x104f
 	.short	0x3
 	.short	0x0
-	.long	0x104d
+	.long	0x104e
 	.short	0x1a
 	.short	0x1009
-	.long	0x1040
-	.long	0x1040
+	.long	0x1041
+	.long	0x1041
 	.long	0x0
 	.byte	0x0
 	.byte	0x1
 	.short	0x0
-	.long	0x100b
+	.long	0x1003
 	.long	0x0
 	.short	0x46
 	.short	0x1505
@@ -3390,78 +2699,78 @@ main:
 	.byte	241
 	.short	0x1511
 	.short	0x3
-	.long	0x1042
+	.long	0x1043
 	.asciz	"duration"
 	.byte	243
 	.byte	242
 	.byte	241
 	.short	0x1511
 	.short	0x3
-	.long	0x1045
+	.long	0x1046
 	.asciz	"count"
 	.byte	242
 	.byte	241
 	.short	0x1511
 	.short	0x3
-	.long	0x1046
+	.long	0x1047
 	.asciz	"operator+"
 	.byte	242
 	.byte	241
 	.short	0x1511
 	.short	0x3
-	.long	0x1046
+	.long	0x1047
 	.asciz	"operator-"
 	.byte	242
 	.byte	241
 	.short	0x150f
 	.short	0x2
-	.long	0x104a
+	.long	0x104b
 	.asciz	"operator++"
 	.byte	241
 	.short	0x150f
 	.short	0x2
-	.long	0x104a
+	.long	0x104b
 	.asciz	"operator--"
 	.byte	241
 	.short	0x1511
 	.short	0x3
-	.long	0x104d
+	.long	0x104e
 	.asciz	"operator+="
 	.byte	241
 	.short	0x1511
 	.short	0x3
-	.long	0x104d
+	.long	0x104e
 	.asciz	"operator-="
 	.byte	241
 	.short	0x1511
 	.short	0x3
-	.long	0x104e
+	.long	0x104f
 	.asciz	"operator*="
 	.byte	241
 	.short	0x1511
 	.short	0x3
-	.long	0x104e
+	.long	0x104f
 	.asciz	"operator/="
 	.byte	241
 	.short	0x150f
 	.short	0x2
-	.long	0x104f
+	.long	0x1050
 	.asciz	"operator%="
 	.byte	241
 	.short	0x1511
 	.short	0xb
-	.long	0x1050
+	.long	0x1051
 	.asciz	"zero"
 	.byte	243
 	.byte	242
 	.byte	241
 	.short	0x1511
 	.short	0xb
-	.long	0x1050
+	.long	0x1051
 	.asciz	"min"
 	.short	0x1511
 	.short	0xb
-	.long	0x1050
+	.long	0x1051
 	.asciz	"max"
 	.short	0x1510
 	.short	0x0
@@ -3469,14 +2778,14 @@ main:
 	.asciz	"rep"
 	.short	0x1510
 	.short	0x0
-	.long	0x1051
+	.long	0x1052
 	.asciz	"period"
 	.byte	241
 	.short	0x82
 	.short	0x1504
 	.short	0x14
 	.short	0x210
-	.long	0x1052
+	.long	0x1053
 	.long	0x0
 	.long	0x0
 	.short	0x8
@@ -3486,22 +2795,22 @@ main:
 	.byte	241
 	.short	0xe
 	.short	0x1606
-	.long	0x1053
-	.long	0x1021
+	.long	0x1054
+	.long	0x1009
 	.long	0x51
 	.short	0x2a
 	.short	0x1203
 	.short	0x150e
 	.short	0x3
-	.long	0x102e
+	.long	0x101b
 	.asciz	"num"
 	.short	0x150e
 	.short	0x3
-	.long	0x102e
+	.long	0x101b
 	.asciz	"den"
 	.short	0x1510
 	.short	0x0
-	.long	0x1051
+	.long	0x1052
 	.asciz	"type"
 	.byte	243
 	.byte	242
@@ -3510,7 +2819,7 @@ main:
 	.short	0x1505
 	.short	0x3
 	.short	0x210
-	.long	0x1055
+	.long	0x1056
 	.long	0x0
 	.long	0x0
 	.short	0x1
@@ -3521,162 +2830,9 @@ main:
 	.byte	241
 	.short	0xe
 	.short	0x1606
-	.long	0x1056
-	.long	0x103e
+	.long	0x1057
+	.long	0x101e
 	.long	0x43
-	.short	0xe
-	.short	0x1602
-	.long	0x101d
-	.long	0x1038
-	.asciz	"now"
-	.short	0x12
-	.short	0x1605
-	.long	0x0
-	.asciz	"std::chrono"
-	.short	0xe
-	.short	0x1008
-	.long	0x1040
-	.byte	0x0
-	.byte	0x0
-	.short	0x1
-	.long	0x1014
-	.short	0x1a
-	.short	0x1601
-	.long	0x1059
-	.long	0x105a
-	.asciz	"duration_cast"
-	.byte	242
-	.byte	241
-	.short	0xa
-	.short	0x1002
-	.long	0x1017
-	.long	0x1002c
-	.short	0xe
-	.short	0x1201
-	.long	0x2
-	.long	0x105c
-	.long	0x105c
-	.short	0xe
-	.short	0x1008
-	.long	0x100f
-	.byte	0x0
-	.byte	0x0
-	.short	0x2
-	.long	0x105d
-	.short	0x16
-	.short	0x1601
-	.long	0x1059
-	.long	0x105e
-	.asciz	"operator-"
-	.byte	242
-	.byte	241
-	.short	0x12
-	.short	0x1602
-	.long	0x1040
-	.long	0x1045
-	.asciz	"count"
-	.byte	242
-	.byte	241
-	.short	0xa
-	.short	0x1002
-	.long	0x1043
-	.long	0x1000c
-	.short	0x1a
-	.short	0x1009
-	.long	0x3
-	.long	0x100f
-	.long	0x1023
-	.byte	0x0
-	.byte	0x0
-	.short	0x1
-	.long	0x1030
-	.long	0x0
-	.short	0x16
-	.short	0x1602
-	.long	0x100f
-	.long	0x1062
-	.asciz	"duration"
-	.byte	243
-	.byte	242
-	.byte	241
-	.short	0xa
-	.short	0x1002
-	.long	0x100f
-	.long	0x1000c
-	.short	0x16
-	.short	0x1602
-	.long	0x100e
-	.long	0x1015
-	.asciz	"time_point"
-	.byte	241
-	.short	0xa
-	.short	0x1002
-	.long	0x100e
-	.long	0x1000c
-	.short	0x12
-	.short	0x1602
-	.long	0x100f
-	.long	0x1026
-	.asciz	"count"
-	.byte	242
-	.byte	241
-	.short	0xa
-	.short	0x1002
-	.long	0x1012
-	.long	0x1000c
-	.short	0x1a
-	.short	0x1009
-	.long	0x3
-	.long	0x1040
-	.long	0x1041
-	.byte	0x0
-	.byte	0x0
-	.short	0x1
-	.long	0x1030
-	.long	0x0
-	.short	0x16
-	.short	0x1602
-	.long	0x1040
-	.long	0x1069
-	.asciz	"duration"
-	.byte	243
-	.byte	242
-	.byte	241
-	.short	0xa
-	.short	0x1002
-	.long	0x1040
-	.long	0x1000c
-	.short	0xe
-	.short	0x1201
-	.long	0x2
-	.long	0x1013
-	.long	0x1013
-	.short	0xe
-	.short	0x1008
-	.long	0x100f
-	.byte	0x0
-	.byte	0x0
-	.short	0x2
-	.long	0x106c
-	.short	0x16
-	.short	0x1601
-	.long	0x1059
-	.long	0x106d
-	.asciz	"operator-"
-	.byte	242
-	.byte	241
-	.short	0x1e
-	.short	0x1602
-	.long	0x100e
-	.long	0x1019
-	.asciz	"time_since_epoch"
-	.byte	243
-	.byte	242
-	.byte	241
-	.short	0xa
-	.short	0x1002
-	.long	0x1017
-	.long	0x1000c
 	.short	0xa
 	.short	0x1001
 	.long	0x74
@@ -3685,31 +2841,31 @@ main:
 	.byte	241
 	.short	0xa
 	.short	0x1001
-	.long	0x1005
+	.long	0x103c
 	.short	0x1
 	.byte	242
 	.byte	241
 	.short	0xa
 	.short	0x1002
-	.long	0x1072
+	.long	0x105a
 	.long	0x1000c
 	.short	0xa
 	.short	0x1002
-	.long	0x1005
+	.long	0x103c
 	.long	0x1000c
 	.short	0xa
 	.short	0x1001
-	.long	0x1006
+	.long	0x103d
 	.short	0x1
 	.byte	242
 	.byte	241
 	.short	0xa
 	.short	0x1002
-	.long	0x1075
+	.long	0x105d
 	.long	0x1000c
 	.short	0xa
 	.short	0x1002
-	.long	0x1006
+	.long	0x103d
 	.long	0x1000c
 	.short	0x4a
 	.short	0x1505
@@ -3727,15 +2883,15 @@ main:
 	.short	0x1203
 	.short	0x150e
 	.short	0x3
-	.long	0x102e
+	.long	0x101b
 	.asciz	"num"
 	.short	0x150e
 	.short	0x3
-	.long	0x102e
+	.long	0x101b
 	.asciz	"den"
 	.short	0x1510
 	.short	0x0
-	.long	0x1078
+	.long	0x1060
 	.asciz	"type"
 	.byte	243
 	.byte	242
@@ -3744,7 +2900,7 @@ main:
 	.short	0x1505
 	.short	0x3
 	.short	0x210
-	.long	0x1079
+	.long	0x1061
 	.long	0x0
 	.long	0x0
 	.short	0x1
@@ -3754,8 +2910,8 @@ main:
 	.byte	241
 	.short	0xe
 	.short	0x1606
-	.long	0x107a
-	.long	0x103e
+	.long	0x1062
+	.long	0x101e
 	.long	0x43
 	.short	0x3e
 	.short	0x1605
@@ -3784,21 +2940,20 @@ main:
 	.asciz	"C:\\Program Files (x86)\\Intel\\oneAPI\\compiler\\2024.2\\bin\\compiler\\clang-cl.exe"
 	.byte	242
 	.byte	241
-	.short	0x128e
+	.short	0x21fa
 	.short	0x1605
 	.long	0x0
-	.asciz	"\"-cc1\" \"-triple\" \"x86_64-pc-windows-msvc19.39.33521\" \"-S\" \"-disable-free\" \"-clear-ast-before-backend\" \"-disable-llvm-verifier\" \"-discard-value-names\" \"-mrelocation-model\" \"pic\" \"-pic-level\" \"2\" \"-fveclib=SVML\" \"-faltmathlib=SVMLAltMathLibrary\" \"-mframe-pointer=none\" \"-fapprox-func\" \"-funsafe-math-optimizations\" \"-fno-signed-zeros\" \"-mreassociate\" \"-freciprocal-math\" \"-ffp-contract=fast\" \"-fno-rounding-math\" \"-complex-range=promoted\" \"-fno-verbose-asm\" \"-mconstructor-aliases\" \"-funwind-tables=2\" \"-target-cpu\" \"x86-64\" \"-target-feature\" \"+avx\" \"-target-feature\" \"+fma\" \"-mllvm\" \"-x86-enable-unaligned-vector-move=true\" \"-tune-cpu\" \"generic\" \"-D_DEBUG\" \"-D_MT\" \"-D_DLL\" \"--dependent-lib=msvcrtd\" \"--dependent-lib=libircmt\" \"--dependent-lib=svml_dispmd\" \"--dependent-lib=libdecimal\" \"--dependent-lib=libmmdd\" \"--dependent-lib=oldnames\" \"-stack-protector\" \"2\" \"-fcxx-exceptions\" \"-fexceptions\" \"-fexternc-nounwind\" \"-fdiagnostics-format\" \"msvc\" \"-gno-column-info\" \"-gcodeview\" \"-debug-info-kind=limited\" \"-fdebug-compilation-dir=C:\\\\Users\\\\\320\230\320\262\320\260\320\275\\\\Desktop\\\\IntelIntrinsics\\\\Intrinsics\" \"-fcoverage-compilation-dir=C:\\\\Users\\\\\320\230\320\262\320\260\320\275\\\\Desktop\\\\IntelIntrinsics\\\\Intrinsics\" \"-fclang-abi-compat=17\" \"-resource-dir\" \"C:\\\\Program Files (x86)\\\\Intel\\\\oneAPI\\\\compiler\\\\2024.2\\\\lib\\\\clang\\\\19\" \"-D\" \"_DEBUG\" \"-D\" \"_CONSOLE\" \"-D\" \"_UNICODE\" \"-D\" \"UNICODE\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Intel\\\\oneAPI\\\\compiler\\\\2024.2\\\\bin\\\\compiler\\\\..\\\\..\\\\opt\\\\compiler\\\\include\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Intel\\\\oneAPI\\\\compiler\\\\2024.2\\\\lib\\\\clang\\\\19\\\\include\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Intel\\\\oneAPI\\\\compiler\\\\2024.2\\\\bin\\\\compiler\\\\..\\\\..\\\\opt\\\\compiler\\\\include\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Intel\\\\oneAPI\\\\tbb\\\\2021.13\\\\include\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Intel\\\\oneAPI\\\\compiler\\\\2024.2\\\\include\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Intel\\\\oneAPI\\\\compiler\\\\2024.2\\\\opt\\\\compiler\\\\include\" \"-internal-isystem\" \"C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Enterprise\\\\VC\\\\Tools\\\\MSVC\\\\14.39.33519\\\\include\" \"-internal-isystem\" \"C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Enterprise\\\\VC\\\\Tools\\\\MSVC\\\\14.39.33519\\\\atlmfc\\\\include\" \"-internal-isystem\" \"C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Enterprise\\\\VC\\\\Auxiliary\\\\VS\\\\include\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Include\\\\10.0.22621.0\\\\ucrt\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Include\\\\10.0.22621.0\\\\um\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Include\\\\10.0.22621.0\\\\shared\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Include\\\\10.0.22621.0\\\\winrt\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Include\\\\10.0.22621.0\\\\cppwinrt\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Windows Kits\\\\NETFXSDK\\\\4.8\\\\Include\\\\um\" \"-internal-isystem\" \"C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Enterprise\\\\VC\\\\Tools\\\\MSVC\\\\14.39.33519\\\\include\" \"-internal-isystem\" \"C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Enterprise\\\\VC\\\\Tools\\\\MSVC\\\\14.39.33519\\\\atlmfc\\\\include\" \"-internal-isystem\" \"C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Enterprise\\\\VC\\\\Auxiliary\\\\VS\\\\include\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Include\\\\10.0.22621.0\\\\ucrt\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Include\\\\10.0.22621.0\\\\um\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Include\\\\10.0.22621.0\\\\shared\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Include\\\\10.0.22621.0\\\\winrt\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Include\\\\10.0.22621.0\\\\cppwinrt\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Windows Kits\\\\NETFXSDK\\\\4.8\\\\Include\\\\um\" \"-header-base-path\" \"C:\\\\Program Files (x86)\\\\Intel\\\\oneAPI\\\\compiler\\\\2024.2\" \"-O0\" \"-Wall\" \"-Wno-c++11-narrowing\" \"-fdeprecated-macro\" \"-ferror-limit\" \"19\" \"-malign-double\" \"-fno-use-cxa-atexit\" \"-fuse-line-directives\" \"-fms-extensions\" \"-fms-compatibility\" \"-fms-compatibility-version=19.39.33521\" \"-std=c++17\" \"-fdiagnostics-absolute-paths\" \"-fskip-odr-check-in-gmf\" \"-fdelayed-template-parsing\" \"-fpack-struct=16\" \"-opt-record-file\" \"main.opt.yaml\" \"-opt-record-format\" \"yaml\" \"-mllvm\" \"-disable-hir-generate-mkl-call\" \"-mllvm\" \"-intel-opt-report-emitter=ir\" \"-mllvm\" \"-enable-ra-report\" \"-mllvm\" \"-intel-opt-report=high\" \"-mllvm\" \"-intel-ra-spillreport=high\" \"-mllvm\" \"-inline-report=0xf859\" \"-mllvm\" \"-intel-opt-report-file=main.optrpt\" \"-mllvm\" \"-loopopt=1\" \"-floopopt-pipeline=light\" \"-mllvm\" \"-intel-abi-compatible=true\" \"-fintel-compatibility\" \"-fintel-libirc-allowed\" \"-fintel-libimf-allowed\" \"-x\" \"c++\""
-	.byte	243
+	.asciz	"\"-cc1\" \"-triple\" \"x86_64-pc-windows-msvc19.39.33521\" \"-S\" \"-disable-free\" \"-clear-ast-before-backend\" \"-disable-llvm-verifier\" \"-discard-value-names\" \"-mrelocation-model\" \"pic\" \"-pic-level\" \"2\" \"-fveclib=SVML\" \"-faltmathlib=SVMLAltMathLibrary\" \"-mframe-pointer=none\" \"-fapprox-func\" \"-funsafe-math-optimizations\" \"-fno-signed-zeros\" \"-mreassociate\" \"-freciprocal-math\" \"-fdenormal-fp-math=preserve-sign,preserve-sign\" \"-ffp-contract=fast\" \"-fno-rounding-math\" \"-complex-range=promoted\" \"-fno-verbose-asm\" \"-mconstructor-aliases\" \"-funwind-tables=2\" \"-target-cpu\" \"skylake\" \"-target-feature\" \"+prfchw\" \"-target-feature\" \"-cldemote\" \"-target-feature\" \"+avx\" \"-target-feature\" \"-msrlist\" \"-target-feature\" \"+aes\" \"-target-feature\" \"+sahf\" \"-target-feature\" \"+pclmul\" \"-target-feature\" \"-xop\" \"-target-feature\" \"+crc32\" \"-target-feature\" \"-pbndkb\" \"-target-feature\" \"+xsaves\" \"-target-feature\" \"-avx512fp16\" \"-target-feature\" \"-usermsr\" \"-target-feature\" \"-sm4\" \"-target-feature\" \"-egpr\" \"-target-feature\" \"+sse4.1\" \"-target-feature\" \"-avx512ifma\" \"-target-feature\" \"+xsave\" \"-target-feature\" \"-avx512pf\" \"-target-feature\" \"+sse4.2\" \"-target-feature\" \"-tsxldtrk\" \"-target-feature\" \"-ptwrite\" \"-target-feature\" \"-widekl\" \"-target-feature\" \"-sm3\" \"-target-feature\" \"-wrmsrns\" \"-target-feature\" \"+invpcid\" \"-target-feature\" \"+64bit\" \"-target-feature\" \"+xsavec\" \"-target-feature\" \"-avx10.1-512\" \"-target-feature\" \"-avx512vpopcntdq\" \"-target-feature\" \"+cmov\" \"-target-feature\" \"-avx512vp2intersect\" \"-target-feature\" \"-avx512cd\" \"-target-feature\" \"+movbe\" \"-target-feature\" \"-avxvnniint8\" \"-target-feature\" \"-avx512er\" \"-target-feature\" \"-ccmp\" \"-target-feature\" \"-amx-int8\" \"-target-feature\" \"-kl\" \"-target-feature\" \"-avx10.1-256\" \"-target-feature\" \"-sha512\" \"-target-feature\" \"-avxvnni\" \"-target-feature\" \"-rtm\" \"-target-feature\" \"+adx\" \"-target-feature\" \"+avx2\" \"-target-feature\" \"-hreset\" \"-target-feature\" \"-movdiri\" \"-target-feature\" \"-serialize\" \"-target-feature\" \"-vpclmulqdq\" \"-target-feature\" \"-avx512vl\" \"-target-feature\" \"-uintr\" \"-target-feature\" \"-cf\" \"-target-feature\" \"+clflushopt\" \"-target-feature\" \"-raoint\" \"-target-feature\" \"-cmpccxadd\" \"-target-feature\" \"+bmi\" \"-target-feature\" \"-amx-tile\" \"-target-feature\" \"+sse\" \"-target-feature\" \"-gfni\" \"-target-feature\" \"-avxvnniint16\" \"-target-feature\" \"-amx-fp16\" \"-target-feature\" \"-ndd\" \"-target-feature\" \"+xsaveopt\" \"-target-feature\" \"+rdrnd\" \"-target-feature\" \"-avx512f\" \"-target-feature\" \"-amx-bf16\" \"-target-feature\" \"-avx512bf16\" \"-target-feature\" \"-avx512vnni\" \"-target-feature\" \"-push2pop2\" \"-target-feature\" \"+cx8\" \"-target-feature\" \"-avx512bw\" \"-target-feature\" \"+sse3\" \"-target-feature\" \"-pku\" \"-target-feature\" \"+fsgsbase\" \"-target-feature\" \"-clzero\" \"-target-feature\" \"-mwaitx\" \"-target-feature\" \"-lwp\" \"-target-feature\" \"+lzcnt\" \"-target-feature\" \"-sha\" \"-target-feature\" \"-movdir64b\" \"-target-feature\" \"-ppx\" \"-target-feature\" \"-wbnoinvd\" \"-target-feature\" \"-enqcmd\" \"-target-feature\" \"-prefetchwt1\" \"-target-feature\" \"-avxneconvert\" \"-target-feature\" \"-tbm\" \"-target-feature\" \"-pconfig\" \"-target-feature\" \"-amx-complex\" \"-target-feature\" \"+ssse3\" \"-target-feature\" \"+cx16\" \"-target-feature\" \"+bmi2\" \"-target-feature\" \"+fma\" \"-target-feature\" \"+popcnt\" \"-target-feature\" \"-avxifma\" \"-target-feature\" \"+f16c\" \"-target-feature\" \"-avx512bitalg\" \"-target-feature\" \"-rdpru\" \"-target-feature\" \"-clwb\" \"-target-feature\" \"+mmx\" \"-target-feature\" \"+sse2\" \"-target-feature\" \"+rdseed\" \"-target-feature\" \"-avx512vbmi2\" \"-target-feature\" \"-rdpid\" \"-target-feature\" \"-prefetchi\" \"-target-feature\" \"-fma4\" \"-target-feature\" \"-avx512vbmi\" \"-target-feature\" \"-shstk\" \"-target-feature\" \"-vaes\" \"-target-feature\" \"-waitpkg\" \"-target-feature\" \"+sgx\" \"-target-feature\" \"+fxsr\" \"-target-feature\" \"-avx512dq\" \"-target-feature\" \"-sse4a\" \"-mllvm\" \"-x86-enable-unaligned-vector-move=true\" \"-D_DEBUG\" \"-D_MT\" \"-D_DLL\" \"--dependent-lib=msvcrtd\" \"--dependent-lib=libircmt\" \"--dependent-lib=svml_dispmd\" \"--dependent-lib=libdecimal\" \"--dependent-lib=libmmdd\" \"--dependent-lib=oldnames\" \"-stack-protector\" \"2\" \"-fcxx-exceptions\" \"-fexceptions\" \"-fexternc-nounwind\" \"-fdiagnostics-format\" \"msvc\" \"-gno-column-info\" \"-gcodeview\" \"-debug-info-kind=limited\" \"-fdebug-compilation-dir=C:\\\\Users\\\\\320\230\320\262\320\260\320\275\\\\Desktop\\\\IntelIntrinsics\\\\Intrinsics\" \"-ffunction-sections\" \"-fcoverage-compilation-dir=C:\\\\Users\\\\\320\230\320\262\320\260\320\275\\\\Desktop\\\\IntelIntrinsics\\\\Intrinsics\" \"-fclang-abi-compat=17\" \"-resource-dir\" \"C:\\\\Program Files (x86)\\\\Intel\\\\oneAPI\\\\compiler\\\\2024.2\\\\lib\\\\clang\\\\19\" \"-D\" \"_DEBUG\" \"-D\" \"_CONSOLE\" \"-D\" \"_UNICODE\" \"-D\" \"UNICODE\" \"-IC:\\\\Program Files (x86)\\\\Intel\\\\oneAPI\\\\tbb\\\\latest\\\\env\\\\..\\\\include\" \"-IC:\\\\Program Files (x86)\\\\Intel\\\\oneAPI\\\\ocloc\\\\latest\\\\include\" \"-IC:\\\\Program Files (x86)\\\\Intel\\\\oneAPI\\\\mkl\\\\latest\\\\include\" \"-IC:\\\\Program Files (x86)\\\\Intel\\\\oneAPI\\\\ippcp\\\\latest\\\\include\" \"-IC:\\\\Program Files (x86)\\\\Intel\\\\oneAPI\\\\ipp\\\\latest\\\\include\" \"-IC:\\\\Program Files (x86)\\\\Intel\\\\oneAPI\\\\dpl\\\\latest\\\\include\" \"-IC:\\\\Program Files (x86)\\\\Intel\\\\oneAPI\\\\dpcpp-ct\\\\latest\\\\env\\\\..\\\\include\" \"-IC:\\\\Program Files (x86)\\\\Intel\\\\oneAPI\\\\dev-utilities\\\\latest\\\\include\" \"-IC:\\\\Program Files (x86)\\\\Intel\\\\oneAPI\\\\dal\\\\latest\\\\include\\\\dal\" \"-IC:\\\\Program Files (x86)\\\\Intel\\\\oneAPI\\\\compiler\\\\latest\\\\include\" \"-I.\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Intel\\\\oneAPI\\\\compiler\\\\2024.2\\\\bin\\\\compiler\\\\..\\\\..\\\\opt\\\\compiler\\\\include\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Intel\\\\oneAPI\\\\compiler\\\\2024.2\\\\lib\\\\clang\\\\19\\\\include\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Intel\\\\oneAPI\\\\compiler\\\\2024.2\\\\bin\\\\compiler\\\\..\\\\..\\\\opt\\\\compiler\\\\include\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Intel\\\\oneAPI\\\\tbb\\\\2021.13\\\\include\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Intel\\\\oneAPI\\\\compiler\\\\2024.2\\\\include\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Intel\\\\oneAPI\\\\compiler\\\\2024.2\\\\opt\\\\compiler\\\\include\" \"-internal-isystem\" \"C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Enterprise\\\\VC\\\\Tools\\\\MSVC\\\\14.39.33519\\\\include\" \"-internal-isystem\" \"C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Enterprise\\\\VC\\\\Tools\\\\MSVC\\\\14.39.33519\\\\atlmfc\\\\include\" \"-internal-isystem\" \"C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Enterprise\\\\VC\\\\Auxiliary\\\\VS\\\\include\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Include\\\\10.0.22621.0\\\\ucrt\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Include\\\\10.0.22621.0\\\\um\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Include\\\\10.0.22621.0\\\\shared\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Include\\\\10.0.22621.0\\\\winrt\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Include\\\\10.0.22621.0\\\\cppwinrt\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Windows Kits\\\\NETFXSDK\\\\4.8\\\\Include\\\\um\" \"-internal-isystem\" \"C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Enterprise\\\\VC\\\\Tools\\\\MSVC\\\\14.39.33519\\\\include\" \"-internal-isystem\" \"C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Enterprise\\\\VC\\\\Tools\\\\MSVC\\\\14.39.33519\\\\atlmfc\\\\include\" \"-internal-isystem\" \"C:\\\\Program Files\\\\Microsoft Visual Studio\\\\2022\\\\Enterprise\\\\VC\\\\Auxiliary\\\\VS\\\\include\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Include\\\\10.0.22621.0\\\\ucrt\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Include\\\\10.0.22621.0\\\\um\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Include\\\\10.0.22621.0\\\\shared\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Include\\\\10.0.22621.0\\\\winrt\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Include\\\\10.0.22621.0\\\\cppwinrt\" \"-internal-isystem\" \"C:\\\\Program Files (x86)\\\\Windows Kits\\\\NETFXSDK\\\\4.8\\\\Include\\\\um\" \"-header-base-path\" \"C:\\\\Program Files (x86)\\\\Intel\\\\oneAPI\\\\compiler\\\\2024.2\" \"-O3\" \"-Wall\" \"-Wno-c++11-narrowing\" \"-fdeprecated-macro\" \"-ferror-limit\" \"19\" \"-malign-double\" \"-fno-use-cxa-atexit\" \"-fuse-line-directives\" \"-fms-extensions\" \"-fms-compatibility\" \"-fms-compatibility-version=19.39.33521\" \"-std=c++17\" \"-fdiagnostics-absolute-paths\" \"-fskip-odr-check-in-gmf\" \"-fdelayed-template-parsing\" \"-fpack-struct=16\" \"-vectorize-loops\" \"-vectorize-slp\" \"-opt-record-file\" \"main.opt.yaml\" \"-opt-record-format\" \"yaml\" \"-mllvm\" \"-disable-hir-generate-mkl-call\" \"-mllvm\" \"-intel-opt-report-emitter=ir\" \"-mllvm\" \"-enable-ra-report\" \"-mllvm\" \"-intel-opt-report=high\" \"-mllvm\" \"-intel-ra-spillreport=high\" \"-mllvm\" \"-inline-report=0xf859\" \"-mllvm\" \"-intel-opt-report-file=main.optrpt\" \"-mllvm\" \"-loopopt=1\" \"-floopopt-pipeline=light\" \"-mllvm\" \"-intel-abi-compatible=true\" \"-fintel-compatibility\" \"-fintel-libirc-allowed\" \"-fintel-libimf-allowed\" \"-x\" \"c++\""
 	.byte	242
 	.byte	241
 	.short	0x1a
 	.short	0x1603
 	.short	0x5
-	.long	0x107c
-	.long	0x107f
-	.long	0x107d
-	.long	0x107e
-	.long	0x1080
+	.long	0x1064
+	.long	0x1067
+	.long	0x1065
+	.long	0x1066
+	.long	0x1068
 	.byte	242
 	.byte	241
 	.globl	_fltused

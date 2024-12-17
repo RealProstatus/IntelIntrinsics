@@ -5,7 +5,7 @@
 
 using namespace std;
 
-const int VEC_SIZE = 80000011;
+const int VEC_SIZE = 4000000;
 
 void addVectors(const double* v1,const double* v2, double* out, int size) {
 	int i;
@@ -75,8 +75,8 @@ double scalarMult(const double* v1, const double* v2, int size) {
 	double horizontal_sum[4];
 	_mm256_store_pd(horizontal_sum, x3);
 
-	for (int j = 0; j < 4; j++)
-		res += horizontal_sum[i];
+	res = horizontal_sum[0] + horizontal_sum[1]
+		+ horizontal_sum[2] + horizontal_sum[3];
 
 	for (; i < size; i++) {
 		res += (v1[i] * v2[i]);
@@ -93,12 +93,12 @@ int main() {
 	c = (double*)_mm_malloc(VEC_SIZE * sizeof(double), 32);
 	
 	auto start = chrono::high_resolution_clock::now();
-	addVectors(a, b, c, VEC_SIZE);
+ 	addVectors(a, b, c, VEC_SIZE);
 	auto stop = chrono::high_resolution_clock::now();
 
 	auto res = chrono::duration_cast<chrono::milliseconds>(stop - start);
 
-	cout << res.count();
+	cout << scalarMult(a,b,VEC_SIZE);
 
 	_mm_free(a);
 	_mm_free(b);
